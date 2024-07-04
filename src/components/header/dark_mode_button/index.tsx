@@ -20,6 +20,7 @@ const DarkModeButton = (): JSX.Element => {
   return (
     <button
       className='glass'
+      aria-label='Toggle dark mode'
       style={darkModeButtonStyle}
       onClick={toggleDarkMode}
     >

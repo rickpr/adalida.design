@@ -1,15 +1,7 @@
 import { graphql, useStaticQuery } from 'gatsby'
 import type { IGatsbyImageData } from 'gatsby-plugin-image'
 
-interface Image {
-  childImageSharp: {
-    gatsbyImageData: IGatsbyImageData
-  }
-  name: string
-  relativePath: string
-}
-
-export const ImageQuery = (imagePath: string): Image => {
+export const ImageQuery = (imagePath: string): IGatsbyImageData => {
   const images = useStaticQuery(graphql`
     query {
       allFile(filter: {sourceInstanceName: {eq: "images"}}) {
@@ -30,7 +22,7 @@ export const ImageQuery = (imagePath: string): Image => {
   const image = images.find(({ node: { relativePath } }: { node: { relativePath: string } }): boolean => (
     relativePath === desiredRelativePath)
   )
-  if (image !== undefined) return image.node
+  if (image !== undefined) return image.node.childImageSharp.gatsbyImageData
 
   throw new Error(`No image found for ${imagePath}`)
 }

@@ -4,7 +4,7 @@ import Image from 'components/image'
 
 export const makeMediaTag = ({ media, style = {} }: { media: string, style?: CSSProperties }): JSX.Element => {
   if (media.endsWith('.png') || media.endsWith('.jpg') || media.endsWith('.webp')) {
-    return <Image path={media} style={style} alt={media} />
+    return <Image path={media} style={style} alt={media} objectFit='contain' />
   }
   if (media.endsWith('.mp4')) {
     return <video src={media} autoPlay loop muted playsInline width='100%' style={style} />
