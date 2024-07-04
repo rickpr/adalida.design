@@ -44,6 +44,7 @@ exports[`Header renders correctly 1`] = `
     </svg>
   </a>
   <button
+    aria-label="Toggle dark mode"
     className="glass"
     onClick={[Function]}
     style={

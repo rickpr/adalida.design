@@ -2,6 +2,12 @@
 
 .portfolio-image {
   flex: 1;
+  position: relative;
+  > * {
+    @media (min-width: $breakpoint) {
+      position: absolute;
+    }
+  }
 }
 
 .portfolio-container {
