@@ -5,7 +5,7 @@ import type { Project } from 'projects'
 
 const Description = ({ project }: { project: Project }): React.ReactElement => {
   const { description, name, link, roles, logo } = project
-  const external = link.url.includes(':')
+  const external = link?.url?.includes(':') ?? false
   const arrow = <div className={`arrow ${external ? 'rotated' : ''}`} />
 
   return (
@@ -20,7 +20,7 @@ const Description = ({ project }: { project: Project }): React.ReactElement => {
         {roles.map(role => <div className='role' key={role}>{role}</div>)}
       </div>
       <div className='description'>{description}</div>
-      <a href={link.url} className='link'>{link.text}&nbsp; {arrow}</a>
+      {link !== undefined && <a href={link.url} className='link'>{link.text}&nbsp; {arrow}</a>}
     </div>
   )
 }

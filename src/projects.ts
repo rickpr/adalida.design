@@ -19,7 +19,7 @@ export interface Project {
   description: string
   heroImage: string
   roles: string[]
-  link: {
+  link?: {
     text: 'Read Case Study' | 'View Presentation' | 'Visit Website' | 'View Figma'
     url: string
   }
@@ -35,10 +35,12 @@ export const Projects: Record<string, Project> = {
     description: 'Designed the user interface and interactions for GainTain, a mobile application focusing on tracking workouts and solving the challenge of logging weight lifting between sets. Currently developing this project with my partner to enhance the user experience in fitness tracking. This ongoing project aims to provide a seamless and efficient solution for fitness enthusiasts to monitor their progress.',
     heroImage: GainTainPhoto,
     roles: [
-      'User Interaction Design',
-      'UX Design',
+      'Product Design',
+      'Product Strategy',
+      'UI Design',
       'SaaS',
-      'B2C'
+      'B2C',
+      
     ],
     link: {
       text: 'Read Case Study',
@@ -47,13 +49,9 @@ export const Projects: Record<string, Project> = {
   },
   JessNRueda: {
     name: 'Jessica Rueda Art',
-    roles: ['Website Design', 'Responsive', 'Shopify'],
+    roles: ['Consultant', 'Shopify', 'Website Design'],
     description: 'Jessica Rueda required a digital platform for her art. I developed a Shopify website with e-commerce functionality, secure payments, SEO optimization, and mobile responsiveness. This increased her online visibility and sales.',
     heroImage: JessRuedaImage,
-    link: {
-      text: 'Visit Website',
-      url: 'https://jessnrueda.com/'
-    },
     logo: {
       image: JessRuedaLogo,
       color: '#FEEEFF'
@@ -64,7 +62,6 @@ export const Projects: Record<string, Project> = {
     description: 'I created visual UI designs in Figma for an educational startup. The project included branding elements such as a logo, color pallets, components, dark and light mode designs, and a simple information architecture. This practice project highlighted my interest in educational startups and my skills in visual design.',
     heroImage: PhronesisPhoto,
     roles: [
-      'Brand Identity',
       'Visual Design',
       'Figma',
       'B2B',
@@ -100,7 +97,6 @@ export const Projects: Record<string, Project> = {
     roles: [
       '1 day Hackathon',
       'Product Design',
-      'Prototyping'
     ],
     link: {
       text: 'View Presentation',
@@ -116,10 +112,6 @@ export const Projects: Record<string, Project> = {
     roles: ['Website Design', 'Responsive', 'Editor X'],
     description: "Utilized Wix to design the digital presence for Airbrush Art Studio, emphasizing effective Information Architecture. Delivered copywriting and SEO services to boost online visibility and client engagement. This budget-friendly project focused on showcasing the studio's portfolio without extensive branding.",
     heroImage: AirbrushImage,
-    link: {
-      text: 'Visit Website',
-      url: 'https://www.airbrushart.studio/'
-    },
     logo: {
       image: AirbrushLogo,
       color: '#181818'
@@ -127,13 +119,13 @@ export const Projects: Record<string, Project> = {
   },
   ZarasCleaning: {
     name: "Zara's Cleaning",
-    roles: ['Website Design', 'Responsive', 'Editor X'],
+    roles: ['Business Consultant', 'Website Design', 'Responsive', 'Copywriting' ],
     description: 'Developed a user-friendly website for Zaras Cleaning using Wix, concentrating on clear and efficient information architecture. Provided comprehensive copywriting and SEO services to enhance search engine performance and attract new clients. The project aimed to present essential information within a limited budget framework.',
     heroImage: ZaraImage,
-    link: {
-      text: 'Visit Website',
-      url: 'https://www.zarascleaning.com/'
-    }
+    //link: {
+      //text: 'Visit Website',
+      //url: 'https://www.zarascleaning.com/'
+    //}
   },
   SunbeltProperties: {
     name: 'Sunbelt Properties',
@@ -147,13 +139,9 @@ export const Projects: Record<string, Project> = {
   },
   LoboGardens: {
     name: 'Lobo Gardens',
-    roles: ['Volunteer', 'Business Cards', 'Event Flyers', 'Branding'],
+    roles: ['Branding', 'Graphic Design', 'Climate'],
     description: 'As part of a community project, I contributed to the branding and promotional design for Lobo Gardens, an urban gardening initiative. This involved creating a logo, designing educational materials, and developing a website to increase community engagement and support for campus gardening activities.',
     heroImage: LoboGardensImage,
-    link: {
-      text: 'Visit Website',
-      url: 'https://dribbble.com/shots/16868644-Flyer-Designs-Business-Card-and-Brochure-Lobo-Gardens'
-    },
     logo: {
       image: LoboGardensLogo,
       color: '#010101'
