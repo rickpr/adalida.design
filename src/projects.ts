@@ -39,8 +39,7 @@ export const Projects: Record<string, Project> = {
       'Product Strategy',
       'UI Design',
       'SaaS',
-      'B2C',
-      
+      'B2C'
     ],
     link: {
       text: 'Read Case Study',
@@ -96,7 +95,7 @@ export const Projects: Record<string, Project> = {
     heroImage: TLDRPhoto,
     roles: [
       '1 day Hackathon',
-      'Product Design',
+      'Product Design'
     ],
     link: {
       text: 'View Presentation',
@@ -119,13 +118,9 @@ export const Projects: Record<string, Project> = {
   },
   ZarasCleaning: {
     name: "Zara's Cleaning",
-    roles: ['Business Consultant', 'Website Design', 'Responsive', 'Copywriting' ],
+    roles: ['Business Consultant', 'Website Design', 'Responsive', 'Copywriting'],
     description: 'Developed a user-friendly website for Zaras Cleaning using Wix, concentrating on clear and efficient information architecture. Provided comprehensive copywriting and SEO services to enhance search engine performance and attract new clients. The project aimed to present essential information within a limited budget framework.',
-    heroImage: ZaraImage,
-    //link: {
-      //text: 'Visit Website',
-      //url: 'https://www.zarascleaning.com/'
-    //}
+    heroImage: ZaraImage
   },
   SunbeltProperties: {
     name: 'Sunbelt Properties',
