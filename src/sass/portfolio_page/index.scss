@@ -1,13 +1,7 @@
 @import './contact_information';
 
 .portfolio-image {
-  flex: 1;
-  position: relative;
-  > * {
-    @media (min-width: $breakpoint) {
-      position: absolute;
-    }
-  }
+  width: 100%;
 }
 
 .portfolio-container {
