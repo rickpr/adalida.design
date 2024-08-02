@@ -1,7 +1,16 @@
 @import './contact_information';
 
-.portfolio-image {
+.portfolio-container-for-hero-image {
   width: 100%;
+  position: relative;
+  .portfolio-hero-image {
+    width: 100%;
+    height: 100%;
+    border-radius: 14px;
+    @media (min-width: $breakpoint) {
+      position: absolute;
+    }
+  }
 }
 
 .portfolio-container {
