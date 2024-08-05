@@ -21,14 +21,14 @@
 }
 
 .stacking-cards {
-  &.more-below { margin-bottom: 20px; }
-
   display: flex;
   justify-content: center;
   gap: 20px;
   width: 100%;
   flex-direction: column;
   align-items: center;
+
+  &.more-below { margin-bottom: 20px; }
 
   @media (min-width: $max-width) {
     flex-direction: row;
