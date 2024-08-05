@@ -10,7 +10,7 @@ exports[`Header renders correctly 1`] = `
     style={
       {
         "alignItems": "center",
-        "color": "#F5F5F5",
+        "color": "#FFFFFF",
         "cursor": "pointer",
         "display": "flex",
         "height": "40px",
@@ -50,7 +50,7 @@ exports[`Header renders correctly 1`] = `
     style={
       {
         "alignItems": "center",
-        "color": "#F5F5F5",
+        "color": "#FFFFFF",
         "cursor": "pointer",
         "display": "flex",
         "height": "40px",

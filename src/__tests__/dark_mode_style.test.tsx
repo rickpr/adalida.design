@@ -2,13 +2,13 @@ import darkModeStyle from '../dark_mode_style'
 
 describe('darkModeStyle', () => {
   describe('background', () => {
-    it('gives the default background when it is dark mode', () => {
+    it('gives the dark background when it is dark mode', () => {
       const { background } = darkModeStyle(true)
-      expect(background).toEqual('#090B0B')
+      expect(background).toEqual('#000000')
     })
-    it('gives the default background when it is light mode', () => {
+    it('gives the light background when it is light mode', () => {
       const { background } = darkModeStyle(false)
-      expect(background).toEqual('#F5F5F5')
+      expect(background).toEqual('#FFFFFF')
     })
   })
 })
