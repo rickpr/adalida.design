@@ -4,5 +4,6 @@ $background-animated-text-size: 36px;
   font-size: $background-animated-text-size * $mobile-multiplier;
   font-weight: 500;
   margin-top: 0;
+
   @media (min-width: $breakpoint) { font-size: $background-animated-text-size; }
 }

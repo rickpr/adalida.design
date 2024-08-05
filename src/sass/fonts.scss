@@ -1,29 +1,30 @@
 @font-face {
   font-family: 'Avenir Next';
-  src: local('Avenir Next'), url(../fonts/AvenirNextLTPro-Regular.otf);
+  src: local('Avenir Next'), url("../fonts/AvenirNextLTPro-Regular.otf");
   font-display: swap;
 }
 
 @font-face {
   font-family: 'Work Sans';
-  src: local('Work Sans'), url(../fonts/WorkSans-VariableFont_wght.ttf);
+  src: local('Work Sans'), url("../fonts/WorkSans-VariableFont_wght.ttf");
   font-display: swap;
 }
+
 @font-face {
   font-family: 'Work Sans Italic';
-  src: local('Work Sans Italic'), url(../fonts/WorkSans-Italic-VariableFont_wght.ttf);
+  src: local('Work Sans Italic'), url("../fonts/WorkSans-Italic-VariableFont_wght.ttf");
   font-weight: italic;
   font-display: swap;
 }
 
 @font-face {
   font-family: Inconsolata;
-  src: local(Inconsolata), url(../fonts/Inconsolata-VariableFont_wdth,wght.ttf);
+  src: local(inconsolata), url("../fonts/Inconsolata-VariableFont_wdth,wght.ttf");
   font-display: swap;
 }
 
 @font-face {
   font-family: Inter;
-  src: local(Inter), url(../fonts/Inter-VariableFont_slnt,wght.ttf);
+  src: local(inter), url("../fonts/Inter-VariableFont_slnt,wght.ttf");
   font-display: swap;
 }

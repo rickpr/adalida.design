@@ -1,6 +1,6 @@
 $theme-colors: (
-  danger: #ffffff,
-  dark: #000000,
+  danger: #fff,
+  dark: #000,
   info: #440BD4,
   primary: #e92efb,
   success: #39ff14,
@@ -40,6 +40,7 @@ li { margin-left: 2ch; }
 a {
   color: inherit;
   text-decoration: none;
+
   &:hover {
     text-decoration: none;
   }

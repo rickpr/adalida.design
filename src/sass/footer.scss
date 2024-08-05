@@ -29,7 +29,7 @@
   font-size: 0.75rem;
 }
 
-@media (max-width: 1250px) {
+@media (width <= 1250px) {
   .footer {
     flex-direction: column;
   }

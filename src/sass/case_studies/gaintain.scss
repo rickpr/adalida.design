@@ -13,6 +13,7 @@ $gaintain-breakpoint: 1200px;
 
   @media (min-width: $gaintain-breakpoint) {
     flex-direction: row;
+
     &.reverse {
       flex-direction: row-reverse;
     }
@@ -23,6 +24,7 @@ $gaintain-breakpoint: 1200px;
   flex-basis: 37%;
   flex-grow: 3;
   font-variant-numeric: tabular-nums;
+
   &.space {
     display: flex;
     flex-direction: column;
@@ -32,12 +34,15 @@ $gaintain-breakpoint: 1200px;
 
 .gaintain-check {
   @include flex-center;
+
   flex-wrap: wrap-reverse;
   margin: 0 auto;
   max-width: max-content;
   gap: 20px;
+
   .caption {
     @include flex-center;
+
     flex: 8 8 335px;
   }
 }

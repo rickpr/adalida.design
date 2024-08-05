@@ -21,6 +21,8 @@ jobs:
       run: npm run tsc
     - name: ESLint/TSLint check
       run: npm run lint
+    - name: Stylelint check
+      run: npm run stylelint
     - name: Run jest tests
       run: npm test
     - name: Build the bundle
