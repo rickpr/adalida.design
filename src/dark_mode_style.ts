@@ -1,8 +1,7 @@
 import type { CSSProperties } from 'react'
 
-const darkBackgroundColor = '#090B0B'
-const darkTextColor = '#3E4242'
-const lightColor = '#F5F5F5'
+const darkColor = '#000000'
+const lightColor = '#FFFFFF'
 
 interface Colors {
   background: CSSProperties['color'] & string
@@ -10,13 +9,13 @@ interface Colors {
 }
 
 const darkModeDefaultColors: Colors = {
-  background: darkBackgroundColor,
+  background: darkColor,
   text: lightColor
 }
 
 const lightModeDefaultColors: Colors = {
   background: lightColor,
-  text: darkTextColor
+  text: darkColor
 }
 
 const darkModeStyle = (darkMode: boolean): Colors =>

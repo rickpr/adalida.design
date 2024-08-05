@@ -28,3 +28,9 @@
   src: local(inter), url("../fonts/Inter-VariableFont_slnt,wght.ttf");
   font-display: swap;
 }
+
+@font-face {
+  font-family: 'Just Another Hand';
+  src: local('Just Another Hand'), url("../fonts/JustAnotherHand-Regular.ttf");
+  font-display: swap;
+}
