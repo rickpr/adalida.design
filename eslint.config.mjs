@@ -11,6 +11,7 @@ import tseslint from 'typescript-eslint'
 export default tseslint.config(
   { ignores: ['node_modules', 'public', '.netlify', '.cache'] },
   { files: ['src/**/*.ts', 'src/**/*.tsx', 'eslint.config.mjs'] },
+  { settings: { react: { version: 'detect' } } },
   jsxA11y.flatConfigs.recommended,
   eslint.configs.recommended,
   ...tseslint.configs.recommended,
