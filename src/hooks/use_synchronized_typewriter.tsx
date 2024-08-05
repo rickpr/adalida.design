@@ -33,6 +33,8 @@ const useSynchronizedTypewriter = (displayFor = 2000): ({ string, styles }: Sync
     // @ts-expect-error we are manually grabbing the ref here
     typewriters.forEach(object => { object.typewriter = new Typewriter(object.component.ref.current) })
 
+    // The following rule conflicts with no-undef-init, it's not possible to satisfy both
+    // eslint-disable-next-line @typescript-eslint/init-declarations
     let timeout: NodeJS.Timeout | undefined
     const typeCharacters = (): void => {
       typewriters.forEach(({ string, typewriter }) => typewriter.typeString(string).start())
