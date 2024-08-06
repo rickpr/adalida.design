@@ -50,13 +50,13 @@ const Interests = (): JSX.Element => {
         </Card>
         <Card title='New Mexico'>
           <p>
-            New Mexico Native. Descendent of Elfego Baca and Maestases of the San Joaquin del Nacimiento Grant of New Mexico.
+            New Mexico Native. Descendant of Elfego Baca and Maestases of the San Joaquin del Nacimiento Grant of New Mexico.
           </p>
         </Card>
         <Card title='Growth'>
           <p>
-            I love a challenge because I learn and adapt. I don’t like the feeling of being stagnant.
-            I also like plants for the same reason.
+            I love a challenge because I learn and adapt. I don&apos;t like the feeling of being stagnant.
+            I like plants for the same reason.
           </p>
         </Card>
       </div>

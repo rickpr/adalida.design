@@ -1,8 +1,8 @@
 .portfolio-intro {
-  margin-top: 5dvw;
   display: grid;
   grid-template-columns: 1fr;
   gap: 1em;
+  margin-top: 1em;
 
   @media (min-width: $breakpoint) {
     gap: 6em;
@@ -12,7 +12,6 @@
   &-hi {
     display: flex;
     flex-direction: column;
-    height: 100%;
     justify-content: center;
     font-size: 1.25rem;
     gap: 1em;

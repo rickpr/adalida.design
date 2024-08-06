@@ -11,7 +11,7 @@
     border-radius: 14px;
 
     @media (min-width: $breakpoint) {
-      position: absolute;
+      height: calc(550px - 1.5em);
     }
   }
 }
@@ -30,12 +30,14 @@
   border-radius: 1.5em;
   display: flex;
   padding: 1.25em;
-  align-items: stretch;
+  align-items: center;
+  justify-content: stretch;
 
   @media (min-width: $breakpoint) {
     padding: 2.5em;
     gap: 2.5em;
     flex-direction: row;
+    min-height: 550px;
 
     &.reverse {
       flex-direction: row-reverse;
@@ -44,22 +46,15 @@
 }
 
 .project-description {
-  $font-size: 2.25rem;
-
   display: flex;
-  padding-top: 1em;
   flex-direction: column;
   gap: 0.875em;
-
-  .logo {
-    display: none;
-  }
+  padding-top: 0.375em;
 
   .badge-list {
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
-    gap: 0.75em;
+    gap: 0.625em;
   }
 
   .badge {
@@ -68,8 +63,12 @@
     border: none;
   }
 
+  .logo {
+    display: none;
+  }
+
   .description {
-    font-size: 0.75rem;
+    font-size: 0.875rem;
     font-family: 'Work Sans', sans-serif;
     line-height: 1.2;
   }

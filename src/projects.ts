@@ -23,7 +23,7 @@ export interface Project {
   heroImage: string
   badges: Record<string, BadgeColors>
   link?: {
-    text: 'Read Case Study' | 'View Presentation' | 'Visit Website' | 'View Figma'
+    text: 'Read Case Study' | 'View Presentation' | 'Visit Website' | 'View Figma' | 'View Designs'
     url: string
   }
   logo?: {
@@ -118,6 +118,10 @@ export const Projects: Record<string, Project> = {
     logo: {
       image: AirbrushLogo,
       color: '#181818'
+    },
+    link: {
+      text: 'Visit Website',
+      url: 'https://www.airbrushart.studio'
     }
   },
   ZarasCleaning: {
@@ -125,7 +129,11 @@ export const Projects: Record<string, Project> = {
     category: 'Digital Presence',
     badges: { Consultancy: BadgeColors.info, 'Web Development': BadgeColors.warning, SEO: BadgeColors.primary },
     description: 'Developed a user-friendly website for Zaras Cleaning using Wix, concentrating on clear and efficient information architecture. Provided comprehensive copywriting and SEO services to enhance search engine performance and attract new clients. The project aimed to present essential information within a limited budget framework.',
-    heroImage: ZaraImage
+    heroImage: ZaraImage,
+    link: {
+      text: 'Visit Website',
+      url: 'https://www.zarascleaning.com'
+    }
   },
   SunbeltProperties: {
     name: 'Sunbelt Properties',
@@ -147,6 +155,10 @@ export const Projects: Record<string, Project> = {
     logo: {
       image: LoboGardensLogo,
       color: '#010101'
+    },
+    link: {
+      text: 'View Designs',
+      url: 'https://dribbble.com/shots/16869293-Flyer-Design-Series-UNI-Nights'
     }
   }
 }
