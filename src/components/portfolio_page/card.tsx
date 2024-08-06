@@ -8,8 +8,8 @@ import HeroImage from './hero_image'
 const Card = ({ project, reverse }: { project: Project, reverse: boolean }): JSX.Element => {
   return (
     <div className={`portfolio-card ${reverse ? 'reverse' : ''}`} data-aos='fade-up'>
-      <HeroImage project={project} />
       <Description project={project} />
+      <HeroImage project={project} />
     </div>
   )
 }

@@ -13,7 +13,7 @@ import NextSteps from './next_steps'
 import VisualIdentity from './visual_identity'
 import Paragraphs from './paragraphs'
 
-const GainTain = (): JSX.Element =>
+const Gaintain = (): JSX.Element =>
   <div className='case-study-container'>
     <About />
     <Think />
@@ -29,4 +29,4 @@ const GainTain = (): JSX.Element =>
     <Paragraphs />
   </div>
 
-export default GainTain
+export default Gaintain

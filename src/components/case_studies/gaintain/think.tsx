@@ -8,11 +8,11 @@ const Think = (): JSX.Element => {
     <div className='gaintain-text'>
       <h3>&#47;&#47; THINK</h3>
       <p>
-        As part of the research phase for the GainTain app, a survey was
+        As part of the research phase for the Gaintain app, a survey was
         conducted with a fitness enthusiast, Tina. Tina expressed her frustration
         with existing workout tracking apps and described her ideal workout tracking
         experience. Using the insights gathered from Tina and other users like her,
-        I created a set of user personas to guide the development of GainTain.
+        I created a set of user personas to guide the development of Gaintain.
       </p>
     </div>
   )

@@ -1,0 +1,32 @@
+@use 'sass:map';
+@use 'sass:list';
+
+$color-names: ['info', 'success', 'primary', 'warning', 'danger', 'secondary'];
+$light-colors: (
+  info: #D1EFFF,
+  success: #EBF5CB,
+  primary: #E2D8FF,
+  warning: #FFF3B8,
+  danger: #FFDCE8,
+  secondary: #C2FCEE
+);
+$dark-colors: (
+  info: #0057D2,
+  success: #256F3A,
+  primary: #5A26EF,
+  warning: #A93F01,
+  danger: #AA0808,
+  secondary: #046C7A
+);
+
+@each $color in $color-names {
+  .badge-#{$color} {
+    background-color: map.get($light-colors, $color);
+    color: map.get($dark-colors, $color);
+
+    &.dark {
+      background-color: map.get($dark-colors, $color);
+      color: map.get($light-colors, $color);
+    }
+  }
+}

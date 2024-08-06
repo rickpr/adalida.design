@@ -1,12 +1,13 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import { IconArrowNarrowRight } from '@tabler/icons-react'
 
 import Image from 'components/image'
+import DarkModeContext from 'dark_mode_context'
 import type { Project } from 'projects'
 
 const Description = ({ project }: { project: Project }): React.ReactElement => {
-  const { description, name, link, roles, logo } = project
-  const external = link?.url?.includes(':') ?? false
-  const arrow = <div className={`arrow ${external ? 'rotated' : ''}`} />
+  const { darkMode } = useContext(DarkModeContext)
+  const { category, description, name, link, badges, logo } = project
 
   return (
     <div className='project-description'>
@@ -15,12 +16,17 @@ const Description = ({ project }: { project: Project }): React.ReactElement => {
           <Image path={logo.image} alt={`${name} logo`} objectFit='contain' style={{ width: '100%', height: '100%' }} />
         </div>
       )}
-      <h1>{name}</h1>
-      <div className='role-list'>
-        {roles.map(role => <div className='role' key={role}>{role}</div>)}
+      <div className='name-and-category'>
+        <h1>{category}</h1>
+        <h2>{name}</h2>
+      </div>
+      <div className='badge-list'>
+        {Object.entries(badges).map(([text, color]) =>
+          <div className={`badge badge-${color} ${darkMode && 'dark'}`} key={text}>{text}</div>
+        )}
       </div>
       <div className='description'>{description}</div>
-      {link !== undefined && <a href={link.url} className='link'>{link.text}&nbsp; {arrow}</a>}
+      {link !== undefined && <a href={link.url} className='link'>{link.text}<IconArrowNarrowRight /></a>}
     </div>
   )
 }

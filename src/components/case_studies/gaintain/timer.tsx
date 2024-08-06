@@ -11,7 +11,7 @@ const Timer = (): JSX.Element => {
     <div>
       <h3>&#47;&#47; 03 | Timer</h3>
       <p>
-        GainTain&apos;s timer feature allows Sarah to easily track her rest
+        Gaintain&apos;s timer feature allows Sarah to easily track her rest
         pauses during her time under tension workouts, without having to switch
         between multiple apps.
       </p>

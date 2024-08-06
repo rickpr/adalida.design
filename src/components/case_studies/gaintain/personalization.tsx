@@ -8,7 +8,7 @@ const Personalization = (): JSX.Element => {
     <div className='gaintain-text'>
       <h3>&#47;&#47; Design for Everyone</h3>
       <p>
-        Tina was particularly impressed with GainTain&apos;s customizable
+        Tina was particularly impressed with Gaintain&apos;s customizable
         background color feature. She found it to be an inclusive feature
         that allowed her to engage with the app and make it her own, whether
         she was tracking weights, reps, or supersets.

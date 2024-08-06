@@ -8,13 +8,13 @@ const About = (): JSX.Element => {
     <div className='about-case-study'>
       <h3>&#47;&#47; ABOUT</h3>
       <p>
-        GainTain is an extraordinary mobile app designed to help fitness enthusiasts take their workouts
+        Gaintain is an extraordinary mobile app designed to help fitness enthusiasts take their workouts
         to the next level. With extensive workout data tracking capabilities and support for time under
-        tension workouts, GainTain provides a comprehensive solution for users who want to improve their
+        tension workouts, Gaintain provides a comprehensive solution for users who want to improve their
         fitness and achieve their goals.
       </p>
       <p>
-        With its user-friendly interface and intuitive design, GainTain makes it easy to track your
+        With its user-friendly interface and intuitive design, Gaintain makes it easy to track your
         progress and stay motivated. You can easily view your workout history, monitor your progress
         over time, and get detailed insights into your performance. And with features like time under
         tension tracking and exercise instruction videos, you&apos;ll have everything you need to take

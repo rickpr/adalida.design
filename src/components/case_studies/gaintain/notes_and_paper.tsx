@@ -11,7 +11,7 @@ const NotesAndPaper = (): JSX.Element => {
     <div>
       <h3>&#47;&#47; 02 | Notes / Paper</h3>
       <p>
-        With GainTain&apos;s page controls, Sarah can hyper-focus on her current
+        With Gaintain&apos;s page controls, Sarah can hyper-focus on her current
         workout and track her progress easily using steppers that display her
         previous weight and repetition data.
       </p>

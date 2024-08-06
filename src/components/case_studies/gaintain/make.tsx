@@ -8,7 +8,7 @@ const Make = (): JSX.Element => {
     <div className='gaintain-text'>
       <h3>&#47;&#47; MAKE</h3>
       <p>
-        I adopted a Lean UX approach for the development of the GainTain MVP.
+        I adopted a Lean UX approach for the development of the Gaintain MVP.
         Using FigJam, the team quickly created an information architecture and user
         flow that reflected the needs of the user personas. As the design progressed,
         Tina, and other users provided feedback that was used to iterate and refine the app.

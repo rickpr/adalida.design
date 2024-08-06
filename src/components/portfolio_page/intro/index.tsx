@@ -9,7 +9,7 @@ const Intro = (): React.ReactElement | null => {
   if (isMobile === null) return null
 
   return (
-    <div className='portfolio-intro'>
+    <div className='portfolio-intro' data-aos='fade-up'>
       <div className='portfolio-intro-duck'><Duck /></div>
       <div className='portfolio-intro-hi'>
         <div className='hi'>

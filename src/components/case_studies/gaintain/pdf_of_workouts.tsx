@@ -11,7 +11,7 @@ const PdfOfWorkouts = (): JSX.Element => {
     <div>
       <h3>&#47;&#47; 01 | PDF of Workouts</h3>
       <p>
-        GainTain&apos;s nested doll architecture eliminates the need for Sarah to
+        Gaintain&apos;s nested doll architecture eliminates the need for Sarah to
         keep her workout plan pdf open. She can now focus solely on her
         current day&apos;s workout.
       </p>

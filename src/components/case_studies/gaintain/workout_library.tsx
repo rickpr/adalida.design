@@ -11,7 +11,7 @@ const WorkoutLibrary = (): JSX.Element => {
     <div>
       <h3>&#47;&#47; 04 | Workout Library</h3>
       <p>
-        GainTain&apos;s user-friendly design allows Sarah to quickly access
+        Gaintain&apos;s user-friendly design allows Sarah to quickly access
         video instructions for her workouts, without having to search through a
         disorganized list.
       </p>
