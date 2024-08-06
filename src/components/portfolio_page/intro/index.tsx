@@ -10,9 +10,7 @@ const Intro = (): React.ReactElement | null => {
 
   return (
     <div className='portfolio-intro'>
-      <div>
-        <Duck />
-      </div>
+      <div className='portfolio-intro-duck'><Duck /></div>
       <div className='portfolio-intro-hi'>
         <div className='hi'>
           Hi, I&apos;m Adalida - I&apos;m a product designer based in San Francisco and open to work.
