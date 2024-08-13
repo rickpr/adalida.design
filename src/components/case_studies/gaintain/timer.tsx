@@ -3,7 +3,6 @@ import React from 'react'
 import TimerVideo from 'videos/gaintain/timer.mp4'
 
 import Card from './card'
-import { videoBorderRadius } from './style'
 import { makeMediaTag } from '../../media_with_text'
 
 const Timer = (): JSX.Element => {
@@ -23,7 +22,7 @@ const Timer = (): JSX.Element => {
       <div className='video-card-content'>
         {text}
         <div className='video-card-video'>
-          {makeMediaTag({ media: TimerVideo, style: { borderRadius: videoBorderRadius } })}
+          {makeMediaTag({ media: TimerVideo })}
         </div>
       </div>
     </Card>

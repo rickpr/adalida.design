@@ -1,7 +1,6 @@
 import React from 'react'
 
 import Card from './card'
-import { videoBorderRadius } from './style'
 import { makeMediaTag } from '../../media_with_text'
 
 import PdfOfWorkoutsVideo from 'videos/gaintain/pdf_of_workouts.mp4'
@@ -23,7 +22,7 @@ const PdfOfWorkouts = (): JSX.Element => {
       <div className='video-card-content'>
         {text}
         <div className='video-card-video'>
-          {makeMediaTag({ media: PdfOfWorkoutsVideo, style: { borderRadius: videoBorderRadius } })}
+          {makeMediaTag({ media: PdfOfWorkoutsVideo })}
         </div>
       </div>
     </Card>

@@ -4,7 +4,6 @@ import IncrementVideo from 'videos/gaintain/notes_and_paper.mp4'
 
 import { makeMediaTag } from '../../media_with_text'
 import Card from './card'
-import { videoBorderRadius } from './style'
 
 const NotesAndPaper = (): JSX.Element => {
   const text = (
@@ -23,7 +22,7 @@ const NotesAndPaper = (): JSX.Element => {
       <div className='video-card-content reverse'>
         {text}
         <div className='video-card-video'>
-          {makeMediaTag({ media: IncrementVideo, style: { borderRadius: videoBorderRadius } })}
+          {makeMediaTag({ media: IncrementVideo })}
         </div>
       </div>
     </Card>

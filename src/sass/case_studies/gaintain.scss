@@ -8,7 +8,10 @@ $gaintain-breakpoint: 1200px;
   justify-content: center;
 
   .video-card-video {
-    max-width: 331px;
+    border-radius: 13% / 6.5%;
+    overflow: hidden;
+    max-width: 277px;
+    max-height: 601px;
   }
 
   @media (min-width: $gaintain-breakpoint) {

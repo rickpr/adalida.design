@@ -4,7 +4,6 @@ import WorkoutLibraryVideo from 'videos/gaintain/workout_library.mp4'
 
 import Card from './card'
 import { makeMediaTag } from '../../media_with_text'
-import { videoBorderRadius } from './style'
 
 const WorkoutLibrary = (): JSX.Element => {
   const text = (
@@ -23,7 +22,7 @@ const WorkoutLibrary = (): JSX.Element => {
       <div className='video-card-content reverse'>
         {text}
         <div className='video-card-video'>
-          {makeMediaTag({ media: WorkoutLibraryVideo, style: { borderRadius: videoBorderRadius } })}
+          {makeMediaTag({ media: WorkoutLibraryVideo })}
         </div>
       </div>
     </Card>

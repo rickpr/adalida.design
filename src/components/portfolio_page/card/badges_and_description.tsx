@@ -13,8 +13,8 @@ const BadgesAndDescription = ({ project }: { project: Project }): React.ReactEle
   return (
     <>
       <div className='badge-list'>
-        {Object.entries(badges).map(([text, color]) =>
-          <div className={`badge badge-${color} ${darkMode && 'dark'}`} key={text}>{text}</div>
+        {badges.map(badge =>
+          <div className={`badge badge-info ${darkMode && 'dark'}`} key={badge}>{badge}</div>
         )}
       </div>
       <div className='description'>{description}</div>

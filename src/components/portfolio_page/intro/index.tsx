@@ -19,7 +19,7 @@ const Intro = (): React.ReactElement | null => {
           With a knack for reasoning from my english-philosophy background, I solve complex problems and create user-friendly
           products. I enjoy collaborating with engineers to bring innovative ideas to life through clear communication and a bit of quacking.
         </div>
-        <a className='badge' href='https://linkedin.com/in/adalidabaca' target='_blank' rel='noreferrer'>
+        <a className='badge badge-danger' href='https://linkedin.com/in/adalidabaca' target='_blank' rel='noreferrer'>
           Find Me on LinkedIn
         </a>
       </div>
