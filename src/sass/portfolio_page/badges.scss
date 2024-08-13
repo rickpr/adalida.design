@@ -1,20 +1,24 @@
 @use 'sass:map';
 @use 'sass:list';
 
-$info-light: #D1EFFF;
-$info-dark: #0057D2;
-$danger: #FCD8FF;
+$color-names: ['info', 'danger'];
+$light-colors: (
+  info: #D1EFFF,
+  danger: #FCD8FF
+);
+$dark-colors: (
+  info: #0057D2,
+  danger: #B21661
+);
 
-.badge-info {
-  background-color: $info-light;
-  color: $info-dark;
+@each $color in $color-names {
+  .badge-#{$color} {
+    background-color: map.get($light-colors, $color);
+    &.text-swap { color: map.get($dark-colors, $color); }
 
-  &.dark {
-    background-color: $info-dark;
-    color: $info-light;
+    &.dark {
+      background-color: map.get($dark-colors, $color);
+      &.text-swap { color: map.get($light-colors, $color); }
+    }
   }
-}
-
-.badge-danger {
-  background-color: $danger;
 }

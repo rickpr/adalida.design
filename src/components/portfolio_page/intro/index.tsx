@@ -1,11 +1,13 @@
-import React from 'react'
+import React, { useContext } from 'react'
 
+import DarkModeContext from 'dark_mode_context'
 import useIsMobile from 'hooks/use_is_mobile'
 
 import Duck from './duck'
 
 const Intro = (): React.ReactElement | null => {
   const isMobile = useIsMobile()
+  const { darkMode } = useContext(DarkModeContext)
   if (isMobile === null) return null
 
   return (
@@ -19,7 +21,7 @@ const Intro = (): React.ReactElement | null => {
           With a knack for reasoning from my english-philosophy background, I solve complex problems and create user-friendly
           products. I enjoy collaborating with engineers to bring innovative ideas to life through clear communication and a bit of quacking.
         </div>
-        <a className='badge badge-danger' href='https://linkedin.com/in/adalidabaca' target='_blank' rel='noreferrer'>
+        <a className={`badge badge-danger ${darkMode && 'dark'}`} href='https://linkedin.com/in/adalidabaca' target='_blank' rel='noreferrer'>
           Find Me on LinkedIn
         </a>
       </div>
