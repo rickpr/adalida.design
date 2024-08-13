@@ -13,7 +13,7 @@ const Intro = (): JSX.Element | null => {
   return (
     <div className='intro'>
       <div className='image'>
-        {makeMediaTag({ media: AdalidaFace, style: { maxWidth: '80dvh', width: '100%' }})}
+        {makeMediaTag({ media: AdalidaFace, style: { maxWidth: '80dvh', width: '100%', height: '100%' }})}
       </div>
       <div className='intro-text'>
         <div className='heading'>A bit about me...</div>

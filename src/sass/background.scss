@@ -12,7 +12,7 @@
 }
 
 .background-glass {
-  backdrop-filter: blur(12dvmin);
+  backdrop-filter: blur($blur);
   position: absolute;
   width: 100%;
   height: 100%;
