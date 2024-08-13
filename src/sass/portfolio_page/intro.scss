@@ -1,32 +1,25 @@
-.portfolio-intro {
+.intro {
   display: grid;
   grid-template-columns: 1fr;
   gap: 1em;
   margin-top: 1em;
+  place-items: center;
 
   @media (min-width: $breakpoint) {
     gap: 6em;
     grid-template-columns: 1fr 1fr;
   }
 
-  &-hi {
+  &-text {
     display: flex;
     flex-direction: column;
     justify-content: center;
     font-size: 1.25rem;
     gap: 1em;
 
-    > .hi {
+    > .heading {
       font-weight: 600;
     }
-  }
-
-  .badge {
-    font-size: 0.875rem;
-    width: max-content;
-    font-weight: 600;
-    padding-left: 1rem;
-    padding-right: 1rem;
   }
 }
 

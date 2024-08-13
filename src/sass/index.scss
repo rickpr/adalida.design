@@ -40,24 +40,6 @@
   }
 }
 
-.lets-chat {
-  display: flex;
-  font-size: 0.75em;
-  gap: 0.5rem;
-  margin-top: 1.5rem;
-  align-items: center;
-  justify-content: center;
-  width: 15rem;
-  font-weight: 700;
-  padding: 0.5rem 1rem;
-  border-radius: 5rem;
-
-  .arrow {
-    font-weight: 400;
-    font-size: 1.25em;
-  }
-}
-
 .arrow {
   &::before {
     content: '→';

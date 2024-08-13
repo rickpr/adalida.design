@@ -56,7 +56,7 @@ export const Projects: Record<string, Project> = {
   Phronesis: {
     name: 'Phronesis',
     category: 'Dashboard',
-    description: 'I created visual UI designs in Figma for an educational startup. The project included branding elements such as a logo, color pallets, components, dark and light mode designs, and a simple information architecture. This practice project highlighted my interest in educational startups and my skills in visual design.',
+    description: 'I created visual UI designs in Figma for an educational startup. The project included branding elements such as a logo, color palettes, components, dark and light mode designs, and a simple information architecture. This practice project highlighted my interest in educational startups and my skills in visual design.',
     heroImage: PhronesisPhoto,
     badges: ['Visual Design', 'B2B', 'SAAS', 'Figma'],
     link: {

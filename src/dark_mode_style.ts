@@ -1,7 +1,7 @@
 import type { CSSProperties } from 'react'
 
-const darkColor = '#000000'
-const lightColor = '#FFFFFF'
+const darkColor = '#121212'
+const lightColor = '#F5F5F5'
 
 interface Colors {
   background: CSSProperties['color'] & string
