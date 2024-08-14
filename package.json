@@ -78,7 +78,7 @@
     "test": "jest",
     "tsc": "tsc",
     "lint": "eslint .",
-    "stylelint": "stylelint src/**/*.{css,scss}"
+    "stylelint": "stylelint src/sass/**/*"
   },
   "repository": {
     "type": "git",
