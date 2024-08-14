@@ -10,7 +10,6 @@ const Background = (): JSX.Element => {
   return (
     <div className='fixed-background' style={{ background }}>
       <Spheres />
-      <div className='background-glass' />
     </div>
   )
 }

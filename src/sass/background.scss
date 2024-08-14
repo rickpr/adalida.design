@@ -9,35 +9,27 @@
 .background-sphere {
   position: absolute;
   overflow: hidden;
-}
+  animation-duration: 10s;
+  animation-name: move-sphere;
+  animation-iteration-count: infinite;
 
-.background-glass {
-  backdrop-filter: blur($blur);
-  position: absolute;
-  width: 100%;
-  height: 100%;
-}
+  &.dark {
+    mix-blend-mode: lighten;
+  }
 
-.top-right-sphere {
-  height: 50vw;
-  width: 50vw;
-  right: -10vw;
-  top: -10vw;
-}
-
-.bottom-left-sphere {
-  height: 35vw;
-  width: 35vw;
-  left: 0;
-  bottom: 0;
+  &.light {
+    mix-blend-mode: darken;
+  }
 }
 
 @mixin sphere {
   position: absolute;
+  border-radius: 50%;
+  overflow: hidden;
   width: 100%;
   height: 100%;
   z-index: -2;
-  transition: opacity 0.5s linear;
+  transition: opacity 0.5s ease-in-out;
 }
 
 .old-sphere {
@@ -48,67 +40,30 @@
   @include sphere;
 
   z-index: -1;
-  transition: opacity 0.5s linear;
 }
 
-.sphere-container {
+.sphere {
   width: 100%;
   height: 100%;
   border-radius: 50%;
   overflow: hidden;
   position: relative;
-}
 
-@mixin sphere-lighting {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  animation-duration: 10s;
-  animation-iteration-count: infinite;
-}
-
-.sphere-left-half {
-  @include sphere-lighting;
-
-  left: -50%;
-  animation-name: rotate-left-half;
-  animation-timing-function: linear;
-}
-
-.sphere-right-half {
-  @include sphere-lighting;
-
-  right: -50%;
-  animation-name: rotate-right-half, duck-behind;
-  animation-timing-function: linear, steps(1);
-}
-
-@keyframes rotate-left-half {
-  0% {
-    transform: translateX(0);
+  &-dark {
+    background: radial-gradient(transparent, #121212 70%), linear-gradient(#D32E61, #337ABA);
+    border: 1px solid #121212;
   }
 
-  50% {
-    transform: translateX(100%);
+  &-light {
+    background: radial-gradient(transparent, #F5F5F5 70%), linear-gradient(#E77BA8, #85BFE8);
+    border: 1px solid #F5F5F5;
   }
 }
 
-@keyframes rotate-right-half {
-  0% {
-    transform: translateX(0);
-  }
+@keyframes move-sphere {
+  0% { transform: translateX(0); }
 
-  50% {
-    transform: translateX(-100%);
-  }
-}
+  50% { transform: translateX(25%); }
 
-@keyframes duck-behind {
-  0% {
-    z-index: 0;
-  }
-
-  50% {
-    z-index: -1;
-  }
+  100% { transform: translateX(0); }
 }

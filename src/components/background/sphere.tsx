@@ -1,27 +1,15 @@
-import React, { type CSSProperties } from 'react'
+import React from 'react'
 
 interface Props {
-  background: CSSProperties['color']
-  gradientColor: CSSProperties['color']
+  darkMode: boolean
   animationDurationSeconds: number
   animationDelaySeconds: number
 }
 
-const Sphere = ({ background, gradientColor, animationDurationSeconds, animationDelaySeconds }: Props): JSX.Element => {
+const Sphere = ({ darkMode, animationDurationSeconds, animationDelaySeconds }: Props): JSX.Element => {
   const animationDuration = `${animationDurationSeconds}s`
   const animationDelay = `${animationDelaySeconds}s`
-  return (
-    <div className='sphere-container'>
-      <div
-        className='sphere-left-half'
-        style={{ background: gradientColor, animationDuration, animationDelay }}
-      />
-      <div
-        className='sphere-right-half'
-        style={{ background, animationDuration, animationDelay }}
-      />
-    </div>
-  )
+  return <div className={`sphere sphere-${darkMode ? 'dark' : 'light'}`} style={{ animationDuration, animationDelay }} />
 }
 
 export default Sphere

@@ -1,20 +1,17 @@
-import React, { useEffect, useMemo, useState, type CSSProperties } from 'react'
+import React, { useContext, useEffect, useMemo, useState } from 'react'
 
+import DarkModeContext from 'dark_mode_context'
 import Sphere from './sphere'
-
-interface Props {
-  background: CSSProperties['color']
-  gradientColor: CSSProperties['color']
-}
 
 const minAnimationDurationSeconds = 5
 const maxAnimationDurationSeconds = 15
 
-const SphereWithTransition = ({ background, gradientColor }: Props): JSX.Element => {
+const SphereWithTransition = (): JSX.Element => {
+  const { darkMode } = useContext(DarkModeContext)
   const [isTransitioning, setIsTransitioning] = useState(false)
   const [opacity, setOpacity] = useState(0)
-  const [oldBackground, setOldBackground] = useState<CSSProperties['color']>(background)
-  const [oldGradientColor, setOldGradientColor] = useState<CSSProperties['color']>(gradientColor)
+  const [oldDarkMode, setOldDarkMode] = useState(darkMode)
+
   const animationDurationSeconds = useMemo(
     () => Math.random() * (maxAnimationDurationSeconds - minAnimationDurationSeconds) + minAnimationDurationSeconds,
     []
@@ -28,8 +25,7 @@ const SphereWithTransition = ({ background, gradientColor }: Props): JSX.Element
     setIsTransitioning(true)
     const opacityTimeout = setTimeout(() => { setOpacity(1) }, 50)
     const useStateTimeout = setTimeout(() => {
-      setOldBackground(background)
-      setOldGradientColor(gradientColor)
+      setOldDarkMode(darkMode)
       setOpacity(0)
       setIsTransitioning(false)
     }, 550)
@@ -37,22 +33,20 @@ const SphereWithTransition = ({ background, gradientColor }: Props): JSX.Element
       clearTimeout(opacityTimeout)
       clearTimeout(useStateTimeout)
     }
-  }, [background, gradientColor])
+  }, [darkMode])
 
   return (
     <>
       <div className='old-sphere'>
         <Sphere
-          background={oldBackground}
-          gradientColor={oldGradientColor}
+          darkMode={oldDarkMode}
           animationDurationSeconds={animationDurationSeconds}
           animationDelaySeconds={animationDelaySeconds}
         />
       </div>
       <div className='next-sphere' style={{ opacity, visibility: isTransitioning ? 'visible' : 'hidden' }}>
         <Sphere
-          background={background}
-          gradientColor={gradientColor}
+          darkMode={darkMode}
           animationDurationSeconds={animationDurationSeconds}
           animationDelaySeconds={animationDelaySeconds}
         />

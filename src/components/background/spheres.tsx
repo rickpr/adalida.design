@@ -94,18 +94,29 @@ const smallSpheres: CSSProperties[] = [
 
 const spherePositions: CSSProperties[] = [...cornerSpheres, ...middleSpheres, ...smallSpheres]
 
+const minAnimationDurationSeconds = 5
+const maxAnimationDurationSeconds = 15
+
+
+const animationDurations = spherePositions.map(() =>
+  Math.random() * (maxAnimationDurationSeconds - minAnimationDurationSeconds) + minAnimationDurationSeconds
+)
+const animationDelays = animationDurations.map((animationDurationSeconds) =>
+  -(Math.random() * animationDurationSeconds / 2)
+)
+
 const Spheres = (): JSX.Element[] => {
   const { darkMode } = useContext(DarkModeContext)
-  const background = darkMode ? '#D32E61' : '#E77BA8'
-  const gradientColor = darkMode ? '#337ABA' : '#85BFE8'
-
   return spherePositions.map((position, index) => (
     <div
       key={index}
-      className='background-sphere'
-      style={position}
-    >
-      <SphereWithTransition background={background} gradientColor={gradientColor} />
+      className={`background-sphere ${darkMode ? 'dark' : 'light'}`}
+      style={{
+        ...position,
+        animationDuration: `${animationDurations[index]}s`,
+        animationDelay: `${animationDelays[index]}s`
+      }}>
+      <SphereWithTransition />
     </div>
   ))
 }
