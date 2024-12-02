@@ -30,6 +30,10 @@ $gaintain-breakpoint: 1200px;
   gap: 1.5em;
   align-items: center;
   text-align: center;
+
+  > img {
+    max-width: 100%;
+  }
 }
 
 
@@ -83,23 +87,17 @@ $gaintain-breakpoint: 1200px;
 
   > img {
     border-radius: 0.875em;
+    max-width: 100%;
   }
 }
 
 .gaintain-top-to-bottom {
   @include gaintain-container;
 
-  > img {
-    max-width: 100%;
-  }
 }
 
 .gaintain-side-by-side {
   @include gaintain-container;
-
-  > img {
-    max-width: 50%;
-  }
 
   @media (min-width: $gaintain-breakpoint) {
     flex-direction: row;
@@ -107,6 +105,10 @@ $gaintain-breakpoint: 1200px;
 
     &.reverse {
       flex-direction: row-reverse;
+    }
+
+    > img {
+      max-width: 50%;
     }
   }
 }
@@ -146,9 +148,10 @@ $gaintain-breakpoint: 1200px;
 }
 
 .gaintain-mockups {
-  width: 100dvw;
+  width: 95dvw;
   min-height: 100dvw;
-  margin-left: calc(calc($page-width - 100dvw) / 2);
+  margin-left: calc(calc($page-width - 95dvw) / 2);
+  background-size: min(1078px, 80%);
 }
 
 .gaintain-learnings {
