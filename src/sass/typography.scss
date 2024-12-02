@@ -1,3 +1,5 @@
+$huge-size: 3.25rem;
+$big-size: 1.375rem;
 $h1-size: 2rem;
 $h2-size: $h1-size * 0.75;
 $h3-size: $h1-size * 0.585;
@@ -48,6 +50,19 @@ h6 {
   @media (min-width: $breakpoint) { font-size: $h6-size; }
 }
 
+.huge {
+  font-size: $huge-size * $mobile-multiplier;
+  font-weight: 600;
+
+  @media (min-width: $breakpoint) { font-size: $huge-size; }
+}
+
+.big {
+  font-size: $big-size * $mobile-multiplier;
+
+  @media (min-width: $breakpoint) { font-size: $big-size; }
+}
+
 p {
   margin: 0;
   font-size: 0.875rem;
@@ -59,10 +74,25 @@ ul {
   margin: 0;
 }
 
+ol {
+  padding-left: 0;
+  margin: 0;
+
+  &.bold-numbers {
+    > li::marker {
+      font-weight: 700;
+    }
+  }
+}
+
 .semibold {
   font-weight: 600;
 }
 
 .thin-text {
   font-weight: 300;
+}
+
+.default-weight {
+  font-weight: 400;
 }

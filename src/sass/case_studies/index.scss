@@ -27,3 +27,19 @@
     }
   }
 }
+
+.case-study-footer {
+  display: flex;
+  gap: 25px;
+  font-size: 1.375rem;
+
+  .wave {
+    font-size: 2.25rem;
+  }
+
+  .thanks {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+}

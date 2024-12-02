@@ -1,7 +1,7 @@
 import React from 'react'
 
 const Duck = (): JSX.Element =>
-  <svg width='750' height='621' viewBox='0 0 824 621' fill='none' xmlns='http://www.w3.org/2000/svg'>
+  <svg width='750' height='621' viewBox='0 0 750 621' fill='none' xmlns='http://www.w3.org/2000/svg'>
     <path
       fillRule='evenodd'
       clipRule='evenodd'
@@ -16,9 +16,6 @@ const Duck = (): JSX.Element =>
       d='M711.223 107.212C681.408 133.185 638.078 120.739 622.547 107.212C617.036 160.818 606.015 166.83 603.51 172.841C622.547 183.362 668.568 190.582 710.221 166.83C770.84 132.261 754.809 66.1306 711.223 107.212Z'
       fill='currentColor'
     />
-    <text x='700' y='40' fill='currentColor' fontSize='40'>WHY</text>
-    <text x='775' y='110' fill='currentColor' fontSize='40'>WHY</text>
-    <text x='750' y='190' fill='currentColor' fontSize='40'>WHY</text>
   </svg>
 
 export default Duck

@@ -1,12 +1,3 @@
-$theme-colors: (
-  danger: #fff,
-  dark: #000,
-  info: #440BD4,
-  primary: #e92efb,
-  success: #39ff14,
-  warning: #ff2079
-);
-
 html {
   overscroll-behavior: none;
 }
@@ -48,4 +39,14 @@ a {
 
 .underline {
   text-decoration: underline;
+}
+
+.button {
+  background-color: $primary;
+  box-shadow: 0 4px 24px -1px #15216340;
+  padding: 0.5rem 1rem;
+  border-radius: 100px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  width: max-content;
 }

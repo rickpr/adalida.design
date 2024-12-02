@@ -1,26 +1,109 @@
 $gaintain-breakpoint: 1200px;
 
-.video-card-content {
+.gaintain-header {
+  font-size: $h1-size * 2 * $mobile-multiplier;
+  font-weight: 600;
+  font-family: Inter, sans-serif;
+
+  @media (min-width: $breakpoint) { font-size: $h1-size * 2; }
+}
+
+.gaintain-icon {
+  transition: all 0.5s;
+  border-radius: 0.5em;
+  width: max-content;
+  height: max-content;
+  padding: 3px;
+
+  > svg {
+    display: block;
+    mix-blend-mode: difference;
+    color: #F5F5F5;
+    width: 30px;
+    height: 30px;
+  }
+}
+
+.gaintain-about {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 1.5em;
   align-items: center;
-  justify-content: center;
+  text-align: center;
+}
 
-  .video-card-video {
-    border-radius: 13% / 6.5%;
-    overflow: hidden;
-    max-width: 277px;
 
-    video {
-      width: 100%;
-      height: auto;
+.gaintain-overview {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+  margin-top: 1.5em;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+
+  > .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+
+    > .cell {
       display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      font-size: 1em;
+      text-align: start;
+      gap: 6px;
+
+      > div {
+        font-size: 18px;
+        font-weight: 700;
+      }
     }
+
+    > .cell.right {
+      align-items: flex-end;
+    }
+
+    > .cell.bottom {
+      > div {
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
+
+@mixin gaintain-container {
+  display: flex;
+  flex-direction: column;
+  gap: 3em;
+  align-items: center;
+  padding: 1.25em;
+
+  > img {
+    border-radius: 0.875em;
+  }
+}
+
+.gaintain-top-to-bottom {
+  @include gaintain-container;
+
+  > img {
+    max-width: 100%;
+  }
+}
+
+.gaintain-side-by-side {
+  @include gaintain-container;
+
+  > img {
+    max-width: 50%;
   }
 
   @media (min-width: $gaintain-breakpoint) {
     flex-direction: row;
+    justify-content: center;
 
     &.reverse {
       flex-direction: row-reverse;
@@ -28,29 +111,65 @@ $gaintain-breakpoint: 1200px;
   }
 }
 
-.gaintain-text {
-  flex-basis: 37%;
-  flex-grow: 3;
-  font-variant-numeric: tabular-nums;
+.gaintain-explanation {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 3em;
+  min-width: 375px;
 
-  &.space {
+  > section {
     display: flex;
     flex-direction: column;
-    gap: 1em;
+    gap: 0.75em;
+    font-size: 1em;
+
+    em {
+      font-style: oblique 10deg;
+    }
+
+    &.padding {
+      padding: 1.25em 0;
+    }
+
+    &.more-padding {
+      padding: 2.5em 0;
+    }
+
+    > .list {
+      display: flex;
+      flex-direction: column;
+      gap: 0.875em;
+      margin-top: 0.75em;
+    }
   }
 }
 
-.gaintain-check {
-  @include flex-center;
+.gaintain-mockups {
+  width: 100dvw;
+  min-height: 100dvw;
+  margin-left: calc(calc($page-width - 100dvw) / 2);
+}
 
-  flex-wrap: wrap-reverse;
-  margin: 0 auto;
-  max-width: max-content;
-  gap: 20px;
+.gaintain-learnings {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5em;
 
-  .caption {
-    @include flex-center;
+  @media (min-width: $breakpoint) {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
 
-    flex: 8 8 335px;
+.gaintain-learning {
+  display: flex;
+  flex-direction: column;
+  padding: 0 0.625em;
+  gap: 0.75em;
+
+  > .paragraphs {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
   }
 }

@@ -13,11 +13,6 @@
 @import './portfolio_page';
 @import './scroll_animated_text';
 
-// stylelint-disable-next-line selector-class-pattern -- this is used for typewriter-effect
-.Typewriter {
-  display: inline;
-}
-
 .brand-icon {
   @include glass;
 
@@ -83,8 +78,4 @@
   height: 0;
 
   @media (min-width: $breakpoint) { border-width: 2px; }
-}
-
-.no-margins {
-  margin: 0;
 }

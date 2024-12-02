@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 
 import CarouselOverlay, { carouselMediaTag } from '../../carousel_overlay'
+import Footer from '../footer'
 import Card from './card'
 import About from './about'
 
@@ -63,6 +64,7 @@ const Phronesis = (): JSX.Element => {
     <div className='case-study-container'>
       <About />
       {images}
+      <Footer />
       {showCarousel && <CarouselOverlay dismiss={dismiss} media={carouselMedia} index={mediaIndex} />}
     </div>
   )
