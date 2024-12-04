@@ -16,7 +16,7 @@ const About = (): JSX.Element => {
           </div>
           <div className='cell right'>
             <div>Timeline</div>
-            <span>12 weeks</span>
+            <span>2 weeks</span>
           </div>
         </div>
         <div className='row'>

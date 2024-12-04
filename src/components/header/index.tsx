@@ -12,7 +12,7 @@ const Header = (): JSX.Element => {
   const { darkMode } = useContext(DarkModeContext)
   const isHomePage = togglePortfolioPage !== undefined
   return (
-    <div className={`thin-glass navbar ${darkMode && 'dark'}`} >
+    <div className={`navbar ${darkMode && 'dark'}`} >
       {isHomePage ? <HomeLink /> : <BackButton />}
       {isHomePage && <PortfolioPageSwitch />}
       <DarkModeButton />

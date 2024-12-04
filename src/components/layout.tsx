@@ -29,7 +29,6 @@ const Layout = (
       <div style={{ color, transition: 'all 0.5s ease-in-out' }} data-nosnippet>
         <Header />
         <Page>{children}</Page>
-        <div style={{ minHeight: '5em' }} />
         <Footer />
       </div>
     </DarkModeContext.Provider>

@@ -10,7 +10,10 @@ import Mapping from './mapping'
 import ABTesting from './ab_testing'
 import Iterating from './iterating'
 import Validating from './validating'
+import Developer from './developer'
 import Track from './track'
+import Instructions from './instructions'
+import DataEntry from './data_entry'
 import KeyLearnings from './key_learnings'
 
 const Gaintain = (): JSX.Element =>
@@ -23,7 +26,10 @@ const Gaintain = (): JSX.Element =>
     <ABTesting />
     <Iterating />
     <Validating />
+    <Developer />
     <Track/>
+    <Instructions />
+    <DataEntry />
     <KeyLearnings />
     <Footer />
   </div>

@@ -1,16 +1,16 @@
+import { IconMoodUp } from '@tabler/icons-react'
 import React from 'react'
 
 import ValidatingImage from 'images/gaintain/validating.webp'
 
 import Icon from './icon'
-import ValidatingIcon from './icons/validating'
 
 const Validating = (): JSX.Element => {
   return (
-    <div data-aos='fade-up' className='gaintain-side-by-side padding reverse'>
+    <div data-aos='fade-up' className='gaintain-side-by-side reverse'>
       <div className='gaintain-explanation'>
         <section className='more-padding'>
-          <Icon><ValidatingIcon /></Icon>
+          <Icon><IconMoodUp /></Icon>
           <h1 className='default-weight no-margin'>Validating the Prototype:</h1>
           <div>
             Testing the design under different use cases made it clear lifters track their information using three main

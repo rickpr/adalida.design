@@ -1,16 +1,16 @@
+import { IconAB2 } from '@tabler/icons-react'
 import React from 'react'
 
 import ABTestingImage from 'images/gaintain/ab_testing.webp'
 
 import Icon from './icon'
-import ABTestingIcon from './icons/ab_testing'
 
 const ABTesting = (): JSX.Element => {
   return (
-    <div data-aos='fade-up' className='gaintain-side-by-side padding reverse'>
+    <div data-aos='fade-up' className='gaintain-side-by-side reverse'>
       <div className='gaintain-explanation'>
         <section className='more-padding'>
-          <Icon><ABTestingIcon /></Icon>
+          <Icon><IconAB2 /></Icon>
           <h1 className='default-weight no-margin'>A/B Testing the MVP:</h1>
           <div>
             I tested the Swift UI interactions with guerrilla ethnographic studies in the gym. The insights from testing
@@ -27,7 +27,7 @@ const ABTesting = (): JSX.Element => {
           </ol>
         </section>
       </div>
-      <img src={ABTestingImage} alt='Comparing two versions' />
+      <img className='gaintain-ab-testing-image' src={ABTestingImage} alt='Comparing two versions' />
     </div>
   )
 }

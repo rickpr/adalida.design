@@ -2,7 +2,7 @@
 
 exports[`Header renders correctly 1`] = `
 <div
-  className="thin-glass navbar dark"
+  className="navbar dark"
 >
   <a
     className="glass"

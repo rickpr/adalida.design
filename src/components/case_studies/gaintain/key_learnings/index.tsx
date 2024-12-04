@@ -4,7 +4,7 @@ import Learning from './learning'
 
 const KeyLearnings = (): JSX.Element => {
   return (
-    <div data-aos='fade-up' className='gaintain-top-to-bottom'>
+    <div data-aos='fade-up' className='gaintain-key-learnings'>
       <h2>Key Learnings</h2>
       <div>
         No project is perfect and neither was Gaintain. I learned new hacks and hard lessons.

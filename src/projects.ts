@@ -1,6 +1,6 @@
 const AirbrushImage = 'images/works/airbrush.webp'
 const AirbrushLogo = 'images/works/airbrush_logo.webp'
-const GaintainPhoto = 'images/gaintain/next_steps.webp'
+const GaintainPhoto = 'images/works/gaintain.webp'
 const JessRuedaImage = 'images/works/jessrueda.webp'
 const JessRuedaLogo = 'images/works/jessrueda_logo.webp'
 const LoboGardensImage = 'images/works/lobogardens.webp'

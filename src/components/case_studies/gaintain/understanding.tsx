@@ -1,16 +1,16 @@
+import { IconDatabaseCog } from '@tabler/icons-react'
 import React from 'react'
 
 import UnderstandingImage from 'images/gaintain/understanding.webp'
 
 import Icon from './icon'
-import Data from './icons/data'
 
 const Understanding = (): JSX.Element => {
   return (
     <div data-aos='fade-up' className='gaintain-side-by-side'>
       <div className='gaintain-explanation'>
         <section>
-          <Icon><Data /></Icon>
+          <Icon><IconDatabaseCog /></Icon>
           <h1 className='default-weight no-margin'>Understanding the Data:</h1>
           <div>What preexisting solutions exist currently? Are some solutions better than others?</div>
           <div>

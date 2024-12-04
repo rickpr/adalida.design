@@ -11,7 +11,7 @@ const Learning = ({ number, title, children }: Props): JSX.Element => {
     <div className='gaintain-learning'>
       <div className='big semibold'>{number}</div>
       <div className='paragraphs'>
-        <p><strong><em>{title}</em></strong></p>
+        <p><em><strong>{title}</strong></em></p>
         {children}
       </div>
     </div>
