@@ -12,11 +12,14 @@ const Instructions = (): JSX.Element => {
         <section>
           <Icon><IconPlayerPlayFilled /></Icon>
           <h1 className='default-weight no-margin'>Instructions</h1>
+          <div>Gaintain is built with an extensive video and instructional library.</div>
           <div>
-            Gaintain&apos;s UI tracks and adjusts the recorded weight where the starting weight is what the user
-            completed prior to the current workout. This empowers lifters to make their own informed choices about
-            their physical fitness journey.
+            When the play button is pushed, users can see an instructional video of the exercise along with
+            instructions covering how to complete the exercise.
           </div>
+          <div>Need a refresher on how to complete an exercise, Gaintain is here for you!</div>
+
+
         </section>
       </div>
       <video src={InstructionsVideo} autoPlay loop muted playsInline width='100%' />

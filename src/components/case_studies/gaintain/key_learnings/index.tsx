@@ -13,42 +13,51 @@ const KeyLearnings = (): JSX.Element => {
 
       <div className='gaintain-learnings'>
         <Learning number={1} title='Greenfield vs Brownfield  Projects'>
-          <p>Working on a new project vs working in an existing project can be challenging.</p>
           <p>
-            Feedback, especially statistically meaningful feedback when you have $0 budget, was difficult to come by.
-            I posted a questionnaire to several online fitness communities (free), but unfortunately I received only 2
-            responses. One of which did not pass the first screening question.
+            A few challenges working in a greenfield space especially with a limited team was road mapping,
+            moving the project forward, picking the software to design the backend, and working within a limited
+            budget and time frame.
           </p>
           <p>
-            Next time, if I want statistically meaningful insights from user research, I need to budget time and/or
-            resources for finding participants. It&apos;s not about finding any user feedback, it&apos;s about listening to feedback
-            from my target market.
+            The initial problem we were solving for was to build a user interface for completing a workout. When we were
+            ready for implementation, we were stalled until we completed the backend design. Part of that included
+            providing users the ability to input their workout before being able to complete it.
+          </p>
+          <p>
+            This realization caused a change in our scope to focus on building the sign up process, which included
+            building a workout program but ultimately delayed our release.
           </p>
         </Learning>
 
-        <Learning number={2} title='Utilize Open Source Tools'>
+        <Learning number={2} title='Meaningful Research'>
           <p>
-            I used Apple&apos;s SwiftUI documentation to my advantage and will continue to use this hack in the future.
+            Feedback, especially statistically meaningful feedback with a $0 budget and a 3 week constraint was
+            difficult. I posted a questionnaire to several online fitness communities (free), but unfortunately I
+            received only 2 responses. One of which did not pass the screening questions.
           </p>
           <p>
-            Apple invests heavily in their user research. I found the intersection of my users&apos; needs and the
-            component&apos;s affordances to choose the right components. The components can be our starting point
-            to test, and build the designs from.
+            Next time, if I want statistically meaningful insights from user research, I need to budget time and or
+            resources for finding participants.
           </p>
-          <p>Next time, I’ll read the component documentation before designing.</p>
+          <p>It&apos;s not about finding any user feedback, it’s about listening to feedback from my target market.</p>
+          <p>
+            To mitigate this, I used Apple&apos;s SwiftUI documentation, who invests heavily in their user research, to
+            find the intersection of my user’s needs and the component&apos;.s affordances.
+          </p>
         </Learning>
 
         <Learning number={3} title='Developer Communication'>
           <p>
-            I wasn&apos;t just the designer here, I was the product manager. I had to meet my developer where he was at.
+            I wasn&apos;t just the designer here, I was also the product manager who wore many hats. This included
+            managing the communication with in the team,  designing and leading our workflow process, and writing
+            product requirement documents (PRDs).
           </p>
-          <p>
-            <ul>
-              <li>Product Requirement Documents</li>
-              <li>Building us a Kanban board</li>
-              <li>Being a person who wears many hats</li>
-            </ul>
+          <p>A big lesson from this role included how to communicate with a developer. Sometimes I&apos;d want a design
+            changed and it would not look like what I handed off in Figma. This led me to learn about PRDs where I can
+            specify to the developer what needs to changed. The formatting of a PRD can look different to different
+            developers. I synced with my developer to build a a system that worked for both of us.
           </p>
+          <p>This led to building a workflow that helped speed up our communication.</p>
         </Learning>
 
       </div>
