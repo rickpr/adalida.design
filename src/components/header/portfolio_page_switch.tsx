@@ -2,10 +2,10 @@ import React, { useContext } from 'react'
 
 import { HomePageContext } from '../home_page_context'
 
-const PortfolioPageSwitch = (): JSX.Element => {
+const PortfolioPageSwitch = ({ hide }: { hide: boolean }): JSX.Element => {
   const { isPortfolioPage, togglePortfolioPage } = useContext(HomePageContext)
   return (
-    <div className='switch-container'>
+    <div className={`switch-container ${hide ? 'hide-up' : ''}`}>
       <button className='switch-grid' onClick={() => { togglePortfolioPage?.() }}>
         <div
           className='switch-indicator'

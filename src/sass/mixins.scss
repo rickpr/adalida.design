@@ -31,6 +31,16 @@ $blur: 60px;
   white-space: nowrap;
 }
 
+@mixin logo {
+  display: flex;
+  width: 75px;
+  height: 75px;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  padding: 10%;
+  padding: 0.375rem;
+}
+
 .thin-glass { @include thin-glass; }
 .glass { @include glass; }
 .card { @include card; }

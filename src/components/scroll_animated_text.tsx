@@ -33,11 +33,9 @@ const ScrollAnimatedText = ({ text }: { text: string }): JSX.Element => {
     <div ref={containerRef}>
       {
         text.split('').map((letter, index) => {
-          console.log(letter)
           if (letter === ' ') {
             return <span key={index}> </span>
           } else if (letter === '\n') {
-            console.log('dak dak cyka blyat')
             return <br key={index} />
           } else {
             return <span key={index} className='animated-letter'>{letter}</span>

@@ -11,11 +11,8 @@ const Intro = (): JSX.Element | null => {
   if (isMobile === null) return null
 
   return (
-    <div className='intro'>
-      <div className='image'>
-        {makeMediaTag({ media: AdalidaFace, style: { maxWidth: '80dvh', width: '100%', height: '100%' }})}
-      </div>
-      <div className='intro-text'>
+    <div className='about-intro'>
+      <div className='about-intro-text'>
         <div className='heading'>A bit about me...</div>
         <div>
           I&apos;m an energetic, resourceful, and versatile Product Designer.
@@ -28,6 +25,9 @@ const Intro = (): JSX.Element | null => {
           It was only then that I paused and asked myself: do I even like cereal?
         </div>
         <LetsChat />
+      </div>
+      <div className='image'>
+        {makeMediaTag({ media: AdalidaFace, style: { maxWidth: '80dvh', width: '100%', height: '100%' }})}
       </div>
     </div>
   )

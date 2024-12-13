@@ -29,16 +29,19 @@ M6.3 17.7 l-.7 .7
 `
 
 const Icon = ({ darkMode }: { darkMode: boolean }): JSX.Element => {
-  const [dur, setDur] = useState('1ms')
+  const [opacity, setOpacity] = useState(0)
   const animate = useRef<Animate>(null)
 
   const animateForward = (): void => { animate.current?.animateForward() }
   const animateReverse = (): void => { animate.current?.animateReverse() }
 
-  useEffect(() => { darkMode ? animateReverse() : animateForward() }, [darkMode])
+  useEffect(() => {
+    const timeout = setTimeout(() => { darkMode ? animateReverse() : animateForward() }, 1)
+    return () => { clearTimeout(timeout) }
+  }, [darkMode])
   // This prevents the animation from running on page load
   useEffect(() => {
-    const timeout = setTimeout(() => { setDur('250ms') }, 1000)
+    const timeout = setTimeout(() => { setOpacity(1) }, 250)
     return () => { clearTimeout(timeout) }
   }, [])
 
@@ -55,7 +58,7 @@ const Icon = ({ darkMode }: { darkMode: boolean }): JSX.Element => {
       strokeLinecap="round"
       strokeLinejoin="round"
     >
-      <AnimatedPath startPath={startPath} endPath={endPath} dur={dur} ref={animate} />
+      <AnimatedPath startPath={startPath} endPath={endPath} dur='1ms' ref={animate} opacity={opacity} />
     </svg>
   )
 }

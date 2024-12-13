@@ -6,7 +6,7 @@ interface Props {
   startPath: Path
   endPath: Path
   dur: SVGAttributes<SVGPathElement>['dur']
-  fill?: SVGAttributes<SVGPathElement>['fill']
+  opacity: SVGAttributes<SVGPathElement>['opacity']
 }
 
 const animateProps = {
@@ -22,7 +22,7 @@ export interface Animate {
 }
 
 const AnimatedPath = forwardRef((props: Props, ref: React.Ref<Animate>): JSX.Element => {
-  const { startPath, endPath, dur, fill } = props
+  const { startPath, endPath, dur, opacity } = props
   const animateRef = useRef<SVGAnimateElement>(null)
   const animateReverseRef = useRef<SVGAnimateElement>(null)
 
@@ -32,7 +32,7 @@ const AnimatedPath = forwardRef((props: Props, ref: React.Ref<Animate>): JSX.Ele
   }))
 
   return (
-    <path d={startPath} fill={fill}>
+    <path d={startPath} opacity={opacity}>
       <animate
         ref={animateRef}
         from={startPath}

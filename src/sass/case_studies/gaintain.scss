@@ -94,9 +94,9 @@ $gaintain-breakpoint: 1200px;
 }
 
 .gaintain-key-learnings {
-  @include gaintain-container;
-
   align-items: flex-start;
+
+  @include gaintain-container;
 }
 
 .gaintain-side-by-side {

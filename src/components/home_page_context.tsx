@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useMemo, useState } from 'react'
 
 interface HomePageContextType {
   isPortfolioPage?: boolean
@@ -7,31 +7,37 @@ interface HomePageContextType {
 
 const HomePageContext = React.createContext<HomePageContextType>({})
 
-const HomePageProvider = ({ portfolioPage, children }: { portfolioPage: boolean, children: JSX.Element }): JSX.Element => {
-  const [isPortfolioPage, setIsPortfolioPage] = useState(portfolioPage)
+const HomePageProvider = ({ pathname, children }: { pathname: string, children: JSX.Element }): JSX.Element => {
+  const [isPortfolioPage, setIsPortfolioPage] = useState(pathname === '/' || pathname.startsWith('/portfolio'))
+  const [isAboutPage, setIsAboutPage] = useState(pathname.startsWith('/about'))
 
   useEffect(() => {
-    if (typeof window === 'undefined') return
+    if (pathname === undefined) return
 
-    const changePageOnPopState = (event: PopStateEvent): void => {
-      const windowTarget = event.target as Window | undefined
-      const newPathName = windowTarget?.location?.pathname
-      if (newPathName === undefined) return
-
-      if (newPathName.startsWith('/portfolio')) { setIsPortfolioPage(true) }
-      if (newPathName.startsWith('/about')) { setIsPortfolioPage(false) }
+    if (pathname === '/' || pathname.startsWith('/portfolio')) {
+      setIsPortfolioPage(true)
+      setIsAboutPage(false)
+    } else if (pathname.startsWith('/about')) {
+      setIsPortfolioPage(false)
+      setIsAboutPage(true)
+    } else {
+      setIsPortfolioPage(false)
+      setIsAboutPage(false)
     }
-    window.addEventListener('popstate', changePageOnPopState)
-    return () => { window.removeEventListener('popstate', changePageOnPopState) }
-  }, [portfolioPage])
+  }, [pathname])
 
-  const togglePortfolioPage = (): void => {
-    setIsPortfolioPage((isPortfolioPage: boolean) => {
-      history.pushState({}, '', isPortfolioPage ? '/about' : '/portfolio')
-      return !isPortfolioPage
-    })
-    window.scrollTo({ top: 0, behavior: 'smooth' })
-  }
+  const togglePortfolioPage = useMemo(() => {
+    if (!isPortfolioPage && !isAboutPage) return
+
+    return (): void => {
+      setIsPortfolioPage((oldIsPortfolioPage: boolean) => {
+        history.pushState({}, '', oldIsPortfolioPage ? '/about' : '/portfolio')
+        setIsAboutPage(oldIsPortfolioPage)
+        return !oldIsPortfolioPage
+      })
+      window.scrollTo({ top: 0, behavior: 'smooth' })
+    }
+  }, [isPortfolioPage, isAboutPage])
 
   return (
     <HomePageContext.Provider value={{ isPortfolioPage, togglePortfolioPage }}>

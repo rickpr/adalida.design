@@ -3,8 +3,8 @@ import React from 'react'
 
 import UhOhImage from 'images/gaintain/uh_oh.webp'
 
+import Duck from 'components/duck'
 import Icon from './icon'
-import Duck from './icons/duck'
 
 const UhOh = (): JSX.Element => {
   return (

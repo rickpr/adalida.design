@@ -13,9 +13,14 @@ const Header = (): JSX.Element => {
   const isHomePage = togglePortfolioPage !== undefined
   return (
     <div className={`navbar ${darkMode && 'dark'}`} >
-      {isHomePage ? <HomeLink /> : <BackButton />}
-      {isHomePage && <PortfolioPageSwitch />}
-      <DarkModeButton />
+      <div className='relative flex-center'>
+        <HomeLink hide={!isHomePage} />
+        <BackButton hide={isHomePage} />
+      </div>
+      <div className='flex-center'>
+        <PortfolioPageSwitch hide={!isHomePage} />
+        <DarkModeButton />
+      </div>
     </div>
   )
 }

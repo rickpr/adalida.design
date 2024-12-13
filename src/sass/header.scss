@@ -10,6 +10,11 @@ $header-height: 80px;
   justify-content: space-between;
   padding: 10px 7.5dvw;
   height: $header-height;
+
+  .flex-center {
+    justify-content: space-between;
+    flex-basis: 300px;
+  }
 }
 
 
@@ -17,11 +22,8 @@ $header-height: 80px;
   @include glass;
 
   padding: 6px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   width: max-content;
+  transition: all 0.5s ease-in-out;
 }
 
 .switch-grid {
@@ -66,13 +68,31 @@ $header-height: 80px;
   align-items: center;
   gap: 10px;
   line-height: 1;
+  width: max-content;
+  transition: all 0.5s ease-in-out;
 
   .header-title {
     display: flex;
-    flex-direction: column;
-    justify-content: start;
-    align-items: flex-start;
-    gap: 6px;
-    font-size: 15px;
+    gap: 10px;
+    font-size: 32px;
+    align-items: flex-end;
+
+    .name {
+      font-size: 34px;
+      font-weight: 700;
+    }
   }
+}
+
+.header-button {
+  @include glass;
+
+  height: 40px;
+  width: 40px;
+  color: currentcolor;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
 }
