@@ -58,7 +58,7 @@ const Icon = ({ darkMode }: { darkMode: boolean }): JSX.Element => {
       strokeLinecap="round"
       strokeLinejoin="round"
     >
-      <AnimatedPath startPath={startPath} endPath={endPath} dur='1ms' ref={animate} opacity={opacity} />
+      <AnimatedPath startPath={startPath} endPath={endPath} dur='250ms' ref={animate} opacity={opacity} />
     </svg>
   )
 }
