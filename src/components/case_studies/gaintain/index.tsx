@@ -19,7 +19,6 @@ import KeyLearnings from './key_learnings'
 const Gaintain = (): JSX.Element =>
   <div className='case-study-container'>
     <About />
-    <Mockups />
     <UhOh />
     <Understanding />
     <Mapping />
@@ -27,6 +26,7 @@ const Gaintain = (): JSX.Element =>
     <Iterating />
     <Validating />
     <Developer />
+    <Mockups />
     <Track/>
     <Instructions />
     <DataEntry />
