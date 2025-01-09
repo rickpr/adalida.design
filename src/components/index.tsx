@@ -8,7 +8,7 @@ const MainPage = (): JSX.Element | null => {
   const { isPortfolioPage } = useContext(HomePageContext)
 
   const content = useMemo(() => {
-    if (isPortfolioPage === null) return null // This prevents the wrong page from flashing in production
+    if (isPortfolioPage === undefined) return null // This prevents the wrong page from flashing in production
     return isPortfolioPage === true ? <PortfolioPage /> : <AboutPage />
   }, [isPortfolioPage])
 
