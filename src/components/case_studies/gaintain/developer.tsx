@@ -11,13 +11,9 @@ const Developer = (): JSX.Element => {
       <div className='gaintain-explanation'>
         <section>
           <Icon><IconCode /></Icon>
-          <h1 className='default-weight no-margin'>Developer Specifications &amp; Handoff:</h1>
+          <h1 className='default-weight no-margin'>Developer Specifications:</h1>
           To complete a workout, click the check mark.
           The content is populated by the Gaintain CMS based on the data in the user profile.
-        </section>
-        <section>
-          <Icon><IconHandClick /></Icon>
-          <h1 className='default-weight no-margin'>Behaviors:</h1>
           <div>Checkmark Icon (Tap): Records workout as complete</div>
           <div>Numbered Segmented Picker (Tap): Changes view of exercise in workout</div>
           <div>
