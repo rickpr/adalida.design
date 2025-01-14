@@ -7,8 +7,16 @@
 
   .portfolio-hero-image {
     width: 100%;
-    height: 100%;
     border-radius: 14px;
+
+    &.spline {
+      overflow: hidden;
+
+      canvas {
+        width: 100% !important;
+        height: 100% !important;
+      }
+    }
 
     @media (min-width: $breakpoint) {
       height: calc(550px - 1.5em);

@@ -1,6 +1,5 @@
 const AirbrushImage = 'images/works/airbrush.webp'
 const AirbrushLogo = 'images/works/airbrush_logo.webp'
-const GaintainPhoto = 'images/works/gaintain.webp'
 const JessRuedaImage = 'images/works/jessrueda.webp'
 const JessRuedaLogo = 'images/works/jessrueda_logo.webp'
 const LoboGardensImage = 'images/works/lobogardens.webp'
@@ -35,7 +34,7 @@ export const Projects: Record<string, Project> = {
     name: 'Gaintain',
     category: 'Workout',
     description: 'Designed the user interface and interactions for Gaintain, a mobile application focusing on tracking workouts and solving the challenge of logging weight lifting between sets. Currently developing this project with my partner to enhance the user experience in fitness tracking. This ongoing project aims to provide a seamless and efficient solution for fitness enthusiasts to monitor their progress.',
-    heroImage: GaintainPhoto,
+    heroImage: 'https://prod.spline.design/MX2rK-vIk1fwTzSP/scene.splinecode',
     badges: ['Management', 'Product Design', 'Figma'],
     link: {
       text: 'Read Case Study',

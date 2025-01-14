@@ -1,3 +1,4 @@
+import Spline from '@splinetool/react-spline'
 import React from 'react'
 
 import Image from 'components/image'
@@ -7,7 +8,10 @@ const HeroImage = ({ project }: { project: Project }): JSX.Element => {
   const { name, heroImage } = project
   return (
     <div className='portfolio-container-for-hero-image'>
-      <Image className='portfolio-hero-image' alt={`${name} cover`} path={heroImage} />
+      {heroImage.includes('prod.spline.design')
+        ? <Spline className='portfolio-hero-image spline' scene={heroImage} />
+        : <Image className='portfolio-hero-image' alt={`${name} cover`} path={heroImage} />
+      }
     </div>
   )
 }
