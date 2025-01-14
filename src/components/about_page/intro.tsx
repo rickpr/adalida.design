@@ -12,6 +12,7 @@ const Intro = (): JSX.Element | null => {
 
   return (
     <div className='about-intro'>
+      {makeMediaTag({ media: AdalidaFace, style: { maxWidth: '80dvh', width: '100%', height: '100%' }})}
       <div className='about-intro-text'>
         <div className='heading'>A bit about me...</div>
         <div>
@@ -26,7 +27,6 @@ const Intro = (): JSX.Element | null => {
         </div>
         <LetsChat />
       </div>
-      {makeMediaTag({ media: AdalidaFace, style: { maxWidth: '80dvh', width: '100%', height: '100%' }})}
     </div>
   )
 }
