@@ -27,9 +27,9 @@ const Gaintain = (): JSX.Element =>
     <Validating />
     <Developer />
     <Mockups />
-    <Track/>
     <Instructions />
     <DataEntry />
+    <Track/>
     <KeyLearnings />
     <Footer />
   </div>

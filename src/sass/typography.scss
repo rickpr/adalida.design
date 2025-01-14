@@ -50,13 +50,6 @@ h6 {
   @media (min-width: $breakpoint) { font-size: $h6-size; }
 }
 
-.huge {
-  font-size: $huge-size * $mobile-multiplier;
-  font-weight: 600;
-
-  @media (min-width: $breakpoint) { font-size: $huge-size; }
-}
-
 .big {
   font-size: $big-size * $mobile-multiplier;
 
