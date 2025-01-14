@@ -9,7 +9,7 @@ const MainPage = (): JSX.Element | null => {
 
   const content = useMemo(() => {
     if (isPortfolioPage === undefined) return null // This prevents the wrong page from flashing in production
-    return isPortfolioPage === true ? <PortfolioPage /> : <AboutPage />
+    return isPortfolioPage ? <PortfolioPage /> : <AboutPage />
   }, [isPortfolioPage])
 
   return content

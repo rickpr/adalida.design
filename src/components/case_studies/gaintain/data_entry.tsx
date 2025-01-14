@@ -19,7 +19,7 @@ const DataEntry = (): JSX.Element => {
           <div>No more wondering what you did last time or how heavy you should go. Gaintain’s got you covered!</div>
         </section>
       </div>
-      <video src={DataEntryVideo} autoPlay loop muted playsInline width='100%' />
+      <video src={DataEntryVideo} autoPlay loop muted playsInline />
     </div>
   )
 }

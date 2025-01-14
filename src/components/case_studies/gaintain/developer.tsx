@@ -1,4 +1,4 @@
-import { IconCode, IconHandClick } from '@tabler/icons-react'
+import { IconCode } from '@tabler/icons-react'
 import React from 'react'
 
 import DeveloperImage from 'images/gaintain/developer.webp'

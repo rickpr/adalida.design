@@ -22,7 +22,7 @@ const Instructions = (): JSX.Element => {
 
         </section>
       </div>
-      <video src={InstructionsVideo} autoPlay loop muted playsInline width='100%' />
+      <video src={InstructionsVideo} autoPlay loop muted playsInline />
     </div>
   )
 }
