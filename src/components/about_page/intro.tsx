@@ -26,9 +26,7 @@ const Intro = (): JSX.Element | null => {
         </div>
         <LetsChat />
       </div>
-      <div className='image'>
-        {makeMediaTag({ media: AdalidaFace, style: { maxWidth: '80dvh', width: '100%', height: '100%' }})}
-      </div>
+      {makeMediaTag({ media: AdalidaFace, style: { maxWidth: '80dvh', width: '100%', height: '100%' }})}
     </div>
   )
 }
