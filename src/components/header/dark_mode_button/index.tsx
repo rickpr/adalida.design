@@ -8,7 +8,7 @@ const DarkModeButton = (): JSX.Element => {
 
   return (
     <button
-      className={`header-button ${darkMode ? 'dark' : 'light'}`}
+      className='header-button'
       aria-label='Toggle dark mode'
       onClick={toggleDarkMode}
     >

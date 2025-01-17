@@ -5,11 +5,7 @@ import { IconArrowLeft } from '@tabler/icons-react'
 
 
 const BackButton = ({ hide }: { hide: boolean }): JSX.Element => {
-  return (
-    <Link className={`header-button back-button absolute ${hide ? 'hide-up' : ''}`} to='/' >
-      <IconArrowLeft />
-    </Link>
-  )
+  return <Link className={`header-button back-button absolute ${hide ? 'hide-up' : ''}`} to='/' ><IconArrowLeft /></Link>
 }
 
 export default BackButton

@@ -10,8 +10,6 @@ $header-height: 80px;
   justify-content: space-between;
   padding: 10px 7.5dvw;
   height: $header-height;
-  mix-blend-mode: difference;
-  color: $light-text;
 
   .flex-center {
     justify-content: space-between;
@@ -22,13 +20,7 @@ $header-height: 80px;
 
 
 .switch-container {
-  &.dark {
-    @include glass;
-  }
-
-  &.light {
-    @include dark-glass;
-  }
+  @include glass;
 
   padding: 6px;
   width: max-content;
@@ -59,13 +51,7 @@ $header-height: 80px;
 }
 
 .switch-indicator {
-  &.light {
-    @include dark-glass;
-  }
-
-  &.dark {
-    @include glass;
-  }
+  @include glass;
 
   position: absolute;
   border: 1px solid rgb(255 255 255 / 25%);
@@ -82,7 +68,6 @@ $header-height: 80px;
   gap: 10px;
   line-height: 1;
   width: max-content;
-  mix-blend-mode: difference;
   top: 50%;
   transform: translateY(-50%);
 
@@ -105,13 +90,7 @@ $header-height: 80px;
 }
 
 .header-button {
-  &.light {
-    @include dark-glass;
-  }
-
-  &.dark {
-    @include glass;
-  }
+  @include glass;
 
   height: 40px;
   width: 40px;
