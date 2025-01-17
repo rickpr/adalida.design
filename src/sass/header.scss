@@ -10,6 +10,8 @@ $header-height: 80px;
   justify-content: space-between;
   padding: 10px 7.5dvw;
   height: $header-height;
+  mix-blend-mode: difference;
+  color: $light-text;
 
   .flex-center {
     justify-content: space-between;
@@ -20,11 +22,16 @@ $header-height: 80px;
 
 
 .switch-container {
-  @include glass;
+  &.dark {
+    @include glass;
+  }
+
+  &.light {
+    @include dark-glass;
+  }
 
   padding: 6px;
   width: max-content;
-  transition: all 0.5s ease-in-out;
 }
 
 .switch-grid {
@@ -52,7 +59,13 @@ $header-height: 80px;
 }
 
 .switch-indicator {
-  @include glass;
+  &.light {
+    @include dark-glass;
+  }
+
+  &.dark {
+    @include glass;
+  }
 
   position: absolute;
   border: 1px solid rgb(255 255 255 / 25%);
@@ -69,7 +82,9 @@ $header-height: 80px;
   gap: 10px;
   line-height: 1;
   width: max-content;
-  transition: all 0.5s ease-in-out;
+  mix-blend-mode: difference;
+  top: 50%;
+  transform: translateY(-50%);
 
   .header-title {
     display: flex;
@@ -84,8 +99,19 @@ $header-height: 80px;
   }
 }
 
+.back-button {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
 .header-button {
-  @include glass;
+  &.light {
+    @include dark-glass;
+  }
+
+  &.dark {
+    @include glass;
+  }
 
   height: 40px;
   width: 40px;
@@ -94,5 +120,4 @@ $header-height: 80px;
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  transition: all 0.5s ease-in-out;
 }

@@ -2,17 +2,17 @@
 
 exports[`Header renders correctly 1`] = `
 <div
-  className="navbar dark"
+  className="navbar"
 >
   <div
-    className="relative flex-center"
+    className="relative"
   >
     <a
       className="home-link absolute hide-up"
       href="/"
     >
       <div
-        className="glass"
+        className="header-button dark"
       >
         <svg
           className="home-page-logo"
@@ -43,7 +43,7 @@ exports[`Header renders correctly 1`] = `
       />
     </a>
     <a
-      className="header-button absolute "
+      className="header-button back-button absolute "
       href="/"
     >
       <svg
@@ -74,14 +74,14 @@ exports[`Header renders correctly 1`] = `
     className="flex-center"
   >
     <div
-      className="switch-container hide-up"
+      className="switch-container hide-up dark"
     >
       <button
         className="switch-grid"
         onClick={[Function]}
       >
         <div
-          className="switch-indicator"
+          className="switch-indicator  dark"
           style={
             {
               "transform": "translateX(100%)",
@@ -102,7 +102,7 @@ exports[`Header renders correctly 1`] = `
     </div>
     <button
       aria-label="Toggle dark mode"
-      className="header-button"
+      className="header-button dark"
       onClick={[Function]}
     >
       <svg
