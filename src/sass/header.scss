@@ -21,6 +21,7 @@ $header-height: 80px;
 
 .switch-container {
   @include glass;
+  @include blur;
 
   padding: 6px;
   width: max-content;
@@ -68,8 +69,6 @@ $header-height: 80px;
   gap: 10px;
   line-height: 1;
   width: max-content;
-  top: 50%;
-  transform: translateY(-50%);
 
   .header-title {
     display: flex;
@@ -84,13 +83,9 @@ $header-height: 80px;
   }
 }
 
-.back-button {
-  top: 50%;
-  transform: translateY(-50%);
-}
-
 .header-button {
   @include glass;
+  @include blur;
 
   height: 40px;
   width: 40px;
