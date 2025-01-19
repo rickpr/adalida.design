@@ -11,10 +11,12 @@
 
     &.spline {
       overflow: hidden;
+      max-height: 400px;
 
       canvas {
         width: 100% !important;
         height: 100% !important;
+        transform: translateY(calc(min(calc(400px - 100%), 0px) / 2));
       }
     }
 

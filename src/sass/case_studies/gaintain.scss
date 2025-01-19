@@ -105,7 +105,7 @@ $gaintain-breakpoint: 1200px;
   @include gaintain-container;
 
   > video {
-    border-radius: 13% / 6.5%;
+    border-radius: 1.5em;
     max-width: 100%;
   }
 
