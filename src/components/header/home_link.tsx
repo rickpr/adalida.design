@@ -14,7 +14,7 @@ const HomeLink = ({ hide }: { hide: boolean }): JSX.Element | null => {
       <div className='header-title'>
         {!isMobile &&
          <>
-           <span className='name'>Adalida Baca /</span>
+           <span className='name'>ADALIDA</span>
            <span>Product Designer</span>
          </>
         }
