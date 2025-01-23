@@ -4,7 +4,6 @@
 .case-study-container {
   display: flex;
   flex-direction: column;
-  gap: 15rem;
 }
 
 .about-case-study {
@@ -40,5 +39,31 @@
     display: flex;
     flex-direction: column;
     gap: 25px;
+  }
+}
+
+.table-of-contents {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  left: 2em;
+
+  > strong {
+    opacity: 0.5;
+  }
+}
+
+.link-button {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  color: unset;
+  opacity: 0.5;
+  transition: opacity 0.5s ease-in-out;
+
+  &:hover, &.active {
+    opacity: 1;
   }
 }

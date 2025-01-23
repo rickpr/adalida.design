@@ -22,6 +22,7 @@ $gaintain-breakpoint: 1200px;
 }
 
 .gaintain-about {
+  padding: 7.5rem 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -80,6 +81,7 @@ $gaintain-breakpoint: 1200px;
   flex-direction: column;
   gap: 3em;
   align-items: center;
+  padding: 7.5rem 0;
 
   > img {
     border-radius: 0.875em;

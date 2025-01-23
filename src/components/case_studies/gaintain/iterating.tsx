@@ -1,13 +1,12 @@
 import { IconBulb } from '@tabler/icons-react'
-import React from 'react'
+import React, { forwardRef, type Ref } from 'react'
 
 import IteratingImage from 'images/gaintain/iterating.webp'
 
 import Icon from './icon'
 
-const Iterating = (): JSX.Element => {
-  return (
-    <div data-aos='fade-up' className='gaintain-side-by-side padding'>
+const Iterating = forwardRef((_props: Record<never, never>, ref: Ref<HTMLDivElement>): JSX.Element => (
+    <div data-aos='fade-up' className='gaintain-side-by-side padding' ref={ref}>
       <div className='gaintain-explanation'>
         <section className='more-padding'>
           <Icon><IconBulb /></Icon>
@@ -32,7 +31,8 @@ const Iterating = (): JSX.Element => {
       </div>
       <img src={IteratingImage} alt='Design iterations' />
     </div>
-  )
-}
+))
+
+Iterating.displayName = 'Iterating'
 
 export default Iterating
