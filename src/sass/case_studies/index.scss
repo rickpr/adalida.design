@@ -46,8 +46,9 @@
   position: fixed;
   display: flex;
   flex-direction: column;
-  gap: 1em;
+  gap: 0.5em;
   left: 2em;
+  margin: 2em
 
   > strong {
     opacity: 0.5;
