@@ -6,8 +6,8 @@ import { HomePageContext } from '../home_page_context'
 import Logo from '../logo'
 
 const HomeLink = (): JSX.Element | null => {
-  const { isPortfolioPage } = useContext(HomePageContext)
-  const hide = isPortfolioPage === undefined
+  const { isPortfolioPage, isAboutPage } = useContext(HomePageContext)
+  const hide = isPortfolioPage !== true && isAboutPage !== true
   const isMobile = useIsMobile(1000)
   if (isMobile === null) return null
 

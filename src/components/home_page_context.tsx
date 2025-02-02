@@ -3,6 +3,7 @@ import React, { useEffect, useMemo, useState } from 'react'
 interface HomePageContextType {
   isPortfolioPage?: boolean
   setPortfolioPage?: (portfolioPage: boolean) => void
+  isAboutPage?: boolean
 }
 
 const HomePageContext = React.createContext<HomePageContextType>({})
@@ -42,7 +43,7 @@ const HomePageProvider = ({ pathname, children }: { pathname: string, children: 
   }, [isPortfolioPage, isAboutPage])
 
   return (
-    <HomePageContext.Provider value={{ isPortfolioPage, setPortfolioPage }}>
+    <HomePageContext.Provider value={{ isPortfolioPage, setPortfolioPage, isAboutPage }}>
       {children}
     </HomePageContext.Provider>
   )

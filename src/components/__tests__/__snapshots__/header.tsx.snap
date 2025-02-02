@@ -43,7 +43,7 @@ exports[`Header renders correctly 1`] = `
       />
     </a>
     <a
-      className="header-button absolute hide-up"
+      className="header-button absolute "
       href="/"
     >
       <svg
