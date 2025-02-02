@@ -12,9 +12,9 @@ const Intro = (): JSX.Element | null => {
 
   return (
     <div className='about-intro'>
-      {makeMediaTag({ media: AdalidaFace, style: { maxWidth: '80dvh', width: '100%', height: '100%' }})}
+      {makeMediaTag({ media: AdalidaFace, style: { maxWidth: '80dvw', maxHeight: '70dvh', width: '100%', height: '100%' }})}
       <div className='about-intro-text'>
-        <div className='heading'>A bit about me...</div>
+        <h6>A bit about me...</h6>
         <div>
           I&apos;m an energetic, resourceful, and versatile Product Designer.
           Weekdays, I&apos;m a Rubber Duck cosplaying as a Product Designer. Weekends, I&apos;m a Product Designer cosplaying as a Rubber Duck.

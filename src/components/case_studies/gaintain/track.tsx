@@ -5,8 +5,8 @@ import TrackImage from 'images/gaintain/track.webp'
 const Track = (): JSX.Element => {
   return (
     <div data-aos='fade-up' className='gaintain-about'>
-      <div className='gaintain-header'>GAINTAIN</div>
-      <h1 className='default-weight'>Where Gains are Data-Driven</h1>
+      <h3><strong>GAINTAIN</strong></h3>
+      <h5>Where Gains are Data-Driven</h5>
       <img src={TrackImage} alt='Where Gains are Data-Driven' />
     </div>
   )

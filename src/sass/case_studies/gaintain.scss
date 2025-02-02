@@ -1,12 +1,5 @@
 $gaintain-breakpoint: 1200px;
 
-.gaintain-header {
-  font-size: $h1-size * 2 * $mobile-multiplier;
-  font-weight: 600;
-
-  @media (min-width: $gaintain-breakpoint) { font-size: $h1-size * 2; }
-}
-
 .gaintain-icon {
   transition: all 0.5s;
   border-radius: 0.5rem;
@@ -22,12 +15,13 @@ $gaintain-breakpoint: 1200px;
 }
 
 .gaintain-about {
-  padding: 7.5rem 0;
+  padding: 7.5em 0;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
   width: 100%;
+  gap: 1.5em;
 
   > img {
     max-width: 100%;
@@ -54,14 +48,8 @@ $gaintain-breakpoint: 1200px;
       display: flex;
       flex-direction: column;
       align-items: flex-start;
-      font-size: 1em;
       text-align: start;
-      gap: 6px;
-
-      > div {
-        font-size: 18px;
-        font-weight: 700;
-      }
+      gap: 0.375em;
     }
 
     > .cell.right {
@@ -70,7 +58,7 @@ $gaintain-breakpoint: 1200px;
 
     > .cell.bottom {
       > div {
-        margin-bottom: 10px;
+        margin-bottom: 0.625em;
       }
     }
   }
@@ -91,16 +79,6 @@ $gaintain-breakpoint: 1200px;
 
 .gaintain-top-to-bottom {
   @include gaintain-container;
-}
-
-.gaintain-key-learnings {
-  @include gaintain-container;
-
-  // SASS now requires declarations in this way due to upcoming CSS change
-  // https://sass-lang.com/documentation/breaking-changes/mixed-decls/
-  & { /* stylelint-disable-line no-duplicate-selectors */
-    align-items: flex-start;
-  }
 }
 
 .gaintain-side-by-side {
@@ -145,58 +123,9 @@ $gaintain-breakpoint: 1200px;
     &.more-padding {
       padding: 2.5em 0;
     }
-
-    > .list {
-      display: flex;
-      flex-direction: column;
-      gap: 0.875em;
-      margin-top: 0.75em;
-    }
   }
 
   @media (min-width: $gaintain-breakpoint) {
     min-width: 375px;
-  }
-}
-
-.gaintain-mockups {
-  width: 100dvw;
-  min-height: 84dvw;
-  align-self: center;
-  background-size: 100% auto;
-}
-
-.gaintain-ab-testing-image {
-  max-height: 100dvh;
-
-  @media (min-width: $gaintain-breakpoint) {
-    padding: 0 2em;
-  }
-}
-
-.gaintain-learnings {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 1.5em;
-
-  @media (min-width: $gaintain-breakpoint) {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-}
-
-.gaintain-learning {
-  display: flex;
-  flex-direction: column;
-  padding: 0 0.625em;
-  gap: 0.75em;
-
-  > .paragraphs {
-    display: flex;
-    flex-direction: column;
-    gap: 1em;
-
-    em {
-      font-style: oblique 10deg;
-    }
   }
 }

@@ -10,15 +10,19 @@ const Instructions = forwardRef((_props: Record<never, never>, ref: Ref<HTMLDivE
     <div className='gaintain-explanation'>
       <section>
         <Icon><IconPlayerPlayFilled /></Icon>
-        <h1 className='default-weight no-margin'>Instructions</h1>
-        <div>Gaintain is built with an extensive video and instructional library.</div>
-        <div>
-          When the play button is pushed, users can see an instructional video of the exercise along with
-          instructions covering how to complete the exercise.
-        </div>
-        <div>Need a refresher on how to complete an exercise, Gaintain is here for you!</div>
-
-
+        <h5>Interactions: Instructions</h5>
+        <p>
+          GainTain is designed to support users in maintaining proper form with its extensive library of instructional
+          videos and written tutorials.
+        </p>
+        <p>
+          A simple tap of the play button brings up a detailed demonstration video paired with step-by-step instructions,
+          ensuring every movement is performed safely and effectively.
+        </p>
+        <p>
+          Whether mastering a new exercise or refreshing technique, GainTain provides the clarity and confidence needed
+          to excel in every workout.
+        </p>
       </section>
     </div>
     <video src={InstructionsVideo} autoPlay loop muted playsInline />

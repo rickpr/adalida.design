@@ -1,10 +1,13 @@
 import { Link } from 'gatsby'
-import React from 'react'
+import React, { useContext } from 'react'
 
 import useIsMobile from 'hooks/use_is_mobile'
+import { HomePageContext } from '../home_page_context'
 import Logo from '../logo'
 
-const HomeLink = ({ hide }: { hide: boolean }): JSX.Element | null => {
+const HomeLink = (): JSX.Element | null => {
+  const { isPortfolioPage } = useContext(HomePageContext)
+  const hide = isPortfolioPage === undefined
   const isMobile = useIsMobile(1000)
   if (isMobile === null) return null
 

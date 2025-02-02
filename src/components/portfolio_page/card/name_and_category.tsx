@@ -14,8 +14,8 @@ const NameAndCategory = ({ project }: { project: Project }): React.ReactElement 
         </div>
       )}
       <div className='name-and-category'>
-        <h1>{category}</h1>
-        <h2>{name}</h2>
+        <h5>{name}</h5>
+        <h6>{category}</h6>
       </div>
     </>
   )

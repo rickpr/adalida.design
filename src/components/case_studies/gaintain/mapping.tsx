@@ -10,10 +10,13 @@ const Mapping = forwardRef((_props: Record<never, never>, ref: Ref<HTMLDivElemen
     <div className='gaintain-explanation'>
       <section>
         <Icon><IconSitemap /></Icon>
-        <h1 className='default-weight no-margin'>Mapping the Data:</h1>
-        <div>The data captured in notebooks are successful and reliable for lifters. How can we successfully convert
-          the pen and paper method to a digital tracking method using the Swift UI Framework, which our Developer will
-          be using to build the MVP, to build a better user experience?</div>
+        <h5>Mapping the Data:</h5>
+        <p>
+          Notebooks are a trusted tool for lifters, but transitioning to a digital format required thoughtful planning.
+          Using the Swift UI Framework, I focused on preserving the simplicity of pen-and-paper tracking while enhancing
+          usability. Lo-fi mockups mapped key features like exercise tracking, instructional support, and organized
+          daily workout plans into a seamless digital experience.
+        </p>
       </section>
     </div>
     <img src={MappingImage} alt='Mockups' />

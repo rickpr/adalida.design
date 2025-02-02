@@ -1,32 +1,39 @@
+import { IconMailFilled } from '@tabler/icons-react'
 import React from 'react'
 
-import BuildTimeQuery from 'queries/build_time'
-import Link from './link'
-
-const dateFormatOptions: Intl.DateTimeFormatOptions = {
-  day: 'numeric',
-  month: 'long',
-  year: 'numeric'
-}
+import BadgeButton from 'components/badge_button'
+import Duck from 'components/duck'
 
 const Footer = (): JSX.Element => {
-  const buildTime = BuildTimeQuery()
-  const formattedBuildTime = buildTime.toLocaleDateString(undefined, dateFormatOptions)
 
   return (
     <div className='footer'>
       <div className='footer-row'>
         <div className='footer-column'>
-          <Link to='https://dribbble.com/adalida-baca' text='Dribbble' />
-          <Link to='https://www.linkedin.com/in/adalidabaca/' text='LinkedIn' />
+          <div className='footer-logo'>
+            <Duck />
+            <h6>ADALIDA.DESIGN</h6>
+          </div>
+          <div className='footer-links'>
+            <a href='https://www.linkedin.com/in/adalidabaca/'>LinkedIn</a>
+            <a href='https://dribbble.com/adalida-baca'>Dribbble</a>
+            <a href='https://adalida.notion.site/A-Heavenly-Read-dfe9351a7e204898a1451de826b3e812'>Blog</a>
+            <a href='https://www.linkedin.com/in/adalidabaca/'>Resume</a>
+          </div>
         </div>
         <div className='footer-column'>
-          <Link to='mailto:hi@adalida.design' text='Email' />
-          <Link to='https://adalida.notion.site/A-Heavenly-Read-dfe9351a7e204898a1451de826b3e812' text='Blog' />
+          <h6>Let’s chat?</h6>
+          <BadgeButton to='mailto:hi@adalida.design'>
+            <IconMailFilled height='1em' width='1em' /> EMAIL ADI
+          </BadgeButton>
         </div>
       </div>
-      <div className='footer-row build-time'>
-        Last updated: {formattedBuildTime}
+      <div className='footer-row'>
+        <hr />
+      </div>
+      <div className='footer-row subtitle-2'>
+        <div className='footer-column'>© 2025</div>
+        <div className='footer-column'>Made with lots of coffee and green chile!</div>
       </div>
     </div>
   )

@@ -1,14 +1,15 @@
 .portfolio-intro {
   display: flex;
   flex-direction: column;
-  gap: 1.25em;
+  gap: 1.5em;
   margin-top: 10dvw;
 
   &-duck {
     @include logo;
+    @include glass;
 
-    display: flex;
     align-items: center;
-    border: 1px solid #8884;
+    border-radius: 30px;
+    display: flex;
   }
 }

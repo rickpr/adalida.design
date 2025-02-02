@@ -10,9 +10,7 @@ This unique blend enriches my approach to UX design, enabling me to create thoug
 const Background = (): JSX.Element => {
   return (
     <Section title='Background'>
-      <div className='background-animated-text'>
-        <ScrollAnimatedText text={text} />
-      </div>
+      <h4><strong><ScrollAnimatedText text={text} /></strong></h4>
     </Section>
   )
 }

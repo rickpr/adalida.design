@@ -9,7 +9,7 @@ const Card = ({ title, children }: Props): JSX.Element => {
   return (
     <div className='glass card' data-aos='fade-up'>
       <div className='about-card-content'>
-        <h2 className='no-margin'>{title}</h2>
+        <h5><strong>{title}</strong></h5>
         {children}
       </div>
     </div>

@@ -1,10 +1,12 @@
-import React from 'react'
+import React, { useContext } from 'react'
+
+import DarkModeContext from 'dark_mode_context'
 
 const SectionHeading = ({ title }: { title: string }): JSX.Element => {
+  const { darkMode } = useContext(DarkModeContext)
   return (
     <div className='section-heading-container'>
-      <h1>{title}</h1>
-      <div className='section-heading-line' />
+      <h4 className={darkMode ? 'dark' : ''}>{title}</h4>
     </div>
   )
 }

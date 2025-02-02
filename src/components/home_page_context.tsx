@@ -2,7 +2,7 @@ import React, { useEffect, useMemo, useState } from 'react'
 
 interface HomePageContextType {
   isPortfolioPage?: boolean
-  togglePortfolioPage?: () => void
+  setPortfolioPage?: (portfolioPage: boolean) => void
 }
 
 const HomePageContext = React.createContext<HomePageContextType>({})
@@ -26,21 +26,23 @@ const HomePageProvider = ({ pathname, children }: { pathname: string, children: 
     }
   }, [pathname])
 
-  const togglePortfolioPage = useMemo(() => {
+  const setPortfolioPage = useMemo(() => {
     if (!isPortfolioPage && !isAboutPage) return
 
-    return (): void => {
+    return (portfolioPage: boolean): void => {
       setIsPortfolioPage((oldIsPortfolioPage: boolean) => {
-        history.pushState({}, '', oldIsPortfolioPage ? '/about' : '/portfolio')
-        setIsAboutPage(oldIsPortfolioPage)
-        return !oldIsPortfolioPage
+        if (oldIsPortfolioPage !== portfolioPage) {
+          history.pushState({}, '', oldIsPortfolioPage ? '/about' : '/portfolio')
+          setIsAboutPage(!portfolioPage)
+        }
+        return portfolioPage
       })
       window.scrollTo({ top: 0, behavior: 'smooth' })
     }
   }, [isPortfolioPage, isAboutPage])
 
   return (
-    <HomePageContext.Provider value={{ isPortfolioPage, togglePortfolioPage }}>
+    <HomePageContext.Provider value={{ isPortfolioPage, setPortfolioPage }}>
       {children}
     </HomePageContext.Provider>
   )

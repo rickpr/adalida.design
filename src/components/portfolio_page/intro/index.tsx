@@ -1,8 +1,8 @@
 import React from 'react'
 
-import useIsMobile from 'hooks/use_is_mobile'
 import Duck from 'components/duck'
 import LetsChat from 'components/lets_chat'
+import useIsMobile from 'hooks/use_is_mobile'
 
 const Intro = (): React.ReactElement | null => {
   const isMobile = useIsMobile()
@@ -11,12 +11,15 @@ const Intro = (): React.ReactElement | null => {
   return (
     <div className='portfolio-intro' data-aos='fade-up'>
       <div className='portfolio-intro-duck'><Duck /></div>
-      <h1 className='no-margin'>Hi, I’m Adalida - I’m a Product Designer with a knack for strategic reasoning.</h1>
-      <div>
-        My English - Philosophy background contributes to how I solve complex problems and create user-friendly products.
-        With a bit of quacking, I collaborate with engineers to bring innovative ideas to life.
-      </div>
-      <div>Based in San Francisco, California and open to work.</div>
+      <h5>
+        Hello - I’m Adalida a product designer with an interdisciplinary background offering fresh perspective and
+        creative problem-solving.
+      </h5>
+      <h5>
+        I collaborate closely with engineers to build thoughtful, user-centered products,
+        tackling challenges with clarity—and a bit of quacking for good measure.
+      </h5>
+      <div className='subtitle-1'>Based in San Francisco, California and open to work.</div>
       <LetsChat />
     </div>
   )

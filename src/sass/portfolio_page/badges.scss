@@ -2,14 +2,6 @@
 @use 'sass:list';
 
 $color-names: ['info', 'danger'];
-$light-colors: (
-  info: #D1EFFF,
-  danger: #FCD8FF
-);
-$dark-colors: (
-  info: #0057D2,
-  danger: #B21661
-);
 
 @each $color in $color-names {
   .badge-#{$color} {
@@ -23,13 +15,11 @@ $dark-colors: (
   }
 }
 
-
 .big-badge {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
-  font-size: 0.875rem;
+  gap: 0.57em;
   width: max-content;
-  font-weight: 600;
-  padding: 0.5rem 1rem;
+  padding: 0.57em 1.14em;
+  text-transform: uppercase;
 }

@@ -1,17 +1,58 @@
-.footer {
-  padding: 4rem;
+@use 'sass:map';
+
+.pre-footer {
+  margin: 10dvw 0 1.5em;
+  padding: 0.875em 0.5em 0;
   display: flex;
+  gap: 0.875em;
+  align-items: flex-end;
+  flex-direction: column;
+  border-top: 1px solid map.get($dark-colors, secondary);
+
+  > h5 {
+    color: map.get($dark-colors, secondary);
+  }
+}
+
+.footer {
+  transition: 0.5s all ease-in-out;
+  padding: 6em 6.25dvw;
+  display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  gap: 2em;
+  gap: 3em;
+  margin-top: 5em;
   background: $dark-background;
   color: $light-text;
-  margin-top: 5rem;
+
+  .btn {
+    background-color: map.get($dark-colors, danger);
+    color: $light-text;
+  }
+
+  .btn.dark {
+    background-color: map.get($light-colors, danger);
+    color: $dark-text;
+  }
+}
+
+.dark .footer {
+  background: #F3F3F3F9;
+  color: $dark-text;
 }
 
 .footer-row {
   display: flex;
-  gap: 2em;
+  justify-content: space-between;
+  width: 100%;
+
+  > hr {
+    min-width: 100dvw;
+    border-top-width: 1px;
+    margin-left: -6.25dvw;
+    border-top-color: map.get($dark-colors, secondary);
+  }
 }
 
 .build-time {
@@ -21,7 +62,8 @@
 .footer-column {
   display: flex;
   flex-direction: column;
-  gap: 2em;
+  gap: 1.5em;
+  padding: 0.75em 0;
 }
 
 .footer-link {
@@ -30,8 +72,36 @@
   font-size: 0.75rem;
 }
 
-@media (width <= 1250px) {
-  .footer {
-    flex-direction: column;
+.footer-button {
+  background-color: $primary;
+  color: $light-text;
+  box-shadow: 0 4px 24px -1px #15216340;
+  padding: 0.5rem 1rem;
+  border-radius: 100px;
+  width: max-content;
+}
+
+.footer-logo {
+  display: flex;
+  gap: 0.875em;
+
+  > svg {
+    height: $h6-size;
+    width: auto;
+  }
+}
+
+.footer-links {
+  @extend %body-2;
+
+  display: flex;
+  gap: 3em;
+
+  > svg {
+    height: $h6-size;
+  }
+
+  > a:hover {
+    text-decoration: underline;
   }
 }

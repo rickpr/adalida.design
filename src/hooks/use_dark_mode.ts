@@ -7,7 +7,8 @@ const setHTMLAttributes = (darkMode: boolean): void => {
   const color = darkModeStyle(darkMode).background
   themeColorTag?.setAttribute('content', color)
   const bodyTag = document.querySelector('body')
-  bodyTag?.setAttribute('style', `background-color: ${darkModeStyle(darkMode).background};`)
+  bodyTag?.classList.add(darkMode ? 'dark' : 'light')
+  bodyTag?.classList.remove(darkMode ? 'light' : 'dark')
 }
 
 const useDarkMode = (): [boolean | null, () => void] => {

@@ -23,32 +23,34 @@ $header-height: 80px;
   @include glass;
   @include blur;
 
-  padding: 6px;
+  padding: 0.4375em;
+  font-size: 1rem; // This prevents the switch from resizing on mobile
   width: max-content;
 }
 
 .switch-grid {
-  color: unset;
   display: grid;
-  background: none;
-  border: none;
   position: relative;
   grid-template-columns: 1fr 1fr;
   place-items: center;
   place-content: center;
-  gap: 18px;
-  padding: 6px 9px;
   min-height: 100%;
   pointer-events: auto;
   cursor: pointer;
 }
 
-.switch-text {
-  line-height: 1;
-  font-weight: 600;
-  font-size: 1.125em;
-  padding: 4px 8px;
+.switch-button {
+  padding: 0.4375em;
   width: 100%;
+  background: none;
+  color: inherit;
+  border: none;
+  cursor: pointer;
+  opacity: 0.6;
+
+  &.active {
+    opacity: 1;
+  }
 }
 
 .switch-indicator {
@@ -86,8 +88,8 @@ $header-height: 80px;
   @include glass;
   @include blur;
 
-  height: 40px;
-  width: 40px;
+  height: 50px;
+  width: 50px;
   color: currentcolor;
   display: flex;
   align-items: center;

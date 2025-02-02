@@ -1,9 +1,10 @@
 import React from 'react'
 
 import Background from './background'
-import Interests from './interests'
 import Intro from './intro'
 import Services from './services'
+import Writing from './writing'
+import Thanks from './thanks'
 
 const AboutPage = (): JSX.Element => {
   return (
@@ -11,7 +12,8 @@ const AboutPage = (): JSX.Element => {
       <Intro />
       <Services />
       <Background />
-      <Interests />
+      <Writing />
+      <Thanks />
     </div>
   )
 }

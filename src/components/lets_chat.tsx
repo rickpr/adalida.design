@@ -1,14 +1,13 @@
 import { IconMailFilled } from '@tabler/icons-react'
-import React, { useContext } from 'react'
+import React from 'react'
 
-import DarkModeContext from 'dark_mode_context'
+import BadgeButton from './badge_button'
 
 const LetsChat = (): JSX.Element => {
-  const { darkMode } = useContext(DarkModeContext)
   return (
-    <a className={`badge big-badge badge-danger ${darkMode && 'dark'}`} href='mailto:hi@adalida.design'>
-      <IconMailFilled /> Let&apos;s Chat
-    </a>
+    <BadgeButton to='mailto:hi@adalida.design'>
+      <IconMailFilled height='1em' width='1em' /> LET&apos;S CHAT
+    </BadgeButton>
   )
 }
 

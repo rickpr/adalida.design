@@ -6,18 +6,17 @@ import Footer from '../footer'
 import TableOfContents from '../table_of_contents'
 
 import About from './about'
-import Mockups from './mockups'
 import UhOh from './uh_oh'
-import Understanding from './understanding'
+import Analyzing from './analyzing'
 import Mapping from './mapping'
-import ABTesting from './ab_testing'
+import InternalTesting from './internal_testing'
 import Iterating from './iterating'
 import Validating from './validating'
 import Developer from './developer'
 import Track from './track'
 import Instructions from './instructions'
 import DataEntry from './data_entry'
-import KeyLearnings from './key_learnings'
+import KeyTakeaways from './key_takeaways'
 
 const attachRef = (
   name: string,
@@ -45,17 +44,16 @@ const Gaintain = (): JSX.Element => {
       <div className='case-study-container'>
         <About ref={(node) => { attachRef('Overview', node, sections) }} />
         <UhOh ref={(node) => { attachRef('The Problem', node, sections) }} />
-        <Understanding ref={(node) => { attachRef('The Raw Data', node, sections) }} />
+        <Analyzing ref={(node) => { attachRef('The Raw Data', node, sections) }} />
         <Mapping ref={(node) => { attachRef('Data Mapping', node, sections) }} />
-        <ABTesting ref={(node) => { attachRef('MVP Testing', node, sections) }} />
+        <InternalTesting ref={(node) => { attachRef('MVP Testing', node, sections) }} />
         <Iterating ref={(node) => { attachRef('Layout Iterations', node, sections) }} />
         <Validating ref={(node) => { attachRef('Edge Cases', node, sections) }} />
         <Developer ref={(node) => { attachRef('Developer Handoff', node, sections) }} />
-        <Mockups />
         <Instructions ref={(node) => { attachRef('Interactions', node, sections) }} />
         <DataEntry />
         <Track />
-        <KeyLearnings ref={(node) => { attachRef('Retrospective', node, sections) }} />
+        <KeyTakeaways ref={(node) => { attachRef('Retrospective', node, sections) }} />
         <Footer />
       </div>
     </>

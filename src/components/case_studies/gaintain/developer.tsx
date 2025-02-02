@@ -10,18 +10,20 @@ const Developer = forwardRef((_props: Record<never, never>, ref: Ref<HTMLDivElem
     <div className='gaintain-explanation'>
       <section>
         <Icon><IconCode /></Icon>
-        <h1 className='default-weight no-margin'>Developer Specifications:</h1>
-        To complete a workout, click the check mark.
-        The content is populated by the Gaintain CMS based on the data in the user profile.
-        <div>Checkmark Icon (Tap): Records workout as complete</div>
-        <div>Numbered Segmented Picker (Tap): Changes view of exercise in workout</div>
-        <div>
+        <h5>Developer Specifications:</h5>
+        <p>
+          To complete a workout, click the check mark.
+          The content is populated by the Gaintain CMS based on the data in the user profile.
+        </p>
+        <p>Checkmark Icon (Tap): Records workout as complete</p>
+        <p>Numbered Segmented Picker (Tap): Changes view of exercise in workout</p>
+        <p>
           Plus and minus icon (Tap): Adjusts the recorded weight where the starting weight is what the user completed
           in the prior workout. If first workout, start at zero.
-        </div>
-        <div>Play Video Icon (Tap): Sheet pops up containing  instructional video with written instructions.</div>
-        <div>Page controls (Swipe left or right): Changes view to next step in the workout.</div>
-        <div>Next button (Tap): View swipes right to next set for the exercise.</div>
+        </p>
+        <p>Play Video Icon (Tap): Sheet pops up containing  instructional video with written instructions.</p>
+        <p>Page controls (Swipe left or right): Changes view to next step in the workout.</p>
+        <p>Next button (Tap): View swipes right to next set for the exercise.</p>
       </section>
     </div>
     <img src={DeveloperImage} alt='Developer specifications' />

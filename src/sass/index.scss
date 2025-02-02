@@ -1,3 +1,4 @@
+@use 'sass:map';
 @import './variables';
 @import './utilities';
 @import './mixins';
@@ -6,7 +7,6 @@
 @import './typography';
 @import './custom';
 @import './about';
-@import './background';
 @import './case_studies';
 @import './footer';
 @import './header';
@@ -22,7 +22,6 @@
 }
 
 .page {
-  transition: all 0.5s ease-in-out;
   gap: 1em;
   display: flex;
   flex-direction: column;
@@ -53,24 +52,10 @@
 }
 
 .section-heading-container {
-  margin: 10dvw 0 1rem;
-  font-weight: 700;
-  display: flex;
-  gap: 0.75em;
-  align-items: center;
+  margin: 10dvw 0 1.5em;
   width: 100%;
 
-  @media (min-width: $breakpoint) {
-    gap: 1em;
+  > h4.dark {
+    color: map.get($dark-colors, secondary)
   }
-}
-
-.section-heading-line {
-  width: 100px;
-  border-width: 2px;
-  border-style: solid;
-  border-radius: 5px;
-  height: 0;
-
-  @media (min-width: $breakpoint) { border-width: 2px; }
 }

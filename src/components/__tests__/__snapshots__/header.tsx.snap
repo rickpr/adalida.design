@@ -43,7 +43,7 @@ exports[`Header renders correctly 1`] = `
       />
     </a>
     <a
-      className="header-button absolute "
+      className="header-button absolute hide-up"
       href="/"
     >
       <svg
@@ -76,9 +76,8 @@ exports[`Header renders correctly 1`] = `
     <div
       className="switch-container hide-up"
     >
-      <button
+      <div
         className="switch-grid"
-        onClick={[Function]}
       >
         <div
           className="switch-indicator"
@@ -88,17 +87,19 @@ exports[`Header renders correctly 1`] = `
             }
           }
         />
-        <div
-          className="switch-text"
+        <button
+          className="switch-button"
+          onClick={[Function]}
         >
-          Portfolio
-        </div>
-        <div
-          className="switch-text"
+          PORTFOLIO
+        </button>
+        <button
+          className="switch-button"
+          onClick={[Function]}
         >
-          About
-        </div>
-      </button>
+          ABOUT
+        </button>
+      </div>
     </div>
     <button
       aria-label="Toggle dark mode"

@@ -1,36 +1,37 @@
 import { IconBulb } from '@tabler/icons-react'
 import React, { forwardRef, type Ref } from 'react'
 
+import NumberedList from 'components/numbered_list'
 import IteratingImage from 'images/gaintain/iterating.webp'
 
 import Icon from './icon'
 
 const Iterating = forwardRef((_props: Record<never, never>, ref: Ref<HTMLDivElement>): JSX.Element => (
-    <div data-aos='fade-up' className='gaintain-side-by-side padding' ref={ref}>
-      <div className='gaintain-explanation'>
-        <section className='more-padding'>
-          <Icon><IconBulb /></Icon>
-          <h1 className='default-weight no-margin'>Iterating the Design:</h1>
-          <div>
-            The insights discovered in testing led to the redesign of components and elements specifically focused on:
-          </div>
-          <ol>
-            <li>Order of elements</li>
-          </ol>
-          <ol start={2}>
-            <li>Alignment of elements</li>
-          </ol>
-          <ol start={3}>
-            <li>Proximity of elements to each other</li>
-          </ol>
-          <ol start={4}>
-            <li>Layout of elements</li>
-          </ol>
-          <div>Keying on these issues led to fixing key navigational and layout issues.</div>
-        </section>
-      </div>
-      <img src={IteratingImage} alt='Design iterations' />
+  <div data-aos='fade-up' className='gaintain-side-by-side padding' ref={ref}>
+    <div className='gaintain-explanation'>
+      <section className='more-padding'>
+        <Icon><IconBulb /></Icon>
+        <h5>Iterating the Design:</h5>
+        <p>
+          Testing insights guided a focused redesign of the app’s interface, addressing key navigational and layout
+          challenges. Specific improvements included:
+        </p>
+        <NumberedList
+          items={[
+            'Order of elements: Rearranging components for better usability and logical flow.',
+            'Alignment: Ensuring visual consistency to enhance clarity.',
+            'Proximity: Grouping related elements to improve accessibility.',
+            'Overall Layout: Streamlining the interface for a more intuitive user experience.',
+          ]}
+        />
+        <p>
+          These refinements resolved critical usability issues, creating a design that better supports users
+          during workouts.
+        </p>
+      </section>
     </div>
+    <img src={IteratingImage} alt='Design iterations' />
+  </div>
 ))
 
 Iterating.displayName = 'Iterating'

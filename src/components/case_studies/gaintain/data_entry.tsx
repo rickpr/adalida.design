@@ -11,12 +11,16 @@ const DataEntry = (): JSX.Element => {
       <div className='gaintain-explanation'>
         <section>
           <Icon><IconPlusMinus/></Icon>
-          <h1 className='default-weight no-margin'>Data Entry</h1>
-          <div>Gaintain is designed for users to track and adjust their weight and repetitions with ease.</div>
-          <div>The weight and repetitions starting number is set to the last recorded input. This empowers lifters with
-            the information to decide to increase or decrease the weight depending on their goals.
-          </div>
-          <div>No more wondering what you did last time or how heavy you should go. Gaintain’s got you covered!</div>
+          <h5>Interactions: Data Entry</h5>
+          <p>GainTain simplifies tracking by allowing users to easily log and adjust their weight and repetitions.</p>
+          <p>
+            Each set begins with the last recorded input, giving lifters the context needed to decide whether to increase
+            or decrease their weight based on their goals.
+          </p>
+          <p>
+            By eliminating guesswork, GainTain ensures users can focus on progress without worrying about what they did
+            last time—because GainTain’s got it covered.
+          </p>
         </section>
       </div>
       <video src={DataEntryVideo} autoPlay loop muted playsInline />

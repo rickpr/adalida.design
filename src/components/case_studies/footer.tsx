@@ -1,6 +1,7 @@
-import { Link } from 'gatsby'
 import { useLocation } from '@reach/router'
 import React from 'react'
+
+import BadgeButton from 'components/badge_button'
 
 const Footer = (): JSX.Element => {
   const { pathname } = useLocation()
@@ -9,12 +10,9 @@ const Footer = (): JSX.Element => {
     : '/case_studies/gaintain'
 
   return (
-    <div data-aos='fade-up' className='case-study-footer'>
-      <div className='wave'>👋</div>
-      <div className='big thanks'>
-        Thanks for making it the end! Read my next case study here:
-        <Link className='button' to={to}>Read next case study</Link>
-      </div>
+    <div data-aos='fade-up' className='pre-footer'>
+      <h5>👋 Thanks for making it the end! Read my next case study here:</h5>
+      <BadgeButton to={to}>Read next case study</BadgeButton>
     </div>
   )
 }

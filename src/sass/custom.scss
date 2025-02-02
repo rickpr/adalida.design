@@ -2,12 +2,26 @@ html {
   overscroll-behavior: none;
 }
 
+input, select, textarea, button {
+  font-family: inherit;
+}
+
 body {
-  font-family: 'Work Sans', sans-serif;
+  font-family: Inter, sans-serif;
   font-weight: 400;
-  line-height: 1.5;
   margin: 0;
   overscroll-behavior: none;
+  transition: all 0.5s ease-in-out;
+
+  &.dark {
+    background-color: $dark-background;
+    color: $light-text;
+  }
+
+  &.light {
+    background-color: $light-background;
+    color: $dark-text;
+  }
 }
 
 * { box-sizing: border-box; }
@@ -39,15 +53,4 @@ a {
 
 .underline {
   text-decoration: underline;
-}
-
-.button {
-  background-color: $primary;
-  color: $light-text;
-  box-shadow: 0 4px 24px -1px #15216340;
-  padding: 0.5rem 1rem;
-  border-radius: 100px;
-  font-size: 0.75rem;
-  font-weight: 500;
-  width: max-content;
 }

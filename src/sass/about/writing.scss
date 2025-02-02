@@ -1,0 +1,15 @@
+@use 'sass:map';
+
+.writing {
+  display: grid;
+  align-content: center;
+  grid-template-columns: max-content 1fr max-content;
+  text-transform: uppercase;
+  gap: 0.5em;
+
+  > .separator {
+    border: 1.5px dashed map.get($dark-colors, secondary);
+    height: 0;
+    align-self: center;
+  }
+}
