@@ -1,3 +1,6 @@
+import GaintainVideo from 'videos/gaintain/intro.mp4'
+import GaintainLoopVideo from 'videos/gaintain/intro_loop.mp4'
+
 const AirbrushImage = 'images/works/airbrush.webp'
 const AirbrushLogo = 'images/works/airbrush_logo.webp'
 const GaintainLogo = 'images/works/gaintain_logo.webp'
@@ -18,7 +21,7 @@ export interface Project {
   name: string
   category: string
   description: string
-  heroImage: string
+  heroImage: string | [string, string]
   badges: string[]
   link?: {
     text: 'Read Case Study' | 'View Presentation' | 'Visit Website' | 'View Figma' | 'View Designs'
@@ -35,7 +38,7 @@ export const Projects: Record<string, Project> = {
     name: 'Gaintain',
     category: 'Workout Tracking',
     description: 'Designed the user interface and interactions for Gaintain, a mobile application focusing on tracking workouts and solving the challenge of logging weight lifting between sets. Currently developing this project with my partner to enhance the user experience in fitness tracking. This ongoing project aims to provide a seamless and efficient solution for fitness enthusiasts to monitor their progress.',
-    heroImage: 'https://prod.spline.design/MX2rK-vIk1fwTzSP/scene.splinecode',
+    heroImage: [GaintainVideo, GaintainLoopVideo],
     badges: ['Management', 'Product Design', 'Figma'],
     link: {
       text: 'Read Case Study',

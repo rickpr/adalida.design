@@ -11,11 +11,13 @@
 
   > h5 {
     color: map.get($dark-colors, secondary);
+    display: flex;
+    gap: 0.5em;
   }
 }
 
 .footer {
-  transition: 0.5s all ease-in-out;
+  transition: all 0.5s ease-in-out;
   padding: 6em 6.25dvw;
   display: flex;
   flex-direction: column;

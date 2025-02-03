@@ -11,7 +11,7 @@ const Footer = (): JSX.Element => {
 
   return (
     <div data-aos='fade-up' className='pre-footer'>
-      <h5>👋 Thanks for making it the end! Read my next case study here:</h5>
+      <h5><span>👋</span>Thanks for making it the end! Read my next case study here:</h5>
       <BadgeButton to={to}>Read next case study</BadgeButton>
     </div>
   )
