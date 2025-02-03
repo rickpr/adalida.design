@@ -1,5 +1,11 @@
 @use 'sass:map';
 
+.writing-list {
+  display: flex;
+  flex-direction: column;
+  gap: calc(1.5em / 0.875);
+}
+
 .writing {
   display: grid;
   align-content: center;

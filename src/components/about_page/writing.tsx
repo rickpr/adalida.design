@@ -17,7 +17,7 @@ const writings = [
 const Writing = (): JSX.Element => {
   return (
     <Section title='Writing'>
-      <div className='btn'>
+      <div className='btn writing-list'>
         {writings.map(writing => (
           <div key={writing.title} className='writing'>
             <div>{writing.title}</div>
