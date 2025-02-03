@@ -12,7 +12,7 @@
     gap: 1em;
   }
 
-  @media (min-width: $breakpoint) {
+  @media (width >= $breakpoint) {
     gap: 6em;
     grid-template-columns: 1fr 1fr;
   }

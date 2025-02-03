@@ -89,7 +89,7 @@ $gaintain-breakpoint: 1200px;
     max-width: 100%;
   }
 
-  @media (min-width: $gaintain-breakpoint) {
+  @media (width >= $gaintain-breakpoint) {
     flex-direction: row;
     justify-content: center;
 
@@ -125,7 +125,7 @@ $gaintain-breakpoint: 1200px;
     }
   }
 
-  @media (min-width: $gaintain-breakpoint) {
+  @media (width >= $gaintain-breakpoint) {
     min-width: 375px;
   }
 }

@@ -9,7 +9,7 @@ $mobile-multiplier: 0.75;
 body {
   font-size: 1rem * $mobile-multiplier;
 
-  @media (min-width: $breakpoint) {
+  @media (width >= $breakpoint) {
     font-size: 1rem;
   }
 }

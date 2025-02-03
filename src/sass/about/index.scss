@@ -23,7 +23,7 @@
   flex-direction: column;
   align-items: center;
 
-  @media (min-width: $max-width) {
+  @media (width >= $max-width) {
     flex-direction: row;
     align-items: stretch;
 

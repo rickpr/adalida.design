@@ -36,7 +36,7 @@
   align-items: center;
   justify-content: stretch;
 
-  @media (min-width: $breakpoint) {
+  @media (width >= $breakpoint) {
     padding: 2.5em;
     gap: 2.5em;
     flex-direction: row;
@@ -84,7 +84,7 @@
     }
   }
 
-  @media (min-width: $breakpoint) {
+  @media (width >= $breakpoint) {
     flex: 0 0 250px;
     padding-top: unset;
 
