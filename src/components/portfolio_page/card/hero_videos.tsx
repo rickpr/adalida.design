@@ -26,9 +26,9 @@ const HeroVideos = ({ videos }: { videos: [string, string] }): JSX.Element => {
   }, [introRef, loopRef])
 
   return (
-    <div className='portfolio-hero-image'>
-      <video src={loop} loop muted playsInline width='100%' className='absolute' ref={loopRef} />
-      {!looping && <video src={intro} autoPlay muted playsInline width='100%' className='absolute' ref={introRef} />}
+    <div className='portfolio-hero-image video'>
+      <video src={loop} loop muted playsInline className='absolute' ref={loopRef} />
+      {!looping && <video src={intro} autoPlay muted playsInline className='absolute' ref={introRef} />}
     </div>
   )
 }
