@@ -13,7 +13,7 @@
     overflow: hidden;
     position: relative;
 
-    @media (min-width: $breakpoint) {
+    @media (width >= $breakpoint) {
       height: calc(550px - 1.5em);
     }
   }

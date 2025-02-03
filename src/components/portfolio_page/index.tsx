@@ -9,7 +9,7 @@ const PortfolioPage = (): JSX.Element => {
   return (
     <>
       <Intro />
-      <SectionHeading title='Works Selected' />
+      <div data-aos='fade-up'><SectionHeading title='Works Selected' /></div>
       <Container />
       <Thanks />
     </>

@@ -97,7 +97,8 @@
   @extend %body-2;
 
   display: flex;
-  gap: 3em;
+  flex-direction: column;
+  gap: 2em;
 
   > svg {
     height: $h6-size;
@@ -105,5 +106,9 @@
 
   > a:hover {
     text-decoration: underline;
+  }
+
+  @media (width >= 480px) {
+    flex-direction: row;
   }
 }
