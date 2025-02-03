@@ -44,6 +44,8 @@
   gap: 0.5em;
   left: 2em;
   margin: 2em;
+  mix-blend-mode: difference;
+  color: $light-text;
 
   > strong {
     opacity: 0.5;

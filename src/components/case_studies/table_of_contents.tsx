@@ -26,7 +26,7 @@ const TableOfContents = ({ links }: { links: MutableRefObject<Record<string, HTM
 
   return (
     <div className='table-of-contents'>
-      <strong className='title'>CONTENTS</strong>
+      <strong>CONTENTS</strong>
       {Object.entries(links.current).map(([link, element]) => (
         <div key={link}>
           <button className={`link-button${activeLink === link ? ' active' : ''}`} onClick={() => { element?.scrollIntoView({ behavior: 'smooth', block: 'start' }) }}>
