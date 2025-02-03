@@ -9,9 +9,11 @@ const HeroVideos = ({ videos }: { videos: [string, string] }): JSX.Element => {
   useEffect(() => {
     const introVideo = introRef.current
     const loopVideo = loopRef.current
+    let timeout: NodeJS.Timeout | null = null
     const eventListener = (): void => {
-      setLooping(true)
       void loopVideo?.play()
+      introVideo?.style.setProperty('opacity', '0')
+      timeout = setTimeout(() => { setLooping(true) }, 500)
     }
 
     if (introVideo !== null && loopVideo !== null) {
@@ -22,6 +24,7 @@ const HeroVideos = ({ videos }: { videos: [string, string] }): JSX.Element => {
       if (introVideo !== null && loopVideo !== null) {
         introVideo.removeEventListener('ended', eventListener)
       }
+      if (timeout !== null) clearTimeout(timeout)
     }
   }, [introRef, loopRef])
 
