@@ -6,12 +6,14 @@ import Card from 'components/about_page/card'
 const KeyTakeaways = forwardRef((_props: Record<never, never>, ref: Ref<HTMLDivElement>): JSX.Element => {
   const { darkMode } = useContext(DarkModeContext)
   return (
-    <div data-aos='fade-up' ref={ref} className='gaintain-explanation'>
-      <h4 className={darkMode ? 'dark' : ''}>Key Takeaways</h4>
-      <p>
-        No project is perfect and neither was Gaintain. I learned new hacks and hard lessons.
-        Here are my three key takeaways from this project:
-      </p>
+    <div data-aos='fade-up' ref={ref} className='gaintain-top-to-bottom'>
+      <div className='key-takeaways'>
+        <h4 className={darkMode ? 'dark' : ''}>Key Takeaways</h4>
+        <p>
+          No project is perfect and neither was Gaintain. I learned new hacks and hard lessons.
+          Here are my three key takeaways from this project:
+        </p>
+      </div>
       <div className='stacking-cards'>
         <Card title='Meaningful Research'>
           <p>

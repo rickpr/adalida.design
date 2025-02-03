@@ -1,11 +1,11 @@
 $gaintain-breakpoint: 1200px;
 
 .gaintain-icon {
-  transition: all 0.5s;
-  border-radius: 0.5rem;
-  width: 2rem;
-  height: 2rem;
-  padding: 2px;
+  transition: all 0.5s ease-in-out;
+  border-radius: 0.5em;
+  width: 2em;
+  height: 2em;
+  padding: 0.125em;
 
   > svg {
     display: block;
@@ -15,7 +15,6 @@ $gaintain-breakpoint: 1200px;
 }
 
 .gaintain-about {
-  padding: 7.5em 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -69,7 +68,7 @@ $gaintain-breakpoint: 1200px;
   flex-direction: column;
   gap: 3em;
   align-items: center;
-  padding: 7.5rem 0;
+  padding: 7.5em 0;
 
   > img {
     border-radius: 0.875em;
@@ -128,4 +127,10 @@ $gaintain-breakpoint: 1200px;
   @media (width >= $gaintain-breakpoint) {
     min-width: 375px;
   }
+}
+
+.key-takeaways {
+  display: flex;
+  flex-direction: column;
+  gap: 3em;
 }
