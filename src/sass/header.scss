@@ -27,7 +27,7 @@ $header-height: 80px;
   @include glass;
   @include blur;
 
-  padding: calc(0.4375em / 0.875);
+  padding: 0.5em;
   font-size: 1rem; // This prevents the switch from resizing on mobile
 }
 
@@ -44,7 +44,7 @@ $header-height: 80px;
 }
 
 .switch-button {
-  padding: calc(0.4375em / 0.875);
+  padding: 0.5em;
   width: 100%;
   background: none;
   color: inherit;
