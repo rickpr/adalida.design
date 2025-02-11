@@ -36,8 +36,8 @@ export interface Project {
 export const Projects: Record<string, Project> = {
   Gaintain: {
     name: 'Gaintain',
-    category: 'Workout Tracking',
-    description: 'Designed the user interface and interactions for Gaintain, a mobile application focusing on tracking workouts and solving the challenge of logging weight lifting between sets. Currently developing this project with my partner to enhance the user experience in fitness tracking. This ongoing project aims to provide a seamless and efficient solution for fitness enthusiasts to monitor their progress.',
+    category: 'Mobile Workout Tracking',
+    description: 'Designed the user interface and interactions for Gaintain, a mobile application focusing on tracking workouts and solving the challenge of logging weight lifting between sets. Currently developing this project with a developer to enhance the user experience in fitness tracking. This ongoing project aims to provide a seamless and efficient solution for fitness enthusiasts to monitor their progress.',
     heroImage: [GaintainVideo, GaintainLoopVideo],
     badges: ['Management', 'Product Design', 'Figma'],
     link: {
@@ -51,8 +51,8 @@ export const Projects: Record<string, Project> = {
   },
   JessNRueda: {
     name: 'Jessica Rueda',
-    category: 'Artist Store',
-    badges: ['Consultancy', 'Web Development', 'Shopify'],
+    category: 'Web Development',
+    badges: ['Consultancy', 'UX Design', 'Shopify'],
     description: 'Jessica Rueda required a digital platform for her art. I developed a Shopify website with e-commerce functionality, secure payments, SEO optimization, and mobile responsiveness. This increased her online visibility and sales.',
     heroImage: JessRuedaImage,
     logo: {
@@ -62,7 +62,7 @@ export const Projects: Record<string, Project> = {
   },
   Phronesis: {
     name: 'Phronesis',
-    category: 'Dashboard',
+    category: 'Desktop Dashboard',
     description: 'I created visual UI designs in Figma for an educational startup. The project included branding elements such as a logo, color palettes, components, dark and light mode designs, and a simple information architecture. This practice project highlighted my interest in educational startups and my skills in visual design.',
     heroImage: PhronesisPhoto,
     badges: ['Visual Design', 'B2B', 'SAAS', 'Figma'],
@@ -78,7 +78,7 @@ export const Projects: Record<string, Project> = {
   QuerQueCandles: {
     name: 'QuerQue Candles',
     category: 'Brand Identity',
-    badges: ['Consultancy', 'Branding', 'Web Development'],
+    badges: ['Consultancy', 'Graphic Design', 'FIGMA'],
     description: 'Querque Candles needed an online presence. I chose Shopify, designed a brand identity, created a logo, and built a user-friendly website. Despite non-payment for the website, the branding successfully enhanced their market visibility.',
     heroImage: QuerqueImage,
     link: {
@@ -92,7 +92,7 @@ export const Projects: Record<string, Project> = {
   },
   TLDR: {
     name: 'TL;DR',
-    category: 'User Terms',
+    category: 'Product Demo',
     description: 'Participated in a one-day hackathon focused on using AI to summarize legal language in End User Terms Agreements. As a product design project, our team created an MVP to quickly inform users about what they are signing away. This project involved intensive collaboration and rapid prototyping, culminating in a Google Presentation showcasing our solution.',
     heroImage: TLDRPhoto,
     badges: ['1 day Hackathon', 'Product Strategy', 'GenAI'],
@@ -107,8 +107,8 @@ export const Projects: Record<string, Project> = {
   },
   AirbrushArtStudio: {
     name: 'Airbrush Art Studio',
-    category: 'Artist Portfolio',
-    badges: ['Web Development', 'Responsive', 'Editor X'],
+    category: 'Website Development',
+    badges: ['Consultancy', 'UX Design', 'Responsive'],
     description: "Utilized Wix to design the digital presence for Airbrush Art Studio, emphasizing effective Information Architecture. Delivered copywriting and SEO services to boost online visibility and client engagement. This budget-friendly project focused on showcasing the studio's portfolio without extensive branding.",
     heroImage: AirbrushImage,
     logo: {
@@ -122,8 +122,8 @@ export const Projects: Record<string, Project> = {
   },
   ZarasCleaning: {
     name: "Zara's Cleaning",
-    category: 'Digital Presence',
-    badges: ['Consultancy', 'Web Development', 'SEO'],
+    category: 'Website Development',
+    badges: ['Consultancy', 'UX Design', 'Responsive'],
     description: 'Developed a user-friendly website for Zaras Cleaning using Wix, concentrating on clear and efficient information architecture. Provided comprehensive copywriting and SEO services to enhance search engine performance and attract new clients. The project aimed to present essential information within a limited budget framework.',
     heroImage: ZaraImage,
     link: {
@@ -133,8 +133,8 @@ export const Projects: Record<string, Project> = {
   },
   SunbeltProperties: {
     name: 'Sunbelt Properties',
-    category: 'Digital Presence',
-    badges: ['Web Development', 'Responsive', 'SEO'],
+    category: 'Website Development',
+    badges: ['Consultancy', 'UX Design', 'Responsive'],
     description: 'Crafted the online presence for Sunbelt Properties with Wix, designing an intuitive Information Architecture for a seamless user experience. Offered targeted copywriting and SEO services to increase the visibility of property listings and drive user inquiries. This low-budget initiative prioritized functionality and accessibility over extensive branding.',
     heroImage: SunbeltImage,
     link: {
@@ -144,8 +144,8 @@ export const Projects: Record<string, Project> = {
   },
   LoboGardens: {
     name: 'Lobo Gardens',
-    category: 'Marketing',
-    badges: ['Graphic Design', 'Brand Identity', 'Volunteer'],
+    category: 'Marketing Materials',
+    badges: ['Graphic Design', 'Brand Design', 'Volunteer'],
     description: 'As part of a community project, I contributed to the branding and promotional design for Lobo Gardens, an urban gardening initiative. This involved creating a logo, designing educational materials, and developing a website to increase community engagement and support for campus gardening activities.',
     heroImage: LoboGardensImage,
     logo: {
