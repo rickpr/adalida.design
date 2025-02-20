@@ -14,7 +14,7 @@ const BadgeButton = ({ to, children }: Props): JSX.Element => {
   const { external, mailTo, rest } = useMemo(() => {
     const external = to.startsWith('http')
     const mailTo = to.startsWith('mailto')
-    const rest = mailTo ? { target: '_blank', rel: 'noopener noreferrer' } : {}
+    const rest = mailTo ? {} : { target: '_blank', rel: 'noopener noreferrer' }
     return { external, mailTo, rest }
   }, [to])
 

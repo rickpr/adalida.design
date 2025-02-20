@@ -15,7 +15,7 @@ const QuerqueLogo = 'images/works/querque_logo.webp'
 const SunbeltImage = 'images/works/sunbelt.webp'
 const TLDRLogo = 'images/works/tldr_logo.webp'
 const TLDRPhoto = 'images/tldr.webp'
-const ZaraImage = 'images/works/zara.webp'
+const JSharpImage = 'images/works/jsharp.webp'
 
 export interface Project {
   name: string
@@ -120,15 +120,18 @@ export const Projects: Record<string, Project> = {
       url: 'https://www.airbrushart.studio'
     }
   },
-  ZarasCleaning: {
-    name: "Zara's Cleaning",
+  JSharpMusic: {
+    name: "J Sharp Music",
     category: 'Website Development',
     badges: ['Consultancy', 'UX Design', 'Responsive'],
-    description: 'Developed a user-friendly website for Zaras Cleaning using Wix, concentrating on clear and efficient information architecture. Provided comprehensive copywriting and SEO services to enhance search engine performance and attract new clients. The project aimed to present essential information within a limited budget framework.',
-    heroImage: ZaraImage,
+    description: `
+      Migrated a music instrument store's WordPress site to a user-friendly platform in one weekend.
+      Optimized the site's information architecture and delivered a handoff-ready design for easy, ongoing updates.
+    `,
+    heroImage: JSharpImage,
     link: {
       text: 'Visit Website',
-      url: 'https://www.zarascleaning.com'
+      url: 'https://www.jsharpmusic.com'
     }
   },
   SunbeltProperties: {
