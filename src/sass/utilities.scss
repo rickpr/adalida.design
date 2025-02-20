@@ -33,6 +33,21 @@
   transform: translateY(-300%) !important;
 }
 
+.hide-left {
+  transform: translateX(-300%) !important;
+}
+
+.slide-in-from-left {
+  transform: translateX(-300%);
+  animation: slide-in-from-left 1s ease-in-out forwards;
+}
+
+@keyframes slide-in-from-left {
+  to {
+    transform: translateX(0);
+  }
+}
+
 .relative {
   position: relative;
 }

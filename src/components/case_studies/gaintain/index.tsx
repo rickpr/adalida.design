@@ -1,4 +1,4 @@
-import React, { useRef, type MutableRefObject } from 'react'
+import React, { useRef } from 'react'
 
 import useIsMobile from 'hooks/use_is_mobile'
 
@@ -18,42 +18,36 @@ import Instructions from './instructions'
 import DataEntry from './data_entry'
 import KeyTakeaways from './key_takeaways'
 
-const attachRef = (
-  name: string,
-  node: HTMLDivElement | null,
-  sections: MutableRefObject<Record<string, HTMLDivElement | null>>
-): void => { sections.current[name] = node }
-
 const Gaintain = (): JSX.Element => {
-  const sections = useRef<Record<string, HTMLDivElement | null>>({
-    Overview: null,
-    'The Problem': null,
-    'The Raw Data': null,
-    'Data Mapping': null,
-    'MVP Testing': null,
-    'Layout Iterations': null,
-    'Edge Cases': null,
-    'Developer Handoff': null,
-    Interactions: null,
-    Retrospective: null
-  })
+  const sections =  {
+    Overview: useRef(null),
+    'The Problem': useRef(null),
+    'The Raw Data': useRef(null),
+    'Data Mapping': useRef(null),
+    'MVP Testing': useRef(null),
+    'Layout Iterations': useRef(null),
+    'Edge Cases': useRef(null),
+    'Developer Handoff': useRef(null),
+    Interactions: useRef(null),
+    Retrospective: useRef(null)
+  }
   const isMobile = useIsMobile(1400)
   return (
     <>
       {isMobile === false && <TableOfContents links={sections} />}
       <div className='case-study-container'>
-        <About ref={(node) => { attachRef('Overview', node, sections) }} />
-        <UhOh ref={(node) => { attachRef('The Problem', node, sections) }} />
-        <Analyzing ref={(node) => { attachRef('The Raw Data', node, sections) }} />
-        <Mapping ref={(node) => { attachRef('Data Mapping', node, sections) }} />
-        <InternalTesting ref={(node) => { attachRef('MVP Testing', node, sections) }} />
-        <Iterating ref={(node) => { attachRef('Layout Iterations', node, sections) }} />
-        <Validating ref={(node) => { attachRef('Edge Cases', node, sections) }} />
-        <Developer ref={(node) => { attachRef('Developer Handoff', node, sections) }} />
-        <Instructions ref={(node) => { attachRef('Interactions', node, sections) }} />
+        <About ref={sections.Overview} />
+        <UhOh ref={sections['The Problem']} />
+        <Analyzing ref={sections['The Raw Data']} />
+        <Mapping ref={sections['Data Mapping']} />
+        <InternalTesting ref={sections['MVP Testing']} />
+        <Iterating ref={sections['Layout Iterations']} />
+        <Validating ref={sections['Edge Cases']} />
+        <Developer ref={sections['Developer Handoff']} />
+        <Instructions ref={sections.Interactions} />
         <DataEntry />
         <Track />
-        <KeyTakeaways ref={(node) => { attachRef('Retrospective', node, sections) }} />
+        <KeyTakeaways ref={sections.Retrospective} />
         <Footer />
       </div>
     </>
