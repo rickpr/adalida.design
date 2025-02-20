@@ -12,12 +12,12 @@ const Intro = (): React.ReactElement | null => {
     <div className='portfolio-intro' data-aos='fade-up'>
       <div className='portfolio-intro-duck'><Duck /></div>
       <h5>
-        Hello - I’m Adalida a product designer with an interdisciplinary background offering fresh perspective and
-        creative problem-solving.
+        Hello! I’m Adalida, a driven product designer who brings a philosopher’s reasoning, a writer’s clarity, and a 
+        designer’s eye for detail.
       </h5>
       <h5>
-        I collaborate closely with engineers to build thoughtful, user-centered products,
-        tackling challenges with clarity—and a bit of quacking for good measure.
+        I collaborate with engineers to build thoughtful, user-centered products that transform complex challenges into clear, 
+        actionable solutions—with a dash of rubber duck debugging for good measure.
       </h5>
       <div className='subtitle-1'>Based in San Francisco, California and open to work.</div>
       <LetsChat />
