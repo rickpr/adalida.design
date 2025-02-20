@@ -12,6 +12,7 @@
     "aos": "^3.0.0-beta.6",
     "gatsby": "5.13.7",
     "gatsby-adapter-netlify": "^1.1.7",
+    "gatsby-plugin-google-tagmanager": "^5.14.0",
     "gatsby-plugin-image": "^3.13.1",
     "gatsby-plugin-manifest": "^5.13.1",
     "gatsby-plugin-preload-fonts": "^4.13.1",

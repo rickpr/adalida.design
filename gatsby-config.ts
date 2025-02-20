@@ -34,6 +34,13 @@ module.exports = {
         icon: 'src/images/favicon.png' // This path is relative to the root of the site.
       }
     },
-    'gatsby-plugin-typescript'
+    'gatsby-plugin-typescript',
+    {
+      resolve: 'gatsby-plugin-google-tagmanager',
+      options: {
+        id: 'GTM-BWGHPM1NX',
+        enableWebVitalsTracking: true
+      }
+    }
   ]
 }
