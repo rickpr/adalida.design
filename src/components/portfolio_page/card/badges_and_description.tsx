@@ -1,9 +1,9 @@
 import React, { useContext } from 'react'
-import { IconArrowNarrowRight } from '@tabler/icons-react'
 
-import BadgeButton from 'components/badge_button'
 import DarkModeContext from 'dark_mode_context'
 import type { Project } from 'projects'
+
+import BadgeLink from './badge_link'
 
 const BadgesAndDescription = ({ project }: { project: Project }): React.ReactElement => {
   const { darkMode } = useContext(DarkModeContext)
@@ -17,7 +17,7 @@ const BadgesAndDescription = ({ project }: { project: Project }): React.ReactEle
         )}
       </div>
       {description}
-      {link !== undefined && <BadgeButton to={link.url}>{link.text}<IconArrowNarrowRight /></BadgeButton>}
+      {link !== undefined && <BadgeLink link={link} />}
     </>
   )
 }

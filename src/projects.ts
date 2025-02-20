@@ -6,16 +6,20 @@ const AirbrushLogo = 'images/works/airbrush_logo.webp'
 const GaintainLogo = 'images/works/gaintain_logo.webp'
 const JessRuedaImage = 'images/works/jessrueda.webp'
 const JessRuedaLogo = 'images/works/jessrueda_logo.webp'
+const JSharpImage = 'images/works/jsharp.webp'
 const LoboGardensImage = 'images/works/lobogardens.webp'
 const LoboGardensLogo = 'images/works/lobogardens_logo.webp'
 const PhronesisPhoto = 'images/works/phronesis.webp'
 const PhronesisLogo = 'images/works/phronesis_logo.webp'
+const ProjectEchoImage = 'images/works/project_echo.webp'
+const ProjectEchoLogo = 'images/works/project_echo_logo.webp'
 const QuerqueImage = 'images/works/querque.webp'
 const QuerqueLogo = 'images/works/querque_logo.webp'
 const SunbeltImage = 'images/works/sunbelt.webp'
 const TLDRLogo = 'images/works/tldr_logo.webp'
 const TLDRPhoto = 'images/tldr.webp'
-const JSharpImage = 'images/works/jsharp.webp'
+const WaughImage = 'images/works/waugh.webp'
+const WaughLogo = 'images/works/waugh_logo.webp'
 
 export interface Project {
   name: string
@@ -24,7 +28,7 @@ export interface Project {
   heroImage: string | [string, string]
   badges: string[]
   link?: {
-    text: 'Read Case Study' | 'View Presentation' | 'Visit Website' | 'View Figma' | 'View Designs'
+    text: 'Read Case Study' | 'View Presentation' | 'Visit Website' | 'View Figma' | 'View Designs' | 'Request Access'
     url: string
   }
   logo?: {
@@ -34,6 +38,25 @@ export interface Project {
 }
 
 export const Projects: Record<string, Project> = {
+  Waugh: {
+    name: 'Waugh',
+    category: 'Desktop Dashboard',
+    description: `
+      Instant Political Context: Cut Through the Noise and Get the Full Story.
+      I designed an interactive UI to evaluate political debates with real-time video, live transcription, and metrics
+      like a Perspective Meter and Argument Strength Meter, alongside an interactive timeline for context.
+    `,
+    heroImage: WaughImage,
+    badges: ['Multimodal AI Agents', 'Hackathon', 'Product Design'],
+    link: {
+      text: 'View Presentation',
+      url: 'https://www.figma.com/slides/muOS1rWcaNx46Nz4QR95FB/WAUGH-PRESENTATION?node-id=3-58&t=6xA61f3NCqB2cI5g-1'
+    },
+    logo: {
+      image: WaughLogo,
+      color: '#DD6B20'
+    }
+  },
   Gaintain: {
     name: 'Gaintain',
     category: 'Mobile Workout Tracking',
@@ -120,8 +143,23 @@ export const Projects: Record<string, Project> = {
       url: 'https://www.airbrushart.studio'
     }
   },
+  ProjectEcho: {
+    name: "Project ECHO",
+    category: 'Technical Writer Portfolio',
+    badges: ['Internship', 'UX Writing', 'Data Visualization'],
+    description: 'Explore my technical writing portfolio for further details.',
+    heroImage: ProjectEchoImage,
+    logo: {
+      image: ProjectEchoLogo,
+      color: '#BE092F'
+    },
+    link: {
+      text: 'Request Access',
+      url: 'mailto:hi@adalida.design'
+    }
+  },
   JSharpMusic: {
-    name: "J Sharp Music",
+    name: 'J Sharp Music',
     category: 'Website Development',
     badges: ['Consultancy', 'UX Design', 'Responsive'],
     description: `
