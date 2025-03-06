@@ -42,7 +42,7 @@ export const carouselMediaTag = (media: string): JSX.Element => makeMediaTag({ m
 
 const CloseButton = ({ dismiss }: { dismiss: () => void }): JSX.Element =>
   <div style={{ position: 'absolute', top: 0, right: 0, zIndex: 5, background: '#000000' }}>
-    <button style={buttonStyles} onClick={dismiss} >&#x2715;</button>
+    <button style={buttonStyles} onClick={dismiss}>&#x2715;</button>
   </div>
 
 const CarouselOverlay = ({ dismiss, media, index }: { dismiss: () => void, media: JSX.Element[], index: number }): JSX.Element => {
@@ -92,7 +92,7 @@ const CarouselOverlay = ({ dismiss, media, index }: { dismiss: () => void, media
       <div style={{ height: '90vh', width: '90vw', display: 'flex', placeItems: 'center', placeContent: 'center' }}>
         <div
           style={{ position: 'relative', width: '100%', maxWidth: '100%', background }}
-          onClick={(event: MouseEvent) => { event.stopPropagation() } }
+          onClick={(event: MouseEvent) => { event.stopPropagation() }}
         >
           <CloseButton dismiss={dismiss} />
           {media[currentIndex]}

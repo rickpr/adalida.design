@@ -1,7 +1,7 @@
 import React from 'react'
 
 import MainPage from 'components'
-import SEO from 'components/seo'
+import Seo from 'components/seo'
 import Profile from 'components/seo/profile'
 
 const About = (): JSX.Element => {
@@ -10,7 +10,7 @@ const About = (): JSX.Element => {
 
 export const Head = (): JSX.Element => (
   <>
-    <SEO title='About' />
+    <Seo title='About' />
     <Profile />
   </>
 )

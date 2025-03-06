@@ -15,12 +15,12 @@ const HomeLink = (): JSX.Element | null => {
     <Link className={`home-link absolute ${hide ? 'hide-up' : ''}`} to='/'>
       {isMobile && <Logo />}
       <div className='header-title'>
-        {!isMobile &&
-         <>
-           <span className='name'>ADALIDA</span>
-           <span>Product Designer</span>
-         </>
-        }
+        {!isMobile && (
+          <>
+            <span className='name'>ADALIDA</span>
+            <span>Product Designer</span>
+          </>
+        )}
       </div>
     </Link>
   )

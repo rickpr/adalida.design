@@ -14,7 +14,6 @@ import useIsMobile from 'hooks/use_is_mobile'
 
 import './src/sass/index.scss'
 
-
 const WrapPageElement = ({ element, props }: WrapPageElementBrowserArgs): JSX.Element | null => {
   const [darkMode, toggleDarkMode] = useDarkMode()
   const isMobile = useIsMobile(768)

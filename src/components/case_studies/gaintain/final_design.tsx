@@ -21,7 +21,7 @@ const FinalDesign = forwardRef((_props: Record<never, never>, ref: Ref<HTMLDivEl
           items={[
             { title: 'Weighted Sets', description: 'Strength training' },
             { title: 'Non-weighted Sets', description: 'Bodyweight, HIIT, and stretching' },
-            { title: 'Weighted Supersets', description: 'Combined exercises' },
+            { title: 'Weighted Supersets', description: 'Combined exercises' }
           ]}
         />
         <p>

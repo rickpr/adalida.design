@@ -144,7 +144,7 @@ export const Projects: Record<string, Project> = {
     }
   },
   ProjectEcho: {
-    name: "Project ECHO",
+    name: 'Project ECHO',
     category: 'Technical Writer Portfolio',
     badges: ['Internship', 'UX Writing', 'Data Visualization'],
     description: 'Explore my technical writing portfolio for further details.',

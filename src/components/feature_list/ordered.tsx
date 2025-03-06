@@ -9,7 +9,8 @@ interface Props {
 }
 
 const Ordered = ({ items, italic = false }: Props): React.ReactElement => (
-  <NumberedList bold
+  <NumberedList
+    bold
     items={items.map((item) =>
       <Description key={item.title} title={item.title} description={item.description} italic={italic} />
     )}

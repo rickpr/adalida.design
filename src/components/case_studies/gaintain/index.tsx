@@ -19,7 +19,7 @@ import Frictionless from './frictionless'
 import KeyTakeaways from './key_takeaways'
 
 const Gaintain = (): JSX.Element => {
-  const sections =  {
+  const sections = {
     About: useRef(null),
     Discovering: useRef(null),
     Research: useRef(null),

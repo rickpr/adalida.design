@@ -9,7 +9,7 @@ import BackButton from './back_button'
 const Header = (): JSX.Element => {
   const { darkMode } = useContext(DarkModeContext)
   return (
-    <div className={`navbar ${darkMode && 'dark'}`} >
+    <div className={`navbar${darkMode ? ' dark' : ''}`}>
       <div className='relative flex-center'>
         <HomeLink />
         <BackButton />

@@ -11,8 +11,7 @@ const HeroImage = ({ project }: { project: Project }): JSX.Element => {
     <div className='portfolio-container-for-hero-image'>
       {Array.isArray(heroImage)
         ? <HeroVideos videos={heroImage} />
-        : <Image className='portfolio-hero-image' alt={`${name} cover`} path={heroImage} />
-      }
+        : <Image className='portfolio-hero-image' alt={`${name} cover`} path={heroImage} />}
     </div>
   )
 }

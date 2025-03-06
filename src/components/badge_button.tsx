@@ -10,7 +10,7 @@ interface Props {
 
 const BadgeButton = ({ to, children }: Props): JSX.Element => {
   const { darkMode } = useContext(DarkModeContext)
-  const className = useMemo(() => `btn badge big-badge badge-danger ${darkMode && 'dark'}`, [darkMode])
+  const className = useMemo(() => `btn badge big-badge badge-danger${darkMode ? ' dark' : ''}`, [darkMode])
   const { external, mailTo, rest } = useMemo(() => {
     const external = to.startsWith('http')
     const mailTo = to.startsWith('mailto')

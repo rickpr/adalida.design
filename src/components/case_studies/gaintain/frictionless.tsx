@@ -10,7 +10,7 @@ const Frictionless = (): JSX.Element => {
     <div data-aos='fade-up' className='gaintain-side-by-side reverse'>
       <div className='gaintain-explanation'>
         <section>
-          <Icon><IconPlusMinus/></Icon>
+          <Icon><IconPlusMinus /></Icon>
           <h5>Frictionless Workout Logging</h5>
           <p>
             GainTain simplifies tracking by <strong><em>automatically pre-filling weight and reps</em></strong> based on

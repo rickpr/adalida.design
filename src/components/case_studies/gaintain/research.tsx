@@ -20,16 +20,16 @@ const Research = forwardRef((_props: Record<never, never>, ref: Ref<HTMLDivEleme
         </p>
         <UnorderedFeatureList
           items={[
-          { title: 'Paper Notebooks', description: 'Reliable but hard to review.' },
-          { title: 'Digital Apps', description: 'Convenient but fragmented.' }
+            { title: 'Paper Notebooks', description: 'Reliable but hard to review.' },
+            { title: 'Digital Apps', description: 'Convenient but fragmented.' }
           ]}
         />
         <p>Neither fully supported both consistency and insights, leading to three essential features:</p>
         <OrderedFeatureList
           items={[
-          { title: 'Workout Logging', description: 'Track exercises, weights, and reps in one place.' },
-          { title: 'Instructional Guidance', description: 'Exercise cues without app-switching.' },
-          { title: 'Built-in Stopwatch', description: 'Integrated rest timer for efficiency.' }
+            { title: 'Workout Logging', description: 'Track exercises, weights, and reps in one place.' },
+            { title: 'Instructional Guidance', description: 'Exercise cues without app-switching.' },
+            { title: 'Built-in Stopwatch', description: 'Integrated rest timer for efficiency.' }
           ]}
         />
         <p>

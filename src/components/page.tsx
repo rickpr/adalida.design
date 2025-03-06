@@ -1,4 +1,4 @@
-import React  from 'react'
+import React from 'react'
 
 const Page = ({ children }: { children: React.ReactNode }): JSX.Element => {
   return <div className='page'>{children}</div>

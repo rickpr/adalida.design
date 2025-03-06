@@ -1,7 +1,7 @@
 import { Link } from 'gatsby'
 import React from 'react'
 
-import SEO from 'components/seo'
+import Seo from 'components/seo'
 
 const NotFoundPage = (): JSX.Element => (
   <div className='not-found-page'>
@@ -10,6 +10,6 @@ const NotFoundPage = (): JSX.Element => (
   </div>
 )
 
-export const Head = SEO
+export const Head = Seo
 
 export default NotFoundPage

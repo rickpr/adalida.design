@@ -16,10 +16,10 @@ const Iterations = forwardRef((_props: Record<never, never>, ref: Ref<HTMLDivEle
         <UnorderedFeatureList
           italic
           items={[
-          { title: 'Flow Optimization', description: 'Restructured steps to match workout progression.' },
-          { title: 'Visual Consistency', description: 'Standardized spacing, alignment, and hierarchy.' },
-          { title: 'Efficient Inputs', description: 'Grouped sets, weights, and reps for faster tracking.' },
-          { title: 'Reduced Cognitive Load', description: 'Removed distractions, keeping focus on essentials.' },
+            { title: 'Flow Optimization', description: 'Restructured steps to match workout progression.' },
+            { title: 'Visual Consistency', description: 'Standardized spacing, alignment, and hierarchy.' },
+            { title: 'Efficient Inputs', description: 'Grouped sets, weights, and reps for faster tracking.' },
+            { title: 'Reduced Cognitive Load', description: 'Removed distractions, keeping focus on essentials.' }
           ]}
         />
         <p>
