@@ -1,7 +1,8 @@
 import React, { forwardRef, type Ref, useContext } from 'react'
 
 import DarkModeContext from 'dark_mode_context'
-import Card from 'components/about_page/card'
+
+import Card from './card'
 
 const KeyTakeaways = forwardRef((_props: Record<never, never>, ref: Ref<HTMLDivElement>): JSX.Element => {
   const { darkMode } = useContext(DarkModeContext)
@@ -9,54 +10,33 @@ const KeyTakeaways = forwardRef((_props: Record<never, never>, ref: Ref<HTMLDivE
     <div data-aos='fade-up' ref={ref} className='gaintain-top-to-bottom'>
       <div className='key-takeaways'>
         <h4 className={darkMode ? 'dark' : ''}>Key Takeaways</h4>
-        <p>
-          No project is perfect and neither was Gaintain. I learned new hacks and hard lessons.
-          Here are my three key takeaways from this project:
-        </p>
+        <div>
+          Every project presents challenges&mdash;GainTain was an opportunity to refine my research approach, technical
+          alignment, and developer collaboration.
+        </div>
       </div>
       <div className='stacking-cards'>
-        <Card title='Meaningful Research'>
-          <p>
-            Gathering meaningful feedback on a $0 budget and tight timeline was challenging. I used a funnel design for
-            the survey to target experienced lifters, but received only two valid responses.
-          </p>
-          <p>
-            With limited feedback, I relied on dogfooding to gather insights through personal use and referenced
-            Apple’s SwiftUI documentation, informed by user research, to align the design with component affordances and
-            user needs.
-          </p>
-          <p>
-            Next time, I’d allocate resources for recruiting participants from the target market to gather more actionable
-            feedback. While dogfooding provided valuable insights, user input is essential for meeting real needs.
+        <Card title='Making Research Actionable'>
+          <p className='caption-1'>
+            With limited direct feedback, I leveraged dogfooding as an early validation method and Apple&apos;s SwiftUI
+            documentation to refine UI interactions. Moving forward, I’ll prioritize structured user research and
+            participant recruitment for deeper insights.
           </p>
         </Card>
 
-        <Card title='Greenfield Projects'>
-          <p>
-            Building GainTain from scratch with a small team and no budget required careful prioritization of
-            road mapping, project scope, and backend selection.
+        <Card title='Aligning UI & Infrastructure'>
+          <p className='caption-1'>
+            Building a greenfield product reinforced the importance of early collaboration with engineering to align UI
+            with backend feasibility.
+            I learned to prioritize dependencies, manage scope, and adapt quickly to constraints.
           </p>
-          <p>
-            Initially focused on the UI for workout completion, we realized the app lacked functionality without a backend
-            for user input, forcing a pivot to include a sign-up process and workout program builder, delaying the
-            release. This experience highlighted the importance of aligning UI design with backend capabilities early on.
-          </p>
-          <p>Moving forward, I’ll ensure dependencies are identified early to avoid delays and streamline the project.</p>
         </Card>
 
-        <Card title='Developer Communication'>
-          <p>
-            As the sole product lead, I led communication, workflow processes, and PRD creation. I used a Kanban board to
-            track design updates like spacing, alignment, and other details, ensuring clarity and reducing discrepancies.
-          </p>
-          <p>
-            I worked closely with the developer to align on data, technical constraints, and content, ensuring the design
-            was both user-friendly and feasible. Regular check-ins and PRDs streamlined our workflow, improving efficiency
-            and reducing errors.
-          </p>
-          <p>
-            In the future, I’ll be more mindful of team size and communication workflow for smoother collaboration
-            and project management.
+        <Card title='Developer Collaboration'>
+          <p className='caption-1'>
+            Testing GainTain in a gym enabled rapid feedback loops. Using Kanban boards and PRDs, I streamlined handoff,
+            reduced rework, and improved collaboration.
+            Regular check-ins ensured alignment, leading to smoother implementation.
           </p>
         </Card>
       </div>

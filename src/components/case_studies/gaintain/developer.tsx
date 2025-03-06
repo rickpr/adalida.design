@@ -10,7 +10,7 @@ const Developer = forwardRef((_props: Record<never, never>, ref: Ref<HTMLDivElem
     <div className='gaintain-explanation'>
       <section>
         <Icon><IconCode /></Icon>
-        <h5>Developer Specifications:</h5>
+        <h5>Developer Handoff:</h5>
         <p>
           To complete a workout, click the check mark.
           The content is populated by the Gaintain CMS based on the data in the user profile.

@@ -15,17 +15,17 @@ const About = forwardRef((_props: Record<never, never>, ref: Ref<HTMLDivElement>
         </div>
         <div className='cell right'>
           <div className='subtitle-2'>Timeline</div>
-          <div className='body-2'>2 weeks</div>
+          <div className='body-2'>8 weeks</div>
         </div>
       </div>
       <div className='row'>
         <div className='cell bottom'>
           <div className='subtitle-2'>Overview</div>
           <div className='body-2'>
-            Gaintain is a fitness app designed for individuals serious about tracking and enhancing their bodybuilding
-            and weightlifting workouts. Gaintain offers a comprehensive workout log to meticulously track exercises,
-            sets, reps, and progress. Gaintain prioritizes transparency and user control, making it the ultimate tool
-            for achieving fitness goals.
+            This case study covers the development of GainTain, a greenfield fitness app for experienced bodybuilders
+            and lifters who have been training for years. As the Product Designer & Manager, I led the design and
+            project management, tackling challenges like aligning UI design with backend capabilities and gathering
+            meaningful user feedback on a tight budget.
           </div>
         </div>
       </div>

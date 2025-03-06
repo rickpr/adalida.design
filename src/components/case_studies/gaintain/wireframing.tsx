@@ -1,0 +1,29 @@
+import { IconSitemap } from '@tabler/icons-react'
+import React, { forwardRef, type Ref } from 'react'
+
+import WireframingImage from 'images/gaintain/wireframing.webp'
+
+import Icon from './icon'
+
+const Wireframing = forwardRef((_props: Record<never, never>, ref: Ref<HTMLDivElement>): JSX.Element => (
+  <div data-aos='fade-up' className='gaintain-top-to-bottom' ref={ref}>
+    <div className='gaintain-explanation'>
+      <section>
+        <Icon><IconSitemap /></Icon>
+        <h5>Wireframing the Experience:</h5>
+        <p>
+          <strong><em>Transitioning from paper to digital required careful information architecture </em></strong> and
+          usability considerations. Using the Swift UI Framework, I developed lo-fi wireframes <strong><em>to maintain
+          the mental model of traditional tracking</em></strong> while improving efficiency. <strong><em>Through
+          feature mapping, I structured key workflows</em></strong>&mdash;exercise tracking, instructional support, and
+          daily workout plans&mdash;<strong><em>into an intuitive, cohesive user experience.</em></strong>
+        </p>
+      </section>
+    </div>
+    <img src={WireframingImage} alt='Mockups' />
+  </div>
+))
+
+Wireframing.displayName = 'Wireframing'
+
+export default Wireframing
