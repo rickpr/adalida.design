@@ -3,6 +3,7 @@ import React from 'react'
 
 import BadgeButton from 'components/badge_button'
 import Duck from 'components/duck'
+import FileQuery from 'queries/file'
 
 const Footer = (): JSX.Element => (
   <div className='footer'>
@@ -16,7 +17,7 @@ const Footer = (): JSX.Element => (
           <a href='https://www.linkedin.com/in/adalidabaca/'>LinkedIn</a>
           <a href='https://dribbble.com/adalida-baca'>Dribbble</a>
           <a href='https://adalida.notion.site/A-Heavenly-Read-dfe9351a7e204898a1451de826b3e812'>Blog</a>
-          <a href='https://www.linkedin.com/in/adalidabaca/'>Resume</a>
+          <a href={FileQuery('resume.pdf').publicURL} target='_blank' rel='noreferrer'>Resume</a>
         </div>
       </div>
       <div className='footer-column'>

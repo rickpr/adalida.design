@@ -52,7 +52,7 @@ h6, .h6 {
   letter-spacing: $h6-size * 0.0015;
 }
 
-.subtitle-1 {
+.subtitle-1, %subtitle-1 {
   font-weight: 400;
   font-size: 1em;
   letter-spacing: 1em * 0.0015;

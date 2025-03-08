@@ -2,13 +2,18 @@
   display: flex;
   flex-direction: column;
   gap: 1.5em;
+}
 
-  &-duck {
-    @include logo;
-    @include glass;
+.based-in-san-francisco {
+  display: flex;
+  align-items: center;
+  gap: 0.25em;
 
-    align-items: center;
-    border-radius: 30px;
-    display: flex;
+  .green-dot {
+    width: 0.5em;
+    height: 0.5em;
+    background-color: #25EA60;
+    border-radius: 50%;
+    border: 1px solid #888;
   }
 }
