@@ -6,11 +6,9 @@ $color-names: ['info', 'danger'];
 @each $color in $color-names {
   .badge-#{$color} {
     background-color: map.get($light-colors, $color);
-    &.text-swap { color: map.get($dark-colors, $color); }
 
     &.dark {
       background-color: map.get($dark-colors, $color);
-      &.text-swap { color: map.get($light-colors, $color); }
     }
   }
 }

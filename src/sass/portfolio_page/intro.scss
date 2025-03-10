@@ -1,19 +1,48 @@
+@use 'sass:map';
+
 .portfolio-intro {
   display: flex;
   flex-direction: column;
   gap: 1.5em;
+  min-height: calc(100dvh - $header-height - 6em);
+  justify-content: center;
+
+  .fancy-underline {
+    @media (hover: none) {
+      text-decoration-color: map.get($light-colors, danger);
+
+      &.dark {
+        text-decoration-color: map.get($dark-colors, danger);
+      }
+    }
+
+    &:hover {
+      text-decoration-color: map.get($light-colors, danger);
+
+      &.dark {
+        text-decoration-color: map.get($dark-colors, danger);
+      }
+    }
+  }
 }
 
 .based-in-san-francisco {
   display: flex;
   align-items: center;
-  gap: 0.25em;
+  gap: 0.5em;
 
   .green-dot {
     width: 0.5em;
     height: 0.5em;
     background-color: #25EA60;
     border-radius: 50%;
-    border: 1px solid #888;
+    border: 1px solid #CCC;
+    animation: blink 1s infinite alternate;
+  }
+
+  @keyframes blink {
+    to {
+      opacity: 0;
+    }
   }
 }

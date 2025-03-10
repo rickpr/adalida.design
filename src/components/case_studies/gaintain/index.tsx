@@ -21,14 +21,14 @@ import KeyTakeaways from './key_takeaways'
 const Gaintain = (): JSX.Element => {
   const sections = {
     About: useRef(null),
-    Discovering: useRef(null),
+    Discovery: useRef(null),
     Research: useRef(null),
-    Wireframing: useRef(null),
-    Testing: useRef(null),
+    Wireframes: useRef(null),
+    Tests: useRef(null),
     Iterations: useRef(null),
-    FinalDesign: useRef(null),
-    Developer: useRef(null),
-    InteractiveLibrary: useRef(null),
+    'Final Design': useRef(null),
+    Handoff: useRef(null),
+    Interactions: useRef(null),
     Retrospective: useRef(null)
   }
   const isMobile = useIsMobile(1400)
@@ -37,14 +37,14 @@ const Gaintain = (): JSX.Element => {
       {isMobile === false && <TableOfContents links={sections} />}
       <div className='case-study-container'>
         <About ref={sections.About} />
-        <Discovering ref={sections.Discovering} />
+        <Discovering ref={sections.Discovery} />
         <Research ref={sections.Research} />
-        <Wireframing ref={sections.Wireframing} />
-        <Testing ref={sections.Testing} />
+        <Wireframing ref={sections.Wireframes} />
+        <Testing ref={sections.Tests} />
         <Iterations ref={sections.Iterations} />
-        <FinalDesign ref={sections.FinalDesign} />
-        <Developer ref={sections.Developer} />
-        <InteractiveLibrary ref={sections.InteractiveLibrary} />
+        <FinalDesign ref={sections['Final Design']} />
+        <Developer ref={sections.Handoff} />
+        <InteractiveLibrary ref={sections.Interactions} />
         <Frictionless />
         <Track />
         <KeyTakeaways ref={sections.Retrospective} />

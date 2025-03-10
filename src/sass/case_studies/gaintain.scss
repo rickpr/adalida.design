@@ -79,6 +79,10 @@ $gaintain-breakpoint: 1200px;
 
 .gaintain-top-to-bottom {
   @include gaintain-container;
+
+  .gaintain-wireframing {
+    max-width: min(100%, 550px);
+  }
 }
 
 .gaintain-side-by-side {

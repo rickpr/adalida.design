@@ -3,9 +3,9 @@ import React from 'react'
 import Section from './section'
 import ScrollAnimatedText from 'components/scroll_animated_text'
 
-const text = `I hold an interdisciplinary B.A. in English-Philosophy with a specialization in Technical and Professional Communication. Exploring the intersection of these fields allowed me to study how humans think, communicate, and interact.
+const text = `My background in UX design, research, and technical communication, with a B.A. in English-Philosophy, shapes how I analyze data, synthesize insights, and refine user experiences.
 
-This unique blend enriches my approach to UX design, enabling me to create thoughtful, user-centric products. For insights on the intersection of design, philosophy, and language, including my past work, explore my blog.`
+I specialize in product strategy, stakeholder alignment, and process optimization, conducting competitive research, improving onboarding, and streamlining workflows to enhance usability.  Explore my LinkedIn & Writing for more insights.`
 
 const Background = (): JSX.Element => {
   return (

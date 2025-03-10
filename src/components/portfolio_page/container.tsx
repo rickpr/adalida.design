@@ -7,7 +7,7 @@ const Container = (): JSX.Element => {
   return (
     <div className='portfolio-container'>
       {Object.values(Projects).map((project, index) =>
-        <Card key={project.name} reverse={index % 2 === 0} project={project} />
+        <Card key={project.name} reverse={index % 2 === 1} project={project} />
       )}
     </div>
   )

@@ -7,9 +7,6 @@
 
   .portfolio-hero-image {
     width: 100%;
-    border-radius: 0.875em;
-    overflow: hidden;
-    position: relative;
 
     > video {
       min-height: 100%;
@@ -28,7 +25,7 @@
     }
 
     @media (width >= $breakpoint) {
-      height: calc(550px - 1.5em);
+      height: calc(450px - 1.5em);
     }
   }
 }
@@ -41,24 +38,26 @@
 }
 
 .portfolio-card {
-  @include card;
   @include glass;
 
+  grid-template-columns: 1fr;
   border-radius: 1.5em;
-  display: flex;
-  padding: 1.25em;
+  display: grid;
+  padding: 2.5em;
+  gap: 2.5em;
   align-items: center;
   justify-content: stretch;
+  margin: 0 auto;
+  color: $light-text;
 
   @media (width >= $breakpoint) {
-    padding: 2.5em;
-    gap: 2.5em;
-    flex-direction: row;
-    min-height: 550px;
+    min-height: 450px;
+    grid-template-columns: 1fr 1fr;
 
-    &.reverse {
-      flex-direction: row-reverse;
+    &.reverse > .portfolio-container-for-hero-image {
+      order: 2;
     }
+
   }
 }
 
@@ -78,10 +77,6 @@
     }
   }
 
-  .logo {
-    display: none;
-  }
-
   .name-and-category {
     display: flex;
     flex-direction: column;
@@ -99,13 +94,25 @@
   }
 
   @media (width >= $breakpoint) {
-    flex: 0 0 250px;
     padding-top: unset;
-
-    .logo { @include logo; }
 
     .title {
       font-size: 2.25rem;
     }
+  }
+}
+
+.portfolio-project-link {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 0.875em;
+  transition: gap 0.2s ease-in-out;
+
+  &:hover {
+    gap: 0.75em;
+    text-decoration: underline;
   }
 }

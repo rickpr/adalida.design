@@ -6,30 +6,9 @@ import darkModeStyle from 'dark_mode_style'
 
 import { makeMediaTag } from './media_with_text'
 
-const style = {
-  display: 'flex',
-  placeContent: 'center',
-  placeItems: 'center',
-  position: 'fixed' as const,
-  width: '100%',
-  height: '100%',
-  background: '#000000CC',
-  left: '0',
-  top: '0',
-  zIndex: 4
-}
-
-const buttonStyles = {
-  cursor: 'pointer',
-  color: 'white',
-  fontSize: '4vmin',
-  background: '#000000',
-  border: 0
-}
-
 const mediaStyles = {
-  maxHeight: '90vh',
-  maxWidth: '90vw',
+  maxHeight: '90dvh',
+  maxWidth: '90dvw',
   height: '100%'
 }
 
@@ -41,8 +20,8 @@ const modulus = ({ mediaLength, index }: { mediaLength: number, index: number })
 export const carouselMediaTag = (media: string): JSX.Element => makeMediaTag({ media, style: mediaStyles })
 
 const CloseButton = ({ dismiss }: { dismiss: () => void }): JSX.Element =>
-  <div style={{ position: 'absolute', top: 0, right: 0, zIndex: 5, background: '#000000' }}>
-    <button style={buttonStyles} onClick={dismiss}>&#x2715;</button>
+  <div className='close-button'>
+    <button className='carousel-button' onClick={dismiss}>&#x2715;</button>
   </div>
 
 const CarouselOverlay = ({ dismiss, media, index }: { dismiss: () => void, media: JSX.Element[], index: number }): JSX.Element => {
@@ -70,15 +49,17 @@ const CarouselOverlay = ({ dismiss, media, index }: { dismiss: () => void, media
   }, [dismiss, navigateLeft, navigateRight, showLeftArrow, showRightArrow])
 
   const navigationArrows = (
-    <div style={{ position: 'absolute' as const, bottom: 0, left: '50%', transform: 'translateX(-50%)' }}>
+    <div className='carousel-navigation'>
       <button
-        style={{ ...buttonStyles, visibility: showLeftArrow ? 'visible' : 'hidden' }}
+        className='carousel-button'
+        style={{ visibility: showLeftArrow ? 'visible' : 'hidden' }}
         onClick={navigateLeft}
       >
         <IconChevronLeft />
       </button>
       <button
-        style={{ ...buttonStyles, visibility: showRightArrow ? 'visible' : 'hidden' }}
+        className='carousel-button'
+        style={{ visibility: showRightArrow ? 'visible' : 'hidden' }}
         onClick={navigateRight}
       >
         <IconChevronRight />
@@ -88,7 +69,7 @@ const CarouselOverlay = ({ dismiss, media, index }: { dismiss: () => void, media
   /* eslint-disable jsx-a11y/no-static-element-interactions, jsx-a11y/click-events-have-key-events */
   // We have global key listeners, and stopping propagation is not an interaction.
   return (
-    <div style={style} onClick={dismiss} tabIndex={0} role='tab'>
+    <div className='carousel-overlay' onClick={dismiss} tabIndex={0} role='tab'>
       <div style={{ height: '90vh', width: '90vw', display: 'flex', placeItems: 'center', placeContent: 'center' }}>
         <div
           style={{ position: 'relative', width: '100%', maxWidth: '100%', background }}

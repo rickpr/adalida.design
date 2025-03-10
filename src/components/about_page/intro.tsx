@@ -1,8 +1,9 @@
 import React from 'react'
 
-import LetsChat from 'components/lets_chat'
+import BadgeButton from 'components/badge_button'
 import { makeMediaTag } from 'components/media_with_text'
 import useIsMobile from 'hooks/use_is_mobile'
+import FileQuery from 'queries/file'
 
 const AdalidaFace = 'images/about/adalida_face.webp'
 
@@ -14,18 +15,18 @@ const Intro = (): JSX.Element | null => {
     <div className='about-intro'>
       {makeMediaTag({ media: AdalidaFace, style: { maxWidth: '80dvw', maxHeight: '70dvh', width: '100%', height: '100%' } })}
       <div className='about-intro-text'>
-        <h6>A bit about me...</h6>
+        <h6>A bit about me,</h6>
         <div>
-          I&apos;m an energetic, resourceful, and versatile Product Designer.
-          Weekdays, I&apos;m a Rubber Duck cosplaying as a Product Designer. Weekends, I&apos;m a Product Designer cosplaying as a Rubber Duck.
+          I break down language, identify patterns, and translate real-world workflows into scalable, intuitive digital
+          experiences. As a systems thinker, I collaborate closely across design, data, and engineering to align
+          solutions with real-world constraints.
         </div>
         <div>
-          Someone asked me what my favorite cereal was, and I realized I didn&apos;t have an answer.
-          So, I embarked on a quest, buying and testing every cereal option I could find.
-          Yet, even after trying them all, I still couldn&apos;t decide.
-          It was only then that I paused and asked myself: do I even like cereal?
+          Good design is clear and purposeful. I focus on understanding the core problem and its constraints before
+          shaping a solution that balances usability, strategy, and execution.
         </div>
-        <LetsChat />
+        <div>Every interaction should be intuitive, functional, and meaningful.</div>
+        <BadgeButton to={FileQuery('resume.pdf').publicURL}>VIEW RESUME</BadgeButton>
       </div>
     </div>
   )

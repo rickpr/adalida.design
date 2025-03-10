@@ -38,9 +38,6 @@ exports[`Header renders correctly 1`] = `
           />
         </svg>
       </div>
-      <div
-        className="header-title"
-      />
     </a>
     <a
       className="header-button absolute "
