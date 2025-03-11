@@ -8,20 +8,10 @@
   justify-content: center;
 
   .fancy-underline {
-    @media (hover: none) {
-      text-decoration-color: map.get($light-colors, danger);
+    text-decoration-color: map.get($light-colors, danger);
 
-      &.dark {
-        text-decoration-color: map.get($dark-colors, danger);
-      }
-    }
-
-    &:hover {
-      text-decoration-color: map.get($light-colors, danger);
-
-      &.dark {
-        text-decoration-color: map.get($dark-colors, danger);
-      }
+    &.dark {
+      text-decoration-color: map.get($dark-colors, danger);
     }
   }
 }
