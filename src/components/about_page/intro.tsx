@@ -12,7 +12,7 @@ const Intro = (): JSX.Element | null => {
   if (isMobile === null) return null
 
   return (
-    <div className='about-intro'>
+    <div className='about-intro' data-aos='fade-up'>
       {makeMediaTag({ media: AdalidaFace, style: { maxWidth: '80dvw', maxHeight: '70dvh', width: '100%', height: '100%' } })}
       <div className='about-intro-text'>
         <h6>A bit about me,</h6>

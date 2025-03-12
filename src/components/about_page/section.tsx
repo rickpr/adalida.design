@@ -7,13 +7,13 @@ interface Props {
   children: React.ReactNode
 }
 
-const Services = ({ title, children }: Props): JSX.Element => {
+const Section = ({ title, children }: Props): JSX.Element => {
   return (
-    <div>
+    <div data-aos='fade-up'>
       <SectionHeading title={title} />
       {children}
     </div>
   )
 }
 
-export default Services
+export default Section
