@@ -16,6 +16,7 @@ import TypeGuidelines from './type_guidelines'
 import ProportionsAndPadding from './proportions_and_padding'
 import Considerations from './considerations'
 import NextSteps from './next_steps'
+import KeyTakeaways from './key_takeaways'
 
 
 // TODO: Create a more general pattern for this like a context as we do more case studies
@@ -32,6 +33,7 @@ const QuerqueCandles = (): JSX.Element => {
     'Proportions and Padding': useRef(null),
     Considerations: useRef(null),
     'Next Steps': useRef(null),
+    Retrospective: useRef(null)
   }
   const isMobile = useIsMobile(1400)
   return (
@@ -47,6 +49,7 @@ const QuerqueCandles = (): JSX.Element => {
         <ProportionsAndPadding ref={sections['Proportions and Padding']} />
         <Considerations ref={sections.Considerations} />
         <NextSteps ref={sections['Next Steps']} />
+        <KeyTakeaways ref={sections.Retrospective} />
         <Footer />
       </div>
     </Context.Provider>

@@ -1,5 +1,7 @@
 import React, { useContext, useEffect, useState, type MutableRefObject } from 'react'
 
+import DarkModeContext from 'dark_mode_context'
+import darkModeStyle from 'dark_mode_style'
 import Context from './context'
 
 interface Props {
@@ -7,12 +9,12 @@ interface Props {
   color?: string
 }
 
-const defaultColor = '#F5F5F5'
-
 const TableOfContents = ({ links }: Props): JSX.Element => {
+  const { darkMode } = useContext(DarkModeContext)
+  const { text } = darkModeStyle(darkMode)
   const [activeLink, setActiveLink] = useState<string | null>(null)
   const [scrolledTooFar, setScrolledTooFar] = useState(true)
-  const color = useContext(Context)?.color ?? defaultColor
+  const color = useContext(Context)?.color ?? text
 
   useEffect(() => {
     const handleScroll = (): void => {
