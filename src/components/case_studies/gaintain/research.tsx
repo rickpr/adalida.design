@@ -8,8 +8,8 @@ import ResearchImage from 'images/gaintain/research.webp'
 import Icon from './icon'
 
 const Research = forwardRef((_props: Record<never, never>, ref: Ref<HTMLDivElement>): JSX.Element => (
-  <div data-aos='fade-up' className='gaintain-side-by-side' ref={ref}>
-    <div className='gaintain-explanation'>
+  <div data-aos='fade-up' className='case-study-side-by-side' ref={ref}>
+    <div className='case-study-explanation'>
       <section>
         <Icon><IconDatabaseCog /></Icon>
         <h5>Research &amp; Key Insights:</h5>

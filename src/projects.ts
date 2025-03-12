@@ -94,12 +94,12 @@ export const Projects: Record<string, Project> = {
     description: 'Developed a cohesive brand identity for Querque Candles, including logo design and visual elements, to strengthen market presence.',
     heroImage: QuerqueImage,
     link: {
-      text: 'View Figma',
-      url: 'https://www.figma.com/file/3yeMcqsp6NQ5bf7EnJVrCH/QuerQue-Candles?type=design&node-id=0-1'
+      text: 'Read Case Study',
+      url: '/case_studies/querque_candles'
     },
     gradientColors: {
-      inside: '#E0926F',
-      outside: '#CD551F'
+      inside: 'lch(74.31% 76.92 47.61)',
+      outside: 'lch(48.62% 76.92 47.61)'
     }
   },
   AirbrushArtStudio: {

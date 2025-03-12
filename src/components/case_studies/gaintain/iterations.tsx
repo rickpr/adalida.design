@@ -7,8 +7,8 @@ import IterationsImage from 'images/gaintain/iterations.webp'
 import Icon from './icon'
 
 const Iterations = forwardRef((_props: Record<never, never>, ref: Ref<HTMLDivElement>): JSX.Element => (
-  <div data-aos='fade-up' className='gaintain-side-by-side padding' ref={ref}>
-    <div className='gaintain-explanation'>
+  <div data-aos='fade-up' className='case-study-side-by-side padding' ref={ref}>
+    <div className='case-study-explanation'>
       <section className='more-padding'>
         <Icon><IconBulb /></Icon>
         <h5>UI Iterations</h5>

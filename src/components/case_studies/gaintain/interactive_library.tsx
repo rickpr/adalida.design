@@ -6,8 +6,8 @@ import InteractiveLibraryVideo from 'videos/gaintain/interactive_library.mp4'
 import Icon from './icon'
 
 const InteractiveLibrary = forwardRef((_props: Record<never, never>, ref: Ref<HTMLDivElement>): JSX.Element => (
-  <div data-aos='fade-up' className='gaintain-side-by-side' ref={ref}>
-    <div className='gaintain-explanation'>
+  <div data-aos='fade-up' className='case-study-side-by-side' ref={ref}>
+    <div className='case-study-explanation'>
       <section>
         <Icon><IconPlayerPlayFilled /></Icon>
         <h5>Interactive Exercise Library</h5>

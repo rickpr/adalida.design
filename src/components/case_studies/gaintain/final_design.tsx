@@ -7,8 +7,8 @@ import FinalDesignImage from 'images/gaintain/final_design.webp'
 import Icon from './icon'
 
 const FinalDesign = forwardRef((_props: Record<never, never>, ref: Ref<HTMLDivElement>): JSX.Element => (
-  <div data-aos='fade-up' className='gaintain-side-by-side reverse' ref={ref}>
-    <div className='gaintain-explanation'>
+  <div data-aos='fade-up' className='case-study-side-by-side reverse' ref={ref}>
+    <div className='case-study-explanation'>
       <section className='more-padding'>
         <Icon><IconMoodUp /></Icon>
         <h5>Final Design:</h5>

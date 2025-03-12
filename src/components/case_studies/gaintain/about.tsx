@@ -7,7 +7,7 @@ const About = forwardRef((_props: Record<never, never>, ref: Ref<HTMLDivElement>
     <h3>GAINTAIN</h3>
     <h5>A fitness app designed for a comprehensive workout log to meticulously track exercises, sets, reps, and progress.</h5>
     <img src={AboutImage} alt='About Gaintain' />
-    <div className='gaintain-overview'>
+    <div className='case-study-overview'>
       <div className='row'>
         <div className='cell'>
           <div className='subtitle-2'>Team</div>

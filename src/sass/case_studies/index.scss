@@ -1,39 +1,46 @@
 @import './gaintain';
 @import './phronesis';
+@import './querque_candles';
+
+$case-study-breakpoint: 1200px;
 
 .case-study-container {
   display: flex;
   flex-direction: column;
 }
 
-.about-case-study {
+.case-study-overview {
   display: flex;
   flex-direction: column;
-  gap: 1em;
-  flex-basis: 37%;
-  flex-grow: 3;
+  gap: 1.5em;
+  margin-top: 1.5em;
+  align-items: center;
+  text-align: center;
+  width: 100%;
 
-  .client-and-date {
+  > .row {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     width: 100%;
-    padding-right: 10%;
 
-    > div {
+    > .cell {
       display: flex;
       flex-direction: column;
+      align-items: flex-start;
+      text-align: start;
+      gap: 0.375em;
     }
-  }
-}
 
-.case-study-footer {
-  display: flex;
-  gap: 25px;
+    > .cell.right {
+      align-items: flex-end;
+    }
 
-  .thanks {
-    display: flex;
-    flex-direction: column;
-    gap: 25px;
+    > .cell.bottom {
+      > div {
+        margin-bottom: 0.625em;
+      }
+    }
   }
 }
 
@@ -64,5 +71,71 @@
 
   &:hover, &.active {
     opacity: 1;
+  }
+}
+
+.case-study-explanation {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 3em;
+
+  > section {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75em;
+    font-size: 1em;
+
+    em {
+      font-style: oblique 10deg;
+    }
+
+    &.more-padding {
+      padding: 2.5em 0;
+    }
+  }
+
+  @media (width >= $case-study-breakpoint) {
+    min-width: 375px;
+  }
+}
+
+@mixin case-study-card-container {
+  display: flex;
+  flex-direction: column;
+  gap: 3em;
+  align-items: center;
+  padding: 7.5em 0;
+
+  > img {
+    border-radius: 0.875em;
+    max-width: 100%;
+  }
+}
+
+.case-study-top-to-bottom {
+  @include case-study-card-container;
+}
+
+.case-study-side-by-side {
+  @include case-study-card-container;
+
+  > video {
+    border-radius: 1.5em;
+    max-width: 100%;
+  }
+
+  @media (width >= $case-study-breakpoint) {
+    flex-direction: row;
+    justify-content: center;
+
+    &.reverse {
+      flex-direction: row-reverse;
+    }
+
+    > img, video {
+      max-width: 50%;
+      max-height: 100dvh;
+    }
   }
 }

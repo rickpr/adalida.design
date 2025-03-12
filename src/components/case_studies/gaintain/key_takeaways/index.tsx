@@ -7,7 +7,7 @@ import Card from './card'
 const KeyTakeaways = forwardRef((_props: Record<never, never>, ref: Ref<HTMLDivElement>): JSX.Element => {
   const { darkMode } = useContext(DarkModeContext)
   return (
-    <div data-aos='fade-up' ref={ref} className='gaintain-top-to-bottom'>
+    <div data-aos='fade-up' ref={ref} className='case-study-top-to-bottom'>
       <div className='key-takeaways'>
         <h4 className={darkMode ? 'dark' : ''}>Key Takeaways</h4>
         <div>

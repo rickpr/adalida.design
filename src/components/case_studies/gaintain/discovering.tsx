@@ -7,8 +7,8 @@ import Duck from 'components/duck'
 import Icon from './icon'
 
 const Discovering = forwardRef((_props: Record<never, never>, ref: Ref<HTMLDivElement>): JSX.Element => (
-  <div data-aos='fade-up' className='gaintain-side-by-side reverse' ref={ref}>
-    <div className='gaintain-explanation'>
+  <div data-aos='fade-up' className='case-study-side-by-side reverse' ref={ref}>
+    <div className='case-study-explanation'>
       <section>
         <Icon><IconExclamationCircleFilled /></Icon>
         <h5>Discovering the Gap:</h5>

@@ -7,8 +7,8 @@ import Icon from './icon'
 
 const Frictionless = (): JSX.Element => {
   return (
-    <div data-aos='fade-up' className='gaintain-side-by-side reverse'>
-      <div className='gaintain-explanation'>
+    <div data-aos='fade-up' className='case-study-side-by-side reverse'>
+      <div className='case-study-explanation'>
         <section>
           <Icon><IconPlusMinus /></Icon>
           <h5>Frictionless Workout Logging</h5>

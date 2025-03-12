@@ -7,8 +7,8 @@ import TestingImage from 'images/gaintain/testing.webp'
 import Icon from './icon'
 
 const Testing = forwardRef((_props: Record<never, never>, ref: Ref<HTMLDivElement>): JSX.Element => (
-  <div data-aos='fade-up' className='gaintain-side-by-side reverse' ref={ref}>
-    <div className='gaintain-explanation'>
+  <div data-aos='fade-up' className='case-study-side-by-side reverse' ref={ref}>
+    <div className='case-study-explanation'>
       <section className='more-padding'>
         <Icon><IconAB2 /></Icon>
         <h5>Testing for Usability</h5>

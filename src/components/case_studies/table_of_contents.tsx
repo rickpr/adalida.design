@@ -1,6 +1,11 @@
 import React, { useEffect, useState, type MutableRefObject } from 'react'
 
-const TableOfContents = ({ links }: { links: Record<string, MutableRefObject<HTMLDivElement | null>> }): JSX.Element => {
+interface Props {
+  links: Record<string, MutableRefObject<HTMLDivElement | null>>
+  color?: string
+}
+
+const TableOfContents = ({ links, color }: Props): JSX.Element => {
   const [activeLink, setActiveLink] = useState<string | null>(null)
   const [scrolledTooFar, setScrolledTooFar] = useState(true)
 
@@ -35,16 +40,20 @@ const TableOfContents = ({ links }: { links: Record<string, MutableRefObject<HTM
   return (
     <div className={`table-of-contents${scrolledTooFar ? ' hide-left' : ''}`}>
       <strong>CONTENTS</strong>
-      {Object.entries(links).map(([link, element]) => (
-        <div key={link}>
-          <button
-            className={`link-button${activeLink === link ? ' active' : ''}`}
-            onClick={() => { element.current?.scrollIntoView({ behavior: 'smooth', block: 'start' }) }}
-          >
-            {link}
-          </button>
-        </div>
-      ))}
+      {Object.entries(links).map(([link, element]) => {
+        const active = activeLink === link
+        return (
+          <div key={link}>
+            <button
+              className={`link-button${active ? ' active' : ''}`}
+              style={active && color ? { color } : {}}
+              onClick={() => { element.current?.scrollIntoView({ behavior: 'smooth', block: 'start' }) }}
+            >
+              {link}
+            </button>
+          </div>
+        )
+      })}
     </div>
   )
 }

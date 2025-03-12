@@ -6,8 +6,8 @@ import WireframingImage from 'images/gaintain/wireframing.webp'
 import Icon from './icon'
 
 const Wireframing = forwardRef((_props: Record<never, never>, ref: Ref<HTMLDivElement>): JSX.Element => (
-  <div data-aos='fade-up' className='gaintain-top-to-bottom' ref={ref}>
-    <div className='gaintain-explanation'>
+  <div data-aos='fade-up' className='case-study-top-to-bottom' ref={ref}>
+    <div className='case-study-explanation'>
       <section>
         <Icon><IconSitemap /></Icon>
         <h5>Wireframing the Experience:</h5>

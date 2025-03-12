@@ -2,7 +2,7 @@ import React from 'react'
 
 const About = (): JSX.Element => {
   return (
-    <div data-aos='fade-up' className='about-case-study'>
+    <div data-aos='fade-up' className='about-phronesis'>
       <div className='client-and-date'>
         <div><strong>Client</strong><span>Phronesis</span></div>
         <div><strong>Date</strong><span>2 weeks</span></div>
