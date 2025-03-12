@@ -4,7 +4,7 @@ import React, { forwardRef, type Ref } from 'react'
 import DiscoveringImage from 'images/gaintain/discovering.webp'
 
 import Duck from 'components/duck'
-import Icon from './icon'
+import Icon from '../icon'
 
 const Discovering = forwardRef((_props: Record<never, never>, ref: Ref<HTMLDivElement>): JSX.Element => (
   <div data-aos='fade-up' className='case-study-side-by-side reverse' ref={ref}>

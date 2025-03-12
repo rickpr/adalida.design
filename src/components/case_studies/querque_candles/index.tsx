@@ -1,7 +1,9 @@
 import React, { useRef } from 'react'
 
 import useIsMobile from 'hooks/use_is_mobile'
+import { Projects } from 'projects'
 
+import Context from '../context'
 import Footer from '../footer'
 import TableOfContents from '../table_of_contents'
 
@@ -14,6 +16,10 @@ import TypeGuidelines from './type_guidelines'
 import ProportionsAndPadding from './proportions_and_padding'
 import Considerations from './considerations'
 import NextSteps from './next_steps'
+
+
+// TODO: Create a more general pattern for this like a context as we do more case studies
+const themeColor = '#C9450D'
 
 const QuerqueCandles = (): JSX.Element => {
   const sections = {
@@ -29,8 +35,8 @@ const QuerqueCandles = (): JSX.Element => {
   }
   const isMobile = useIsMobile(1400)
   return (
-    <>
-      {isMobile === false && <TableOfContents links={sections} color='#C9450D' />}
+    <Context.Provider value={Projects.QuerqueCandles}>
+      {isMobile === false && <TableOfContents links={sections} color={themeColor} />}
       <div className='case-study-container'>
         <Overview ref={sections.Overview} />
         <ChallengeSolution ref={sections['Challenge / Solution']} />
@@ -43,7 +49,7 @@ const QuerqueCandles = (): JSX.Element => {
         <NextSteps ref={sections['Next Steps']} />
         <Footer />
       </div>
-    </>
+    </Context.Provider>
   )
 }
 

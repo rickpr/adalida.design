@@ -20,10 +20,7 @@ export interface Project {
     text: 'Read Case Study' | 'View Presentation' | 'Visit Website' | 'View Figma' | 'View Designs' | 'Request Access'
     url: string
   }
-  gradientColors: {
-    inside: string
-    outside: string
-  }
+  color: string
 }
 
 export const Projects: Record<string, Project> = {
@@ -37,10 +34,7 @@ export const Projects: Record<string, Project> = {
       text: 'Read Case Study',
       url: '/case_studies/gaintain'
     },
-    gradientColors: {
-      inside: '#A1CCC9',
-      outside: '#09D5C8'
-    }
+    color: '#09D5C8'
   },
   Waugh: {
     name: 'Waugh',
@@ -52,10 +46,7 @@ export const Projects: Record<string, Project> = {
       text: 'View Presentation',
       url: 'https://www.figma.com/slides/muOS1rWcaNx46Nz4QR95FB/WAUGH-PRESENTATION?node-id=3-58&t=6xA61f3NCqB2cI5g-1'
     },
-    gradientColors: {
-      inside: '#D4AF97',
-      outside: '#F56100'
-    }
+    color: '#F56100'
   },
   Phronesis: {
     name: 'Phronesis',
@@ -67,10 +58,7 @@ export const Projects: Record<string, Project> = {
       text: 'Read Case Study',
       url: '/case_studies/phronesis'
     },
-    gradientColors: {
-      inside: '#75AAB5',
-      outside: '#146272'
-    }
+    color: '#146272'
   },
   TLDR: {
     name: 'TL;DR',
@@ -82,13 +70,10 @@ export const Projects: Record<string, Project> = {
       text: 'View Presentation',
       url: 'https://docs.google.com/presentation/d/1qXeKJTsfPWMx_gYd4cbBtRxIbwm7jJqWRpy747TrlWM'
     },
-    gradientColors: {
-      inside: '#E894EF',
-      outside: '#59145F'
-    }
+    color: '#59145F'
   },
-  QuerQueCandles: {
-    name: 'QuerQue Candles',
+  QuerqueCandles: {
+    name: 'Querque Candles',
     category: 'Brand Design',
     badges: ['Consultancy', 'Graphic Design', 'Figma'],
     description: 'Developed a cohesive brand identity for Querque Candles, including logo design and visual elements, to strengthen market presence.',
@@ -97,10 +82,7 @@ export const Projects: Record<string, Project> = {
       text: 'Read Case Study',
       url: '/case_studies/querque_candles'
     },
-    gradientColors: {
-      inside: 'lch(74.31% 76.92 47.61)',
-      outside: 'lch(48.62% 76.92 47.61)'
-    }
+    color: '#C9450D'
   },
   AirbrushArtStudio: {
     name: 'Airbrush Art Studio',
@@ -112,10 +94,7 @@ export const Projects: Record<string, Project> = {
       text: 'Visit Website',
       url: 'https://www.airbrushart.studio'
     },
-    gradientColors: {
-      inside: '#C6C4C4',
-      outside: '#606060'
-    }
+    color: '#606060'
   },
   JSharpMusic: {
     name: 'J Sharp Music',
@@ -127,10 +106,7 @@ export const Projects: Record<string, Project> = {
       text: 'Visit Website',
       url: 'https://www.jsharpmusic.com'
     },
-    gradientColors: {
-      inside: '#6C7CE6',
-      outside: '#2F3EA1'
-    }
+    color: '#2F3EA1'
   },
   SunbeltProperties: {
     name: 'Sunbelt Properties',
@@ -142,10 +118,7 @@ export const Projects: Record<string, Project> = {
       text: 'Visit Website',
       url: 'https://www.sunbeltpropertiesnm.com/'
     },
-    gradientColors: {
-      inside: '#E5A788',
-      outside: '#965738'
-    }
+    color: '#965738'
   },
   ProjectEcho: {
     name: 'Project ECHO',
@@ -157,10 +130,7 @@ export const Projects: Record<string, Project> = {
       text: 'Request Access',
       url: 'mailto:hi@adalida.design'
     },
-    gradientColors: {
-      inside: '#E09DA7',
-      outside: '#C7001D'
-    }
+    color: '#C7001D'
   },
   LoboGardens: {
     name: 'Lobo Gardens',
@@ -172,10 +142,7 @@ export const Projects: Record<string, Project> = {
       text: 'View Designs',
       url: 'https://dribbble.com/shots/16868644-Flyer-Designs-Business-Card-and-Brochure-Lobo-Gardens'
     },
-    gradientColors: {
-      inside: '#BCB0A7',
-      outside: '#8C6849'
-    }
+    color: '#8C6849'
   },
   UniNights: {
     name: 'UNI Nights',
@@ -187,10 +154,7 @@ export const Projects: Record<string, Project> = {
       text: 'View Designs',
       url: 'https://dribbble.com/shots/16869293-Flyer-Design-Series-UNI-Nights'
     },
-    gradientColors: {
-      inside: '#B591AD',
-      outside: '#963981'
-    }
+   color: '#963981'
   }
 }
 

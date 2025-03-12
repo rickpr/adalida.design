@@ -1,10 +1,12 @@
 import React, { forwardRef, type Ref } from 'react'
 
 import OverviewImage from 'images/querque_candles/overview.webp'
+import { Projects } from 'projects'
+const { color } = Projects.QuerqueCandles
 
 const Overview = forwardRef((_props: Record<never, never>, ref: Ref<HTMLDivElement>): JSX.Element => (
   <div data-aos='fade-up' className='querque-candles-overview' ref={ref}>
-    <h3><strong>QUERQUE CANDLES</strong></h3>
+    <h3><strong style={{ color }}>QUERQUE CANDLES</strong></h3>
     <img src={OverviewImage} alt='Querque Candles overview' />
     <div className='case-study-overview'>
       <div className='row'>

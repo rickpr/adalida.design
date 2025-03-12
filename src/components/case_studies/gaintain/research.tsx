@@ -5,7 +5,7 @@ import OrderedFeatureList from 'components/feature_list/ordered'
 import UnorderedFeatureList from 'components/feature_list/unordered'
 import ResearchImage from 'images/gaintain/research.webp'
 
-import Icon from './icon'
+import Icon from '../icon'
 
 const Research = forwardRef((_props: Record<never, never>, ref: Ref<HTMLDivElement>): JSX.Element => (
   <div data-aos='fade-up' className='case-study-side-by-side' ref={ref}>

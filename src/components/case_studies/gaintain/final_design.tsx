@@ -4,7 +4,7 @@ import React, { forwardRef, type Ref } from 'react'
 import OrderedFeatureList from 'components/feature_list/ordered'
 import FinalDesignImage from 'images/gaintain/final_design.webp'
 
-import Icon from './icon'
+import Icon from '../icon'
 
 const FinalDesign = forwardRef((_props: Record<never, never>, ref: Ref<HTMLDivElement>): JSX.Element => (
   <div data-aos='fade-up' className='case-study-side-by-side reverse' ref={ref}>

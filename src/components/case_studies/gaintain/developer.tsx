@@ -3,7 +3,7 @@ import React, { forwardRef, type Ref } from 'react'
 
 import DeveloperImage from 'images/gaintain/developer.webp'
 
-import Icon from './icon'
+import Icon from '../icon'
 
 const Developer = forwardRef((_props: Record<never, never>, ref: Ref<HTMLDivElement>): JSX.Element => (
   <div data-aos='fade-up' className='case-study-side-by-side reverse' ref={ref}>

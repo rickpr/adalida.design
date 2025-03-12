@@ -3,7 +3,7 @@ import React, { forwardRef, type Ref } from 'react'
 
 import ProportionsAndPaddingImage from 'images/querque_candles/proportions_and_padding.webp'
 
-import Icon from './icon'
+import Icon from '../icon'
 
 const ProportionsAndPadding = forwardRef((_props: Record<never, never>, ref: Ref<HTMLDivElement>): JSX.Element => (
   <div data-aos='fade-up' className='case-study-top-to-bottom querque' ref={ref}>

@@ -1,13 +1,18 @@
-import React, { useEffect, useState, type MutableRefObject } from 'react'
+import React, { useContext, useEffect, useState, type MutableRefObject } from 'react'
+
+import Context from './context'
 
 interface Props {
   links: Record<string, MutableRefObject<HTMLDivElement | null>>
   color?: string
 }
 
-const TableOfContents = ({ links, color }: Props): JSX.Element => {
+const defaultColor = '#F5F5F5'
+
+const TableOfContents = ({ links }: Props): JSX.Element => {
   const [activeLink, setActiveLink] = useState<string | null>(null)
   const [scrolledTooFar, setScrolledTooFar] = useState(true)
+  const color = useContext(Context)?.color ?? defaultColor
 
   useEffect(() => {
     const handleScroll = (): void => {
@@ -46,7 +51,7 @@ const TableOfContents = ({ links, color }: Props): JSX.Element => {
           <div key={link}>
             <button
               className={`link-button${active ? ' active' : ''}`}
-              style={active && color ? { color } : {}}
+              style={active ? { color } : {}}
               onClick={() => { element.current?.scrollIntoView({ behavior: 'smooth', block: 'start' }) }}
             >
               {link}

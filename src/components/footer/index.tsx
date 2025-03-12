@@ -23,7 +23,7 @@ const Footer = (): JSX.Element => (
       <div className='footer-column'>
         <h6>Let’s chat?</h6>
         <BadgeButton to='mailto:hi@adalida.design'>
-          <IconMailFilled height='1em' width='1em' /> EMAIL ADI
+          <IconMailFilled height='1em' width='1em' />&nbsp; EMAIL ADI
         </BadgeButton>
       </div>
     </div>

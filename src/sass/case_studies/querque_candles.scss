@@ -14,21 +14,6 @@ $querque-color: #C9450D;
   }
 }
 
-.querque-candles-icon {
-  transition: all 0.5s ease-in-out;
-  border-radius: 50%;
-  background: $querque-color;
-  width: 1.5em;
-  height: 1.5em;
-  padding: 0.25em;
-
-  > svg {
-    display: block;
-    width: 100%;
-    height: 100%;
-  }
-}
-
 .querque-icon-heading {
   color: $querque-color;
   display: flex;
@@ -38,17 +23,7 @@ $querque-color: #C9450D;
 
 .case-study-top-to-bottom {
   &.querque {
+    gap: 0.875em;
     align-items: flex-start;
-  }
-}
-
-.querque-next-steps {
-  background-color: $querque-color;
-  border-radius: 0.875em;
-  width: 100%;
-  padding: 5%;
-
-  > img {
-    width: 100%;
   }
 }

@@ -3,7 +3,7 @@ import React, { forwardRef, type Ref } from 'react'
 
 import InteractiveLibraryVideo from 'videos/gaintain/interactive_library.mp4'
 
-import Icon from './icon'
+import Icon from '../icon'
 
 const InteractiveLibrary = forwardRef((_props: Record<never, never>, ref: Ref<HTMLDivElement>): JSX.Element => (
   <div data-aos='fade-up' className='case-study-side-by-side' ref={ref}>

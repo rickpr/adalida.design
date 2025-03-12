@@ -1,19 +1,5 @@
 $gaintain-breakpoint: 1200px;
 
-.gaintain-icon {
-  transition: all 0.5s ease-in-out;
-  border-radius: 0.5em;
-  width: 2em;
-  height: 2em;
-  padding: 0.125em;
-
-  > svg {
-    display: block;
-    width: 100%;
-    height: 100%;
-  }
-}
-
 .gaintain-about {
   display: flex;
   flex-direction: column;

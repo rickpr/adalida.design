@@ -3,7 +3,7 @@ import React, { forwardRef, type Ref } from 'react'
 
 import NextStepsImage from 'images/querque_candles/next_steps.webp'
 
-import Icon from './icon'
+import Icon from '../icon'
 
 const NextSteps = forwardRef((_props: Record<never, never>, ref: Ref<HTMLDivElement>): JSX.Element => (
   <div data-aos='fade-up' className='case-study-top-to-bottom querque' ref={ref}>
@@ -13,7 +13,7 @@ const NextSteps = forwardRef((_props: Record<never, never>, ref: Ref<HTMLDivElem
           <Icon><IconChevronsRight/></Icon> <h5>Next Steps: Website Development</h5></div>
       </section>
     </div>
-    <div className='querque-next-steps'><img src={NextStepsImage} alt='Next Steps' /></div>
+    <img src={NextStepsImage} alt='Next Steps' />
   </div>
 ))
 

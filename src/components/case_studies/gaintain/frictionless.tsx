@@ -3,7 +3,7 @@ import React from 'react'
 
 import FrictionlessVideo from 'videos/gaintain/frictionless.mp4'
 
-import Icon from './icon'
+import Icon from '../icon'
 
 const Frictionless = (): JSX.Element => {
   return (

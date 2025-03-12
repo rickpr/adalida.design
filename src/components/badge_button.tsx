@@ -7,13 +7,18 @@ import UniversalLink from './universal_link'
 interface Props {
   to: string
   children: React.ReactNode
+  style?: React.CSSProperties
 }
 
-const BadgeButton = ({ to, children }: Props): JSX.Element => {
+const BadgeButton = ({ to, children, style }: Props): JSX.Element => {
   const { darkMode } = useContext(DarkModeContext)
   const className = useMemo(() => `btn badge big-badge badge-danger${darkMode ? ' dark' : ''}`, [darkMode])
 
-  return <UniversalLink to={to} className={className}>{children}</UniversalLink>
+  return (
+    <div className={className} style={style}>
+      <UniversalLink to={to} className='flex-center'>{children}</UniversalLink>
+    </div>
+  )
 }
 
 export default BadgeButton
