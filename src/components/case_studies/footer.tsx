@@ -21,7 +21,7 @@ const Footer = (): JSX.Element => {
       <div className='flex-center' style={{ gap: '1.125em' }}>
         <Icon><Duck /></Icon>
         <h5 style={color !== undefined ? { color } : {}}>
-          Thanks for making it the end! Read my next case study here:
+          Thanks for making it to the end! Read my next case study here:
         </h5>
       </div>
       <BadgeButton to={to} style={color !== undefined ? { backgroundColor: color, color: '#F5F5F5' } : {}}>

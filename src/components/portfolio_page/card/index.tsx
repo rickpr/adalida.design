@@ -18,7 +18,7 @@ const Card = ({ project, reverse }: Props): JSX.Element => {
     backgroundImage: `
       radial-gradient(
         circle at ${at},
-        color-mix(in lch longer hue, ${project.color} 100%, #FFFFFF 100%),
+        color-mix(in lch shorter hue, ${project.color} 100%, #FFFFFF 100%),
         ${project.color}
       )
     `
