@@ -3,13 +3,13 @@ import React, { forwardRef, type Ref } from 'react'
 
 import ConsiderationsImage from 'images/querque_candles/considerations.webp'
 
-import Icon from '../icon'
+import IconHeading from '../icon_heading'
 
 const Considerations = forwardRef((_props: Record<never, never>, ref: Ref<HTMLDivElement>): JSX.Element => (
   <div data-aos='fade-up' className='case-study-top-to-bottom querque' ref={ref}>
     <div className='case-study-explanation'>
       <section>
-        <div className='querque-icon-heading'><Icon><IconInfoTriangleFilled/></Icon> <h5>Considerations</h5></div>
+        <IconHeading icon={<IconInfoTriangleFilled />} heading='Considerations' />
       </section>
     </div>
     <img src={ConsiderationsImage} alt='Considerations' />

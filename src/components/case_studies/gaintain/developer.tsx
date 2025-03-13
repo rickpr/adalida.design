@@ -3,14 +3,13 @@ import React, { forwardRef, type Ref } from 'react'
 
 import DeveloperImage from 'images/gaintain/developer.webp'
 
-import Icon from '../icon'
+import IconHeading from '../icon_heading'
 
 const Developer = forwardRef((_props: Record<never, never>, ref: Ref<HTMLDivElement>): JSX.Element => (
   <div data-aos='fade-up' className='case-study-side-by-side reverse' ref={ref}>
     <div className='case-study-explanation'>
       <section>
-        <Icon><IconCode /></Icon>
-        <h5>Developer Handoff:</h5>
+        <IconHeading icon={<IconCode />} heading='Developer Handoff:' />
         <p>
           To complete a workout, click the check mark.
           The content is populated by the Gaintain CMS based on the data in the user profile.

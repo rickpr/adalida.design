@@ -20,7 +20,10 @@ export interface Project {
     text: 'Read Case Study' | 'View Presentation' | 'Visit Website' | 'View Figma' | 'View Designs' | 'Request Access'
     url: string
   }
-  color: string
+  colors: {
+    cover: string
+    primary: string
+  }
 }
 
 export const Projects: Record<string, Project> = {
@@ -34,7 +37,10 @@ export const Projects: Record<string, Project> = {
       text: 'Read Case Study',
       url: '/case_studies/gaintain'
     },
-    color: '#09D5C8'
+    colors: {
+      cover: '#09D5C8',
+      primary: 'linear-gradient(135deg, #FF512F, #DD2476)'
+    }
   },
   Waugh: {
     name: 'Waugh',
@@ -46,7 +52,10 @@ export const Projects: Record<string, Project> = {
       text: 'View Presentation',
       url: 'https://www.figma.com/slides/muOS1rWcaNx46Nz4QR95FB/WAUGH-PRESENTATION?node-id=3-58&t=6xA61f3NCqB2cI5g-1'
     },
-    color: '#F56100'
+    colors: {
+      cover: '#F56100',
+      primary: '#F56100'
+    }
   },
   Phronesis: {
     name: 'Phronesis',
@@ -58,7 +67,10 @@ export const Projects: Record<string, Project> = {
       text: 'Read Case Study',
       url: '/case_studies/phronesis'
     },
-    color: '#146272'
+    colors: {
+      cover: '#146272',
+      primary: '#146272'
+    }
   },
   TLDR: {
     name: 'TL;DR',
@@ -70,7 +82,10 @@ export const Projects: Record<string, Project> = {
       text: 'View Presentation',
       url: 'https://docs.google.com/presentation/d/1qXeKJTsfPWMx_gYd4cbBtRxIbwm7jJqWRpy747TrlWM'
     },
-    color: '#59145F'
+    colors: {
+      cover: '#59145F',
+      primary: '#59145F'
+    }
   },
   QuerqueCandles: {
     name: 'Querque Candles',
@@ -82,7 +97,10 @@ export const Projects: Record<string, Project> = {
       text: 'Read Case Study',
       url: '/case_studies/querque_candles'
     },
-    color: '#C9450D'
+    colors: {
+      cover: '#C9450D',
+      primary: 'linear-gradient(#C9450D, #C9450D)'
+    }
   },
   AirbrushArtStudio: {
     name: 'Airbrush Art Studio',
@@ -94,7 +112,10 @@ export const Projects: Record<string, Project> = {
       text: 'Visit Website',
       url: 'https://www.airbrushart.studio'
     },
-    color: '#606060'
+    colors: {
+      cover: '#606060',
+      primary: '#606060'
+    }
   },
   JSharpMusic: {
     name: 'J Sharp Music',
@@ -106,7 +127,10 @@ export const Projects: Record<string, Project> = {
       text: 'Visit Website',
       url: 'https://www.jsharpmusic.com'
     },
-    color: '#2F3EA1'
+    colors: {
+      cover: '#2F3EA1',
+      primary: '#2F3EA1'
+    }
   },
   SunbeltProperties: {
     name: 'Sunbelt Properties',
@@ -118,7 +142,10 @@ export const Projects: Record<string, Project> = {
       text: 'Visit Website',
       url: 'https://www.sunbeltpropertiesnm.com/'
     },
-    color: '#965738'
+    colors: {
+      cover: '#965738',
+      primary: '#965738'
+    }
   },
   ProjectEcho: {
     name: 'Project ECHO',
@@ -130,7 +157,10 @@ export const Projects: Record<string, Project> = {
       text: 'Request Access',
       url: 'mailto:hi@adalida.design'
     },
-    color: '#C7001D'
+    colors: {
+      cover: '#C7001D',
+      primary: '#C7001D'
+    }
   },
   LoboGardens: {
     name: 'Lobo Gardens',
@@ -142,7 +172,10 @@ export const Projects: Record<string, Project> = {
       text: 'View Designs',
       url: 'https://dribbble.com/shots/16868644-Flyer-Designs-Business-Card-and-Brochure-Lobo-Gardens'
     },
-    color: '#8C6849'
+    colors: {
+      cover: '#8C6849',
+      primary: '#8C6849'
+    }
   },
   UniNights: {
     name: 'UNI Nights',
@@ -154,7 +187,10 @@ export const Projects: Record<string, Project> = {
       text: 'View Designs',
       url: 'https://dribbble.com/shots/16869293-Flyer-Design-Series-UNI-Nights'
     },
-   color: '#963981'
+   colors: {
+     cover: '#963981',
+     primary: '#963981'
+   }
   }
 }
 

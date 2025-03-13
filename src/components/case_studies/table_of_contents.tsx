@@ -6,7 +6,6 @@ import Context from './context'
 
 interface Props {
   links: Record<string, MutableRefObject<HTMLDivElement | null>>
-  color?: string
 }
 
 const TableOfContents = ({ links }: Props): JSX.Element => {
@@ -14,11 +13,10 @@ const TableOfContents = ({ links }: Props): JSX.Element => {
   const { text } = darkModeStyle(darkMode)
   const [activeLink, setActiveLink] = useState<string | null>(null)
   const [scrolledTooFar, setScrolledTooFar] = useState(true)
-  const color = useContext(Context)?.color ?? text
+  const color = useContext(Context)?.colors?.primary ?? text
 
   useEffect(() => {
     const handleScroll = (): void => {
-      console.log('scrolledTooFar', scrolledTooFar)
       let closestLink = null
       const orderedLinks = Object.entries(links)
       const halfwayDownViewport = window.scrollY + window.innerHeight / 2
@@ -46,14 +44,14 @@ const TableOfContents = ({ links }: Props): JSX.Element => {
 
   return (
     <div className={`table-of-contents${scrolledTooFar ? ' hide-left' : ''}`}>
-      <strong>CONTENTS</strong>
+      <div style={{ opacity: 0.5 }}>CONTENTS</div>
       {Object.entries(links).map(([link, element]) => {
         const active = activeLink === link
         return (
           <div key={link}>
             <button
               className={`link-button${active ? ' active' : ''}`}
-              style={active ? { color } : {}}
+              style={{ backgroundImage: color }}
               onClick={() => { element.current?.scrollIntoView({ behavior: 'smooth', block: 'start' }) }}
             >
               {link}

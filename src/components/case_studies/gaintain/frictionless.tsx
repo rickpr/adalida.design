@@ -3,15 +3,14 @@ import React from 'react'
 
 import FrictionlessVideo from 'videos/gaintain/frictionless.mp4'
 
-import Icon from '../icon'
+import IconHeading from '../icon_heading'
 
 const Frictionless = (): JSX.Element => {
   return (
     <div data-aos='fade-up' className='case-study-side-by-side reverse'>
       <div className='case-study-explanation'>
         <section>
-          <Icon><IconPlusMinus /></Icon>
-          <h5>Frictionless Workout Logging</h5>
+          <IconHeading icon={<IconPlusMinus />} heading='Workout Logging' />
           <p>
             GainTain simplifies tracking by <strong><em>automatically pre-filling weight and reps</em></strong> based on
             the last recorded input.

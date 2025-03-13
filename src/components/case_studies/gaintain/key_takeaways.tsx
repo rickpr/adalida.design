@@ -1,15 +1,18 @@
 import React, { forwardRef, type Ref, useContext } from 'react'
 
 import DarkModeContext from 'dark_mode_context'
+import { Projects } from 'projects'
 
 import KeyTakeawayCard from '../key_takeaway_card'
+
+const backgroundImage = Projects.Gaintain.colors.primary
 
 const KeyTakeaways = forwardRef((_props: Record<never, never>, ref: Ref<HTMLDivElement>): JSX.Element => {
   const { darkMode } = useContext(DarkModeContext)
   return (
     <div data-aos='fade-up' ref={ref} className='case-study-top-to-bottom'>
       <div className='key-takeaways'>
-        <h4 className={darkMode ? 'dark' : ''}>Key Takeaways</h4>
+        <h4 className={`case-study-gradient-text${darkMode ? ' dark' : ''}`} style={{ backgroundImage }}>Key Takeaways</h4>
         <div>
           Every project presents challenges&mdash;GainTain was an opportunity to refine my research approach, technical
           alignment, and developer collaboration.

@@ -3,14 +3,13 @@ import React, { forwardRef, type Ref } from 'react'
 
 import WireframingImage from 'images/gaintain/wireframing.webp'
 
-import Icon from '../icon'
+import IconHeading from '../icon_heading'
 
 const Wireframing = forwardRef((_props: Record<never, never>, ref: Ref<HTMLDivElement>): JSX.Element => (
   <div data-aos='fade-up' className='case-study-top-to-bottom' ref={ref}>
     <div className='case-study-explanation'>
       <section>
-        <Icon><IconSitemap /></Icon>
-        <h5>Wireframing the Experience:</h5>
+        <IconHeading icon={<IconSitemap />} heading='Wireframing the Experience' />
         <p>
           <strong><em>Transitioning from paper to digital required careful information architecture </em></strong> and
           usability considerations. Using the Swift UI Framework, I developed lo-fi wireframes <strong><em>to maintain

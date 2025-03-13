@@ -1,7 +1,9 @@
 import React, { useRef } from 'react'
 
 import useIsMobile from 'hooks/use_is_mobile'
+import { Projects } from 'projects'
 
+import Context from '../context'
 import Footer from '../footer'
 import TableOfContents from '../table_of_contents'
 
@@ -33,7 +35,7 @@ const Gaintain = (): JSX.Element => {
   }
   const isMobile = useIsMobile(1400)
   return (
-    <>
+    <Context.Provider value={Projects.Gaintain}>
       {isMobile === false && <TableOfContents links={sections} />}
       <div className='case-study-container'>
         <About ref={sections.About} />
@@ -50,7 +52,7 @@ const Gaintain = (): JSX.Element => {
         <KeyTakeaways ref={sections.Retrospective} />
         <Footer />
       </div>
-    </>
+    </Context.Provider>
   )
 }
 

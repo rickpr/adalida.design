@@ -7,11 +7,11 @@ import Context from './context'
 
 const Icon = ({ children }: { children: React.ReactNode }): JSX.Element => {
   const { darkMode } = useContext(DarkModeContext)
-  const { background, text } = useMemo(() => darkModeStyle(!darkMode), [darkMode])
-  const caseStudyColor = useContext(Context)?.color
+  const { background: defaultBackground, text } = useMemo(() => darkModeStyle(!darkMode), [darkMode])
+  const caseStudyColor = useContext(Context)?.colors?.primary
   const color = text
-  const backgroundColor = caseStudyColor ?? background
-  return <div className='case-study-icon' style={{ backgroundColor, color }}>{children}</div>
+  const background = caseStudyColor ?? defaultBackground
+  return <div className='case-study-icon' style={{ background, color }}>{children}</div>
 }
 
 export default Icon

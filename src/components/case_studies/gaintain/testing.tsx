@@ -1,22 +1,21 @@
-import { IconAB2 } from '@tabler/icons-react'
+import { IconBubbleText } from '@tabler/icons-react'
 import React, { forwardRef, type Ref } from 'react'
 
 import UnorderedFeatureList from 'components/feature_list/unordered'
 import TestingImage from 'images/gaintain/testing.webp'
 
-import Icon from '../icon'
+import IconHeading from '../icon_heading'
 
 const Testing = forwardRef((_props: Record<never, never>, ref: Ref<HTMLDivElement>): JSX.Element => (
   <div data-aos='fade-up' className='case-study-side-by-side reverse' ref={ref}>
     <div className='case-study-explanation'>
       <section className='more-padding'>
-        <Icon><IconAB2 /></Icon>
-        <h5>Testing for Usability</h5>
-        <p>
+        <IconHeading icon={<IconBubbleText />} heading='Testing for Usability' />
+        <div className='body-2'>
           Using <strong><em>contextual inquiry</em></strong>, I tested two MVP UI designs in a real-world gym
           environment to evaluate usability. Observing users in their routines revealed key challenges that
           shaped design refinements:
-        </p>
+        </div>
         <UnorderedFeatureList
           italic
           items={[
@@ -34,10 +33,10 @@ const Testing = forwardRef((_props: Record<never, never>, ref: Ref<HTMLDivElemen
             }
           ]}
         />
-        <p><strong><em>
+        <div className='body-2'><strong><em>
           Findings from these tests directly influenced the design, ensuring an intuitive, adaptable, and efficient
           tracking experience.
-        </em></strong></p>
+        </em></strong></div>
       </section>
     </div>
     <img className='gaintain-internal-testing-image' src={TestingImage} alt='Comparing two versions' />

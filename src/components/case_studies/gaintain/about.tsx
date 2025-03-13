@@ -1,10 +1,12 @@
 import React, { forwardRef, type Ref } from 'react'
 
 import AboutImage from 'images/gaintain/about.webp'
+import { Projects } from 'projects'
+const backgroundImage = Projects.Gaintain.colors.primary
 
 const About = forwardRef((_props: Record<never, never>, ref: Ref<HTMLDivElement>): JSX.Element => (
   <div data-aos='fade-up' className='gaintain-about' ref={ref}>
-    <h3>GAINTAIN</h3>
+    <h3><strong className='case-study-gradient-text' style={{ backgroundImage }}>GAINTAIN</strong></h3>
     <h5>A fitness app designed for a comprehensive workout log to meticulously track exercises, sets, reps, and progress.</h5>
     <img src={AboutImage} alt='About Gaintain' />
     <div className='case-study-overview'>

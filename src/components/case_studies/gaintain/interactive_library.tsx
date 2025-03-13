@@ -3,14 +3,13 @@ import React, { forwardRef, type Ref } from 'react'
 
 import InteractiveLibraryVideo from 'videos/gaintain/interactive_library.mp4'
 
-import Icon from '../icon'
+import IconHeading from '../icon_heading'
 
 const InteractiveLibrary = forwardRef((_props: Record<never, never>, ref: Ref<HTMLDivElement>): JSX.Element => (
   <div data-aos='fade-up' className='case-study-side-by-side' ref={ref}>
     <div className='case-study-explanation'>
       <section>
-        <Icon><IconPlayerPlayFilled /></Icon>
-        <h5>Interactive Exercise Library</h5>
+        <IconHeading icon={<IconPlayerPlayFilled />} heading='Exercise Library' />
         <p>
           GainTain&apos;s <strong><em>on-demand instructional library</em></strong> provides video and text-based
           guides to help users maintain proper form.

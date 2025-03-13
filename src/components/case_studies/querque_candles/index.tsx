@@ -18,10 +18,6 @@ import Considerations from './considerations'
 import NextSteps from './next_steps'
 import KeyTakeaways from './key_takeaways'
 
-
-// TODO: Create a more general pattern for this like a context as we do more case studies
-const themeColor = '#C9450D'
-
 const QuerqueCandles = (): JSX.Element => {
   const sections = {
     Overview: useRef(null),
@@ -38,7 +34,7 @@ const QuerqueCandles = (): JSX.Element => {
   const isMobile = useIsMobile(1400)
   return (
     <Context.Provider value={Projects.QuerqueCandles}>
-      {isMobile === false && <TableOfContents links={sections} color={themeColor} />}
+      {isMobile === false && <TableOfContents links={sections} />}
       <div className='case-study-container'>
         <Overview ref={sections.Overview} />
         <ChallengeSolution ref={sections['Challenge / Solution']} />

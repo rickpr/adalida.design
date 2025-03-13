@@ -3,18 +3,20 @@ import React, { forwardRef, type Ref } from 'react'
 
 import BrandPrinciplesImage from 'images/querque_candles/brand_principles.webp'
 
-import Icon from '../icon'
+import IconHeading from '../icon_heading'
 
-const BrandPrinciples = forwardRef((_props: Record<never, never>, ref: Ref<HTMLDivElement>): JSX.Element => (
-  <div data-aos='fade-up' className='case-study-top-to-bottom querque' ref={ref}>
-    <div className='case-study-explanation'>
-      <section>
-        <div className='querque-icon-heading'><Icon><IconRuler /></Icon> <h5>Brand Principles</h5></div>
-      </section>
+const BrandPrinciples = forwardRef((_props: Record<never, never>, ref: Ref<HTMLDivElement>): JSX.Element => {
+  return (
+    <div data-aos='fade-up' className='case-study-top-to-bottom querque' ref={ref}>
+      <div className='case-study-explanation'>
+        <section>
+          <IconHeading icon={<IconRuler />} heading='Brand Principles' />
+        </section>
+      </div>
+      <img src={BrandPrinciplesImage} alt='Brand principles' />
     </div>
-    <img src={BrandPrinciplesImage} alt='Brand principles' />
-  </div>
-))
+  )
+})
 
 BrandPrinciples.displayName = 'BrandPrinciples'
 

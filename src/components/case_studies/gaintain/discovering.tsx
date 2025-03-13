@@ -1,34 +1,32 @@
-import { IconExclamationCircleFilled } from '@tabler/icons-react'
+import { IconExclamationMark } from '@tabler/icons-react'
 import React, { forwardRef, type Ref } from 'react'
 
 import DiscoveringImage from 'images/gaintain/discovering.webp'
 
 import Duck from 'components/duck'
-import Icon from '../icon'
+import IconHeading from '../icon_heading'
 
 const Discovering = forwardRef((_props: Record<never, never>, ref: Ref<HTMLDivElement>): JSX.Element => (
   <div data-aos='fade-up' className='case-study-side-by-side reverse' ref={ref}>
     <div className='case-study-explanation'>
       <section>
-        <Icon><IconExclamationCircleFilled /></Icon>
-        <h5>Discovering the Gap:</h5>
-        <div className='subtitle-2'>
+        <IconHeading icon={<IconExclamationMark />} heading='Discovering the Gap:' />
+        <div className='body-2'>
           Workout tracking is valuable, but most apps lock it behind coaching or subscriptions.
         </div>
-        <div className='subtitle-2'>
+        <div className='body-2'>
           <strong>
             <em>How can we give trainees full control&mdash;seamlessly tracking progress without relying on a trainer?</em>
           </strong>
         </div>
       </section>
       <section>
-        <Icon><Duck /></Icon>
-        <h5>Defining the Solution:</h5>
-        <div className='subtitle-2'>
+        <IconHeading icon={<Duck />} heading='Ideating the Solution:' />
+        <div className='body-2'>
           A seamless, fast workout tracker that prioritizes effortless logging&mdash;eliminating the need for multiple apps
           while giving trainees full control over their progress.
         </div>
-        <div className='subtitle-2'>
+        <div className='body-2'>
           By focusing on <strong><em>input efficiency over complexity,</em></strong> it <strong><em>ensures consistent
           tracking and meaningful insights without reliance on a trainer.</em></strong>
         </div>

@@ -14,12 +14,13 @@ interface Props {
 const Card = ({ project, reverse }: Props): JSX.Element => {
   const isMobile = useIsMobile()
   const at = isMobile === true ? '50% 25%' : reverse ? '75%' : '25%'
+  const color = project.colors.cover
   const style = {
     backgroundImage: `
       radial-gradient(
         circle at ${at},
-        color-mix(in lch shorter hue, ${project.color} 100%, #FFFFFF 100%),
-        ${project.color}
+        color-mix(in lch shorter hue, ${color} 100%, #FFFFFF 100%),
+        ${color}
       )
     `
   }

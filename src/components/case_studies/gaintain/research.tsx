@@ -5,26 +5,25 @@ import OrderedFeatureList from 'components/feature_list/ordered'
 import UnorderedFeatureList from 'components/feature_list/unordered'
 import ResearchImage from 'images/gaintain/research.webp'
 
-import Icon from '../icon'
+import IconHeading from '../icon_heading'
 
 const Research = forwardRef((_props: Record<never, never>, ref: Ref<HTMLDivElement>): JSX.Element => (
   <div data-aos='fade-up' className='case-study-side-by-side' ref={ref}>
     <div className='case-study-explanation'>
       <section>
-        <Icon><IconDatabaseCog /></Icon>
-        <h5>Research &amp; Key Insights:</h5>
-        <p>
+        <IconHeading icon={<IconDatabaseCog />} heading='Research & Key Insights:' />
+        <div className='body-2'>
 
           To understand how people track workouts, I explored tracking strategies shared in fitness blogs, guides, and
           videos. Two main approaches emerged:
-        </p>
+        </div>
         <UnorderedFeatureList
           items={[
             { title: 'Paper Notebooks', description: 'Reliable but hard to review.' },
             { title: 'Digital Apps', description: 'Convenient but fragmented.' }
           ]}
         />
-        <p>Neither fully supported both consistency and insights, leading to three essential features:</p>
+        <div className='body-2'>Neither fully supported both consistency and insights, leading to three essential features:</div>
         <OrderedFeatureList
           items={[
             { title: 'Workout Logging', description: 'Track exercises, weights, and reps in one place.' },
@@ -32,10 +31,10 @@ const Research = forwardRef((_props: Record<never, never>, ref: Ref<HTMLDivEleme
             { title: 'Built-in Stopwatch', description: 'Integrated rest timer for efficiency.' }
           ]}
         />
-        <p>
+        <div className='body-2'>
           These insights <strong>informed the data structure</strong> behind the design, ensuring a seamless,
           frictionless tracking system that eliminates app-switching.
-        </p>
+        </div>
       </section>
     </div>
     <img src={ResearchImage} alt='Analyzing' />

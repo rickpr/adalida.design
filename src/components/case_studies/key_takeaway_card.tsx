@@ -8,11 +8,16 @@ interface Props {
 }
 
 const KeyTakeawayCard = ({ title, children }: Props): JSX.Element => {
-  const color = useContext(Context)?.color
+  const backgroundImage = useContext(Context)?.colors?.primary
   return (
     <div className='glass card' data-aos='fade-up'>
       <div className='key-takeaways-card-content'>
-        <div className='subtitle-2' style={color !== undefined ? { color } : {}}><strong>{title}</strong></div>
+        <div
+          className='subtitle-2 case-study-gradient-text'
+          style={backgroundImage !== undefined ? { backgroundImage } : {}}
+        >
+          <strong>{title}</strong>
+        </div>
         {children}
       </div>
     </div>
