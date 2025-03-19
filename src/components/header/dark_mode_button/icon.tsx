@@ -49,8 +49,8 @@ const Icon = ({ darkMode }: { darkMode: boolean }): JSX.Element => {
     <svg
       xmlns='http://www.w3.org/2000/svg'
       xmlnsXlink='http://www.w3.org/1999/xlink'
-      width='22'
-      height='22'
+      width='1.57em'
+      height='1.57em'
       viewBox='0 0 24 24'
       strokeWidth='2'
       stroke='currentColor'

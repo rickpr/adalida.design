@@ -12,7 +12,7 @@ exports[`Header renders correctly 1`] = `
       href="/"
     >
       <div
-        className="header-button"
+        className="btn header-button"
       >
         <svg
           className="home-page-logo"
@@ -40,19 +40,19 @@ exports[`Header renders correctly 1`] = `
       </div>
     </a>
     <a
-      className="header-button absolute "
+      className="btn header-button animated-link absolute"
       href="/"
     >
       <svg
         className="tabler-icon tabler-icon-arrow-left "
         fill="none"
-        height={24}
+        height="1em"
         stroke="currentColor"
         strokeLinecap="round"
         strokeLinejoin="round"
         strokeWidth={2}
         viewBox="0 0 24 24"
-        width={24}
+        width="1em"
         xmlns="http://www.w3.org/2000/svg"
       >
         <path
@@ -65,6 +65,7 @@ exports[`Header renders correctly 1`] = `
           d="M5 12l6 -6"
         />
       </svg>
+       BACK
     </a>
   </div>
   <div
@@ -105,13 +106,13 @@ exports[`Header renders correctly 1`] = `
     >
       <svg
         fill="none"
-        height="22"
+        height="1.57em"
         stroke="currentColor"
         strokeLinecap="round"
         strokeLinejoin="round"
         strokeWidth="2"
         viewBox="0 0 24 24"
-        width="22"
+        width="1.57em"
         xmlns="http://www.w3.org/2000/svg"
         xmlnsXlink="http://www.w3.org/1999/xlink"
       >

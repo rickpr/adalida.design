@@ -13,11 +13,11 @@ $header-height: 80px;
 
   .flex-center {
     justify-content: space-between;
-    flex-basis: 300px;
+    flex-basis: 18.75em;
     gap: 1em;
 
     > * {
-      transition: transform 0.5s ease-in-out;
+      transition: transform 0.5s ease-in-out, gap 0.2s ease-in-out;
     }
   }
 }
@@ -28,7 +28,6 @@ $header-height: 80px;
   @include blur;
 
   padding: 0.5em;
-  font-size: 1rem; // This prevents the switch from resizing on mobile
 }
 
 .switch-grid {
@@ -40,7 +39,7 @@ $header-height: 80px;
   min-height: 100%;
   pointer-events: auto;
   cursor: pointer;
-  width: 200px;
+  width: 12.5em;
 }
 
 .switch-button {
@@ -80,11 +79,15 @@ $header-height: 80px;
   @include glass;
   @include blur;
 
-  height: 50px;
-  width: 50px;
+  height: 3.57em;
+  min-width: 3.57em;
   color: currentcolor;
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
+
+  &.animated-link {
+    padding: 0 0.75em 0 0.5em;
+  }
 }
