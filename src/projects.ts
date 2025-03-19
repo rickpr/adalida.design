@@ -6,8 +6,6 @@ const PhronesisPhoto = 'images/works/phronesis.webp'
 const ProjectEchoImage = 'images/works/project_echo.webp'
 const QuerqueImage = 'images/works/querque.webp'
 const SunbeltImage = 'images/works/sunbelt.webp'
-const TLDRPhoto = 'images/works/tldr.webp'
-const WaughImage = 'images/works/waugh.webp'
 const UniNightsImage = 'images/works/uni_nights.webp'
 
 export interface Project {
@@ -42,21 +40,6 @@ export const Projects: Record<string, Project> = {
       primary: 'linear-gradient(135deg, #FF512F, #DD2476)'
     }
   },
-  Waugh: {
-    name: 'Waugh',
-    category: 'Desktop Dashboard',
-    description: 'Instant Political Context: Cut Through the Noise and Get the Full Story.',
-    heroImage: WaughImage,
-    badges: ['Product Strategy', 'UI Design', 'Design System'],
-    link: {
-      text: 'View Presentation',
-      url: 'https://www.figma.com/slides/muOS1rWcaNx46Nz4QR95FB/WAUGH-PRESENTATION?node-id=3-58&t=6xA61f3NCqB2cI5g-1'
-    },
-    colors: {
-      cover: '#F56100',
-      primary: '#F56100'
-    }
-  },
   Phronesis: {
     name: 'Phronesis',
     category: 'Desktop Dashboard',
@@ -70,21 +53,6 @@ export const Projects: Record<string, Project> = {
     colors: {
       cover: '#146272',
       primary: '#146272'
-    }
-  },
-  TLDR: {
-    name: 'TL;DR',
-    category: 'Desktop Dashboard',
-    description: 'Designed an MVP in a one-day hackathon to simplify legal language in End User Agreements using AI, enabling users to quickly understand what they’re signing.',
-    heroImage: TLDRPhoto,
-    badges: ['Product Strategy', 'UI Design', 'Generative AI'],
-    link: {
-      text: 'View Presentation',
-      url: 'https://docs.google.com/presentation/d/1qXeKJTsfPWMx_gYd4cbBtRxIbwm7jJqWRpy747TrlWM'
-    },
-    colors: {
-      cover: '#59145F',
-      primary: '#59145F'
     }
   },
   QuerqueCandles: {
