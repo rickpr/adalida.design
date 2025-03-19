@@ -21,11 +21,18 @@
   flex-direction: column;
   gap: 0.75em;
   padding: 1.25em;
+  justify-content: space-between;
 
-  .info-row {
+  .inside {
     display: flex;
-    width: 100%;
-    justify-content: space-between;
-    opacity: 0.75;
+    flex-direction: column;
+    gap: 0.75em;
+
+    .info-row {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      opacity: 0.75;
+    }
   }
 }
