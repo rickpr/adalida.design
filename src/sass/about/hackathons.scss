@@ -1,0 +1,31 @@
+.hackathons {
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 100%;
+  justify-items: space-between;
+  gap: 3em;
+
+  @media (width >= $breakpoint) {
+    &.even {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    &.odd {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+}
+
+.hackathon {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75em;
+  padding: 1.25em;
+
+  .info-row {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    opacity: 0.75;
+  }
+}

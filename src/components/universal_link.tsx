@@ -1,7 +1,6 @@
 import { Link } from 'gatsby'
 import React, { useMemo } from 'react'
 
-
 interface Props {
   to: string
   children: React.ReactNode
