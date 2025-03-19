@@ -1,8 +1,7 @@
+@import './variables';
 @import './gaintain';
 @import './phronesis';
 @import './querque_candles';
-
-$case-study-breakpoint: 1200px;
 
 @mixin gradient-text {
   color: transparent;

@@ -12,6 +12,7 @@ import Discovering from './discovering'
 import Research from './research'
 import Wireframing from './wireframing'
 import Testing from './testing'
+import Brand from './brand'
 import Iterations from './iterations'
 import FinalDesign from './final_design'
 import Developer from './developer'
@@ -27,6 +28,7 @@ const Gaintain = (): JSX.Element => {
     Research: useRef(null),
     Wireframes: useRef(null),
     Tests: useRef(null),
+    'The Brand': useRef(null),
     Iterations: useRef(null),
     'Final Design': useRef(null),
     Handoff: useRef(null),
@@ -43,6 +45,7 @@ const Gaintain = (): JSX.Element => {
         <Research ref={sections.Research} />
         <Wireframing ref={sections.Wireframes} />
         <Testing ref={sections.Tests} />
+        <Brand ref={sections['The Brand']} />
         <Iterations ref={sections.Iterations} />
         <FinalDesign ref={sections['Final Design']} />
         <Developer ref={sections.Handoff} />
