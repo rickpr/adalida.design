@@ -44,7 +44,7 @@ const TableOfContents = ({ links }: Props): JSX.Element => {
 
   return (
     <div className={`table-of-contents${scrolledTooFar ? ' hide-left' : ''}`}>
-      <div style={{ opacity: 0.5 }}>CONTENTS</div>
+      <div style={{ opacity: 0.75 }}>CONTENTS</div>
       {Object.entries(links).map(([link, element]) => {
         const active = activeLink === link
         return (

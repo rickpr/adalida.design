@@ -39,16 +39,7 @@ $case-study-breakpoint: 1200px;
       align-items: flex-start;
       text-align: start;
       gap: 0.375em;
-    }
-
-    > .cell.right {
-      align-items: flex-end;
-    }
-
-    > .cell.bottom {
-      > div {
-        margin-bottom: 0.625em;
-      }
+      margin-bottom: 0.625em;
     }
   }
 }
@@ -74,7 +65,7 @@ $case-study-breakpoint: 1200px;
   padding: 0;
   cursor: pointer;
   color: transparent;
-  opacity: 0.5;
+  opacity: 0.75;
   transition: all 0.5s ease-in-out;
   filter: grayscale(1);
 

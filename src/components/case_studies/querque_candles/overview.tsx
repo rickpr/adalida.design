@@ -21,7 +21,7 @@ const Overview = forwardRef((_props: Record<never, never>, ref: Ref<HTMLDivEleme
         </div>
       </div>
       <div className='row'>
-        <div className='cell bottom'>
+        <div className='cell'>
           <div className='subtitle-2'>Overview</div>
           <div className='body-2'>
             Querque Candles needed a versatile brand identity for both product packaging and online marketing.

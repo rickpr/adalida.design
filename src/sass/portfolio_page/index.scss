@@ -8,22 +8,6 @@
   .portfolio-hero-image {
     width: 100%;
 
-    > video {
-      min-height: 100%;
-      min-width: 100%;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      object-position: left;
-      transition: opacity 1s ease-in-out;
-    }
-
-    @media (width < $breakpoint) {
-      &.video {
-        height: 300px;
-      }
-    }
-
     @media (width >= $breakpoint) {
       height: calc(450px - 1.5em);
     }
