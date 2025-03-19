@@ -3,11 +3,15 @@
   grid-template-columns: 1fr;
   width: 100%;
   justify-items: space-between;
-  gap: 3em;
+  gap: 1.5em;
+  margin-top: 1.5em;
 
   @media (width >= $breakpoint) {
+    gap: 3em;
+
     &.even {
       grid-template-columns: 1fr 1fr 1fr;
+      margin-top: 3em;
     }
 
     &.odd {
