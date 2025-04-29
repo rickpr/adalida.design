@@ -1,9 +1,7 @@
 import React from 'react'
 
-import BadgeButton from 'components/badge_button'
 import { makeMediaTag } from 'components/media_with_text'
 import useIsMobile from 'hooks/use_is_mobile'
-import FileQuery from 'queries/file'
 
 const AdalidaFace = 'images/about/adalida_face.webp'
 
@@ -26,7 +24,6 @@ const Intro = (): JSX.Element | null => {
           shaping a solution that balances usability, strategy, and execution.
         </div>
         <div>Every interaction should be intuitive, functional, and meaningful.</div>
-        <BadgeButton to={FileQuery('resume.pdf').publicURL}>VIEW RESUME</BadgeButton>
       </div>
     </div>
   )
